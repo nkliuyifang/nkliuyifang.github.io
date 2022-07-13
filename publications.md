@@ -3,7 +3,7 @@ title: Publication
 permalink: /publication/
 ---
 
-For those interested in numbers, see Mengyuan Liu's [google scholar citations profile](https://scholar.google.com/citations?user=MiFqJGcAAAAJ](https://xs.dailyheadlines.cc/citations?user=woX_4AcAAAAJ&hl=zh-CN&oi=ao).
+For those interested in numbers, see Mengyuan Liu's ([google scholar citations profile](https://xs.dailyheadlines.cc/citations?user=woX_4AcAAAAJ&hl=zh-CN&oi=ao)).
 
 <hr>
 
