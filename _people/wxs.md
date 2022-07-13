@@ -1,6 +1,6 @@
 ---
 name: Xinshun Wang
-position: Master candidate
+position: mastercandidate
 avatar: wxs.jpg
 joined: 2021
 ---
