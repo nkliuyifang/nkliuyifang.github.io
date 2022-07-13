@@ -19,4 +19,4 @@ Pattern Recognition (PR), 2022.
 
 _Exploiting Temporal Contexts with Strided Transformer for 3d Human Pose Estimation_<br>
 Wenhao Li, Hong Liu, Runwei Ding, Mengyuan Liu, Pichao Wang, Wenming Yang<br>
-IEEE Transactions on Multimedia (T-MM) 2022.
+IEEE Transactions on Multimedia (T-MM), 2022.
