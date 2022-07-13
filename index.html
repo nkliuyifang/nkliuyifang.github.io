@@ -8,29 +8,39 @@ layout: default
       <img class='img-responsive center-block' src="/images/school.jpg" width="100%" height="100%" />
 
       <p>
-      <a href="https://github.com/nkliuyifang"><i class="fa fa-github"></i> nkliuyifang</a>&nbsp;&nbsp;&nbsp;
-      <a href="mailto:nkliuyifang@gmail.com"><i class="fa fa-envelope-o"></i> nkliuyifang@gmail.com</a>
+      <a href="https://github.com/nkliuyifang"><i class="fa fa-github"></i> Perception Lab</a>&nbsp;&nbsp;&nbsp;
+      <a href="mailto:liumy85@mail.sysu.edu.cn"><i class="fa fa-envelope-o"></i> liumy85@mail.sysu.edu.cn</a>
       </p>
 
       <div class="w3-container" style="   background: #f0f8ff; padding: 25px; border-radius:10px; border: 1px solid #5d8aa8">
         <div style="text-align:left">
           <h3> Recent News </h3>
+          <u>Happenings of the last two months. Updated 6/18/2021</u>
           <span style="display: block; margin-bottom: 1em"></span>
           <div class="news">
-              {% capture now %}{{'now' | date: '%s' | minus: 51840000 %}}{% endcapture %}
+              {% capture now %}{{'now' | date: '%s' | minus: 5184000 %}}{% endcapture %}
               <ul style="list-style-position:outside;padding:20px" >
                 {% for new in site.data.news %}
                   {% capture date %}{{new.date | date: '%s' | plus: 0 %}}{% endcapture %}
+                  {% if date > 0 %}
                     <li>
                       <span>
                         {{ new.details }}
                       </span>
                     </li>
+                  {% endif %}
                 {% endfor %}
               </ul>
           </div>
         </div >
       </div>
+
+
+
+      <span style="display: block; margin-bottom: 3em"></span>
+      School of Intelligent Systems Engineering at Sun Yat-sen University<br>
+  
+      <span style="display: block; margin-bottom: 3em"></span>
 
     </header>
 </div>
