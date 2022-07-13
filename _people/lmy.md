@@ -1,6 +1,6 @@
 ---
 name: Mengyuan Liu
-position: PI
+position: pi
 avatar: lmy.jpg
 joined: 2020
 ---
