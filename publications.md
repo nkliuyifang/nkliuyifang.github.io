@@ -7,7 +7,7 @@ For those interested in numbers, see Mengyuan Liu's ([google scholar citations p
 
 <hr>
 
-### 2021
+### 2022
 
 _Contrastive Learning from Extremely Augmented Skeleton Sequences for Self-supervised Action Recognition_<br>
 Tianyu Guo, Hong Liu, Zhan Chen, Mengyuan Liu, Tao Wang, Runwei Ding<br>
