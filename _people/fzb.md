@@ -1,5 +1,5 @@
 ---
-name: Zhongbing Fang
+name: Zhongbin Fang
 position: mastercandidate
 avatar: fzb.jpg
 joined: 2022
