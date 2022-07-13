@@ -20,14 +20,12 @@ highlighter:        rouge
 
 # Navigation
 nav:
-  - name:           "home"
-    href:           "/"
-  - name:           "publications"
-    href:           "/publication"
-  - name:           "people"
-    href:           "/people"
   - name:           "about"
     href:           "/about"
+  - name:           "people"
+    href:           "/people"
+  - name:           "publications"
+    href:           "/publication"
 #  - name:           "blog"
 #    href:           "/blog"
 #  - name:           "resources"
