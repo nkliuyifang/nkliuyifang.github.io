@@ -5,6 +5,6 @@ avatar: lmy.jpg
 joined: 2020
 ---
 
-<img width="600" src="{{site.baseurl}}/images/people/{{page.avatar}}" data-action="zoom">
+<img width="600" src="{{site.baseurl}}/images/people/{{page.avatar}}">
 
 nkliuyifang@gmail.com
