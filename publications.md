@@ -17,6 +17,6 @@ _Image-to-Video Person Re-Identification using Three-Dimensional Semantic Appear
 Wei Shi, Hong Liu, Mengyuan Liu<br>
 Pattern Recognition (PR), 2022.
 
-_Exploiting temporal contexts with strided transformer for 3d human pose estimation_<br>
+_Exploiting Temporal Contexts with Strided Transformer for 3d Human Pose Estimation_<br>
 Wenhao Li, Hong Liu, Runwei Ding, Mengyuan Liu, Pichao Wang, Wenming Yang<br>
 IEEE Transactions on Multimedia (T-MM) 2022.
