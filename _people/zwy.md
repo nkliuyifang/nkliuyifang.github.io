@@ -1,6 +1,6 @@
 ---
 name: Wanying Zhang
-position: Master candidate
+position: mastercandidate
 avatar: zwy.jpg
 joined: 2021
 ---
