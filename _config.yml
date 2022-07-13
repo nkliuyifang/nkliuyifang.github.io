@@ -3,13 +3,11 @@
 # # # # # # # #
 
 # Basic
-name:               "Kording lab"
-title:              "Kording lab at University of Pennsylvania"
-description:        "this is a page for Konrad Kording lab, we are comptational neurosciece and datascience lab at the University of Pennsylvania, Philadelphia"
-
+name:               "Perception lab"
+title:              "Perception lab at Sun-yat Sen University"
 
 # URL
-url:                http://kordinglab.com
+url:                http://nkliuyifang.github.io
 baseurl:            
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
