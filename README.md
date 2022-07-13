@@ -1,17 +1,3 @@
-# Kording lab page
-
-This is repository for [Kording lab page](http://kordinglab.com/). We use Jekyll to run our Github page. We are welcome for other people to contribute to our site not just lab members. Feel free to fork and pull-request!
-
-## Run the page locally using Jekyll
-
-To run locally, follow instruction [here](https://jekyllrb.com/) to install Jekyll then run `jekyll serve` to see in `localhost:4000`. Here is a brief install guidelines.
-
-```bash
-sudo gem install jekyll
-sudo gem install rouge
-jekyll serve
-```
-
 ## Editing the lab website
 
 Below, we explain how to edit the lab webpage
