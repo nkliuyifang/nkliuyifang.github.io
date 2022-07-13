@@ -5,7 +5,7 @@ avatar: fzb.jpg
 joined: 2022
 ---
 
-<img width="600" src="{{site.baseurl}}/images/people/{{page.avatar}}">
+<img width="300" src="{{site.baseurl}}/images/people/{{page.avatar}}">
 
 
 ## 方锺滨
