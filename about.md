@@ -4,7 +4,7 @@ permalink: /about/
 ---
 
 ### About us
-We are a group of CVers.
+A group of CVers
 
 ### Research
 - Human Action Recognition
