@@ -4,7 +4,7 @@ permalink: /about/
 ---
 
 ### About us
-We are a group of CVer
+We are a group of CVers.
 
 ### Research
 1. Human Action Recognition
@@ -12,4 +12,4 @@ We are a group of CVer
 3. 3D Point Cloud Analysis
 
 ### Lab Culture
-Just Do It
+Let we have a try!
