@@ -12,4 +12,4 @@ A group of CVers
 - 3D Point Cloud Perception
 
 ### Lab Culture
-Let we have a try!
+Let's have a try!
