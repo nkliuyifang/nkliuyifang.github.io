@@ -12,3 +12,7 @@ For those interested in numbers, see Mengyuan Liu's ([google scholar citations p
 _Contrastive Learning from Extremely Augmented Skeleton Sequences for Self-supervised Action Recognition_<br>
 Tianyu Guo, Hong Liu, Zhan Chen, Mengyuan Liu, Tao Wang, Runwei Ding<br>
 AAAI, 2022 ([pdf](documents/aaai2022.pdf)))
+
+_Image-to-Video Person Re-Identification using Three-Dimensional Semantic Appearance Alignment and Cross-Modal Interactive Learning_<br>
+Wei Shi, Hong Liu, Mengyuan Liu<br>
+Pattern Recognition (PR), 2022 ([pdf](documents/pr2022.pdf)))
