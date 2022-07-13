@@ -7,9 +7,9 @@ permalink: /about/
 We are a group of CVers.
 
 ### Research
-1. Human Action Recognition
-2. Human Motion Prediction
-3. 3D Point Cloud Analysis
+- Human Action Recognition
+- Human Motion Prediction
+- 3D Point Cloud Perception
 
 ### Lab Culture
 Let we have a try!
