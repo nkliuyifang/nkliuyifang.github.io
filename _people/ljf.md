@@ -1,6 +1,6 @@
 ---
 name: Jinfu Liu
-position: Master candidate
+position: mastercandidate
 avatar: ljf.jpg
 joined: 2022
 ---
