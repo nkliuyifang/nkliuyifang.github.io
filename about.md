@@ -3,10 +3,10 @@ title: About
 permalink: /about/
 ---
 
-### About us
+### About Us
 We are a group of CVers
 
-### Research
+### Research Scope
 - Human action recognition
 - Human motion prediction
 - 3D point cloud analysis
