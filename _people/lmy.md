@@ -7,8 +7,6 @@ joined: 2020
 
 <img width="300" src="{{site.baseurl}}/images/people/{{page.avatar}}">
 
-**联系方式**
-- liumy85@mail.sysu.edu.cn
 
 **工作经历**
 - 2020年至今：中山大学智能工程学院副教授，入选 “百人计划” 引进人才项目
