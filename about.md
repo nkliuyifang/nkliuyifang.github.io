@@ -4,12 +4,12 @@ permalink: /about/
 ---
 
 ### About us
-A group of CVers
+We are a group of CVers
 
 ### Research
-- Human Action Recognition
-- Human Motion Prediction
-- 3D Point Cloud Perception
+- Human action recognition
+- Human motion prediction
+- 3D point cloud analysis
 
 ### Lab Culture
-Let's have a try!
+Just Try Once More
