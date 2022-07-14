@@ -7,20 +7,10 @@ joined: 2022
 
 <img width="300" src="{{site.baseurl}}/images/people/{{page.avatar}}">
 
-
-**联系方式**
-- jinfuliu@whut.edu.cn
+**研究方向**
+- 三维人体行为分析
 
 
 **个人简介**
 - 性格乐观、乐于助人
 - 热爱篮球
-
-
-**研究方向**
-- 三维人体行为分析
-
-
-**学术成果**
--
--
