@@ -12,4 +12,4 @@ We are a group of CVers
 - 3D point cloud analysis
 
 ### Lab Culture
-Just Try Once More
+Just try once more
