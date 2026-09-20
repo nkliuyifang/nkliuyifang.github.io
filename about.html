@@ -263,15 +263,16 @@
 									
 								
 							
-		   </div>
-<br><br>
-	
-								
-</div>
-</div>
-</div>
-<br>
-<!----> 
+					<div class="clearfix"></div>
+				</div>
+			</strong></strong></strong></font></strong></strong></div><strong style="line-height: 1.5;"><strong style="line-height: 1.5;"><font face="Times New Roman"><strong><strong>
+</strong></strong></font></strong></strong></div><strong style="line-height: 1.5;"><strong style="line-height: 1.5;"><font face="Times New Roman"><strong><strong>
+		</strong></strong></font></strong></strong></div><strong style="line-height: 1.5;"><strong style="line-height: 1.5;"><font face="Times New Roman"><strong><strong>
+	</strong></strong></font></strong></strong></div><strong style="line-height: 1.5;"><strong style="line-height: 1.5;"><font face="Times New Roman"><strong><strong>
+	<!---->
+	 			 
+	<!---->
+	<!----> 
 	<div class="footer">
 		<div class="container">
 			<div class="footer-sec">
@@ -289,7 +290,9 @@
 		</div>
 	</div>
 
-	
+
+
+
 <script style="text/javascript">
       $(document).ready(function() {
           // Cache selectors for faster performance.
@@ -297,11 +300,7 @@
               $mainMenuBar = $('#fixTest'),
               $mainMenuBarAnchor = $('#mainMenuBarAnchor');
        
-          // Run this on scroll events.
-        //scroll()
-       //当用户滚动指定的元素时，会发生scroll事件。
-       //scroll事件适用于所有可滚动的元素和window对象（浏览器窗口）
-       //scroll()方法触发scroll事件，或规定当发生scroll事件时运行的函数
+        
           $window.scroll(function() {
               //scrollTop()方法返回或设置匹配元素的滚动条的垂直位置
               var window_top = $window.scrollTop();
@@ -320,8 +319,28 @@
               }
   });
       });
+$(function () { 
+	$("[data-toggle='popover']").popover();
+});
 
+ $(function(){ 
+        $('[data-toggle="popover"]').popover() //弹窗
+        .on('show.bs.popover', function () { //展示时,关闭非当前所有弹窗
+            $(this).parent().siblings().find('[data-toggle="popover"]').popover('hide');
+        });
+    });
+    //给Body加一个Click监听事件
+      $('body').on('click', function(event) {
+        var target = $(event.target);
+        if (!target.hasClass('popover') //弹窗内部点击不关闭
+                && target.parent('.popover-content').length === 0
+                && target.parent('.popover-title').length === 0
+                && target.parent('.popover').length === 0
+                && target.data("toggle") !== "popover") {
+                //弹窗触发列不关闭，否则显示后隐藏
+            $('[data-toggle="popover"]').popover('hide');
+        }
+    });
 </script>
-		</a></font>
 
-</div></body></html>
+</a></strong></strong></font></strong></strong></body></html>
