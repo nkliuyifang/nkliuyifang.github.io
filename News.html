@@ -139,47 +139,38 @@
         <div class="clear"></div>		
 	 </strong></div><strong>
 </strong></div><strong>		
-	<!----pages-end---->
 
-<!----> 
-<div class="footer">
-	 <div class="container">
-		 <div class="footer-sec">
-			 <div class="col-md-4 news-ltr">
-				 <h3>地址</h3>
-				 <p><font color="#FFFFFF"><font face="Times New Roman">测绘遥感信息工程国家重点实验室<br>
-				 武汉大学信息学部/工学部<br>
-					 武汉市珞喻路129号 430079</font></font></p>
-					
+
+<div class="clearfix"></div>
+				</div>
+			</strong></strong></strong></font></strong></strong></div><strong style="line-height: 1.5;"><strong style="line-height: 1.5;"><font face="Times New Roman"><strong><strong>
+</strong></strong></font></strong></strong></div><strong style="line-height: 1.5;"><strong style="line-height: 1.5;"><font face="Times New Roman"><strong><strong>
+		</strong></strong></font></strong></strong></div><strong style="line-height: 1.5;"><strong style="line-height: 1.5;"><font face="Times New Roman"><strong><strong>
+	</strong></strong></font></strong></strong></div><strong style="line-height: 1.5;"><strong style="line-height: 1.5;"><font face="Times New Roman"><strong><strong>
+	<!---->
+	 			 
+	<!---->
+	<!----> 
+	<div class="footer">
+		<div class="container">
+			<div class="footer-sec">
+				<div class="col-md-4 news-ltr">
+					<h3>地址</h3>
+				 <p><font color="#FFFFFF"><font face="Times New Roman">北京大学深圳研究生院<br>
+					 广东省深圳市西丽大学城北大校区 518055</font></font></p>
 				</div>
 				<div class="col-md-4 news-ltr">
-					<h3>电话/传真</h3>
-					<p><font color="#FFFFFF"><font face="Times New Roman">027-68778969（办公室）<br>027-68778229（国际交流办公室）<br>027-68778525(研究生管理办公室)</font></font><br></p>
-				</div>
-				<div class="col-md-4 news-ltr">
-					<h3>电子邮箱</h3>
-					<p><font color="#FFFFFF"><font face="Times New Roman">tuzhigang@whu.edu.cn</font></font></p>
-					<p><font color="#FFFFFF"><font face="Times New Roman">tuzhigang1986@163.com</font></font></p>
+					<h3>邮箱</h3>
+					<p><font color="#FFFFFF"><font face="Times New Roman">liumengyuan@pku.edu.cn</font></font></p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
-	<!---->  
-	<div class="copywrite">
-		<div class="container">
-			<div class="ftr-logo">
-				<h3><a href="index.html"><img src="./News_files/logo.png" <="" a=""></a></h3><a href="index.html">
-			</a></div><a href="index.html">
-			<div class="ftr-right">
-				<p>©版权所有：测绘遥感信息工程国家重点实验室 <br>  
-联系地址： 中国·武汉市珞瑜路129号   邮编: 430079   E-mail：liesmars@whu.edu.cn<br>
-Tel/Fax：027-68778969（办公室） 027-68778229（国际交流办公室）027-68778525(研究生管理办公室)</p>
-		 </div>
-		 <div class="clearfix"></div>
-	 </a></div><a href="index.html">
-</a></div><a href="index.html">
-<!----> 
+
+
+
+
 <script style="text/javascript">
       $(document).ready(function() {
           // Cache selectors for faster performance.
@@ -187,11 +178,7 @@ Tel/Fax：027-68778969（办公室） 027-68778229（国际交流办公室）027
               $mainMenuBar = $('#fixTest'),
               $mainMenuBarAnchor = $('#mainMenuBarAnchor');
        
-          // Run this on scroll events.
-        //scroll()
-       //当用户滚动指定的元素时，会发生scroll事件。
-       //scroll事件适用于所有可滚动的元素和window对象（浏览器窗口）
-       //scroll()方法触发scroll事件，或规定当发生scroll事件时运行的函数
+        
           $window.scroll(function() {
               //scrollTop()方法返回或设置匹配元素的滚动条的垂直位置
               var window_top = $window.scrollTop();
@@ -210,8 +197,28 @@ Tel/Fax：027-68778969（办公室） 027-68778229（国际交流办公室）027
               }
   });
       });
+$(function () { 
+	$("[data-toggle='popover']").popover();
+});
 
+ $(function(){ 
+        $('[data-toggle="popover"]').popover() //弹窗
+        .on('show.bs.popover', function () { //展示时,关闭非当前所有弹窗
+            $(this).parent().siblings().find('[data-toggle="popover"]').popover('hide');
+        });
+    });
+    //给Body加一个Click监听事件
+      $('body').on('click', function(event) {
+        var target = $(event.target);
+        if (!target.hasClass('popover') //弹窗内部点击不关闭
+                && target.parent('.popover-content').length === 0
+                && target.parent('.popover-title').length === 0
+                && target.parent('.popover').length === 0
+                && target.data("toggle") !== "popover") {
+                //弹窗触发列不关闭，否则显示后隐藏
+            $('[data-toggle="popover"]').popover('hide');
+        }
+    });
 </script>
 
-
-</a></strong></body></html>
+</a></strong></strong></font></strong></strong></body></html>
