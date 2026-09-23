@@ -1,446 +1,1370 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>招生信息 - 刘梦源课题组</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="./News_files/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="./News_files/style.css" rel="stylesheet" type="text/css">
+    <title>招生信息 - 刘梦源课题组</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 保留原有 Bootstrap -->
+    <link href="./News_files/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./News_files/style.css" rel="stylesheet" type="text/css">
 
-	<script src="./News_files/jquery.min.js"></script>
-	<script src="./News_files/bootstrap.js"></script>
+    <script src="./News_files/jquery.min.js"></script>
+    <script src="./News_files/bootstrap.js"></script>
+
+    <style>
+
+        /* =========================================================
+           全局
+        ========================================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f7f9fb;
+            color: #333;
+            font-family:
+                "Microsoft YaHei",
+                "PingFang SC",
+                "Helvetica Neue",
+                Arial,
+                sans-serif;
+            font-size: 16px;
+            line-height: 1.85;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+
+        /* =========================================================
+           顶部 Logo
+        ========================================================= */
+
+        .header-top {
+            background: #ffffff;
+            padding: 28px 0 24px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo h1 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .logo img {
+            display: inline-block;
+            max-height: 82px;
+            width: auto;
+            object-fit: contain;
+        }
+
+
+        /* =========================================================
+           导航栏
+        ========================================================= */
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid #e9edf0;
+
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+
+        .top-menu {
+            min-height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav1 {
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 8px;
+        }
+
+        .nav1 li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav1 li a {
+            display: block;
+
+            padding: 8px 24px;
+
+            color: #444;
+            font-size: 16px;
+            font-weight: 500;
+
+            border-radius: 8px;
+
+            transition: all 0.25s ease;
+        }
+
+        .nav1 li a:hover {
+            color: #1AADDA;
+            background: #f0faff;
+        }
+
+        .nav1 li.active a {
+            color: #ffffff;
+            background: #1AADDA;
+            box-shadow: 0 4px 10px rgba(26,173,218,0.25);
+        }
+
+        /* 手机菜单按钮 */
+        span.menu {
+            display: none;
+            cursor: pointer;
+        }
+
+        span.menu img {
+            width: 28px;
+            height: 28px;
+        }
+
+
+        /* =========================================================
+           主体
+        ========================================================= */
+
+        .pages {
+            padding: 45px 0 70px;
+        }
+
+        .content-wrapper {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+
+        /* =========================================================
+           顶部欢迎语
+        ========================================================= */
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 38px;
+        }
+
+        .welcome h1 {
+            margin: 0;
+
+            color: #1AADDA;
+
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .welcome p {
+            margin: 10px 0 0;
+
+            color: #888;
+            font-size: 15px;
+        }
+
+
+        /* =========================================================
+           内容卡片
+        ========================================================= */
+
+        .info-card {
+            background: #ffffff;
+
+            margin-bottom: 28px;
+            padding: 0;
+
+            border: 1px solid #e9eef2;
+            border-radius: 12px;
+
+            box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+
+            overflow: hidden;
+        }
+
+        .card-title {
+            position: relative;
+
+            margin: 0;
+            padding: 19px 28px;
+
+            color: #1AADDA;
+
+            font-size: 21px;
+            font-weight: 600;
+
+            background: linear-gradient(
+                to right,
+                #f3fbfe,
+                #ffffff
+            );
+
+            border-bottom: 1px solid #edf2f5;
+        }
+
+        .card-title:before {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+            width: 4px;
+
+            background: #1AADDA;
+        }
+
+        .card-body {
+            padding: 27px 30px 30px;
+        }
+
+        .card-body p {
+            margin: 0 0 16px;
+        }
+
+        .card-body p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* =========================================================
+           列表
+        ========================================================= */
+
+        .research-list,
+        .normal-list {
+            margin: 15px 0 0;
+            padding-left: 25px;
+        }
+
+        .research-list li,
+        .normal-list li {
+            margin-bottom: 14px;
+            padding-left: 4px;
+        }
+
+        .research-list li:last-child,
+        .normal-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .research-list strong {
+            color: #222;
+        }
+
+
+        /* =========================================================
+           Vision ↔ Action ↔ Learning
+        ========================================================= */
+
+        .vision-box {
+            margin-top: 28px;
+
+            padding: 22px 20px;
+
+            text-align: center;
+
+            background: linear-gradient(
+                135deg,
+                #f2fbfe,
+                #f8fcfd
+            );
+
+            border: 1px solid #dceff5;
+            border-radius: 10px;
+        }
+
+        .vision-main {
+            display: block;
+
+            margin-bottom: 4px;
+
+            color: #1AADDA;
+
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .vision-sub {
+            color: #666;
+            font-size: 15px;
+        }
+
+
+        /* =========================================================
+           申请邮箱
+        ========================================================= */
+
+        .email-box {
+            margin: 25px 0;
+
+            padding: 22px;
+
+            text-align: center;
+
+            background: #f5fafd;
+
+            border: 1px solid #dceff5;
+            border-radius: 10px;
+        }
+
+        .email-title {
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: #555;
+            font-size: 15px;
+        }
+
+        .email-box a {
+            color: #1AADDA;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 21px;
+            font-weight: 600;
+
+            word-break: break-all;
+        }
+
+        .email-box a:hover {
+            color: #078ab5;
+        }
+
+
+        /* =========================================================
+           邮件标题
+        ========================================================= */
+
+        .mail-subject {
+            margin: 15px 0;
+
+            padding: 14px 18px;
+
+            color: #1AADDA;
+
+            background: #f8fbfc;
+
+            border-left: 4px solid #1AADDA;
+            border-radius: 5px;
+
+            font-size: 15px;
+
+            word-break: break-all;
+        }
+
+        .application-types {
+            margin-top: 15px;
+
+            color: #555;
+        }
+
+        .application-types strong {
+            color: #222;
+        }
+
+
+        /* =========================================================
+           最后一封信
+        ========================================================= */
+
+        .letter p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        .signature {
+            margin-top: 35px;
+
+            text-align: right;
+
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .signature strong {
+            color: #222;
+            font-size: 17px;
+        }
+
+
+        /* =========================================================
+           强调文字
+        ========================================================= */
+
+        strong {
+            font-weight: 600;
+        }
+
+        .highlight {
+            color: #1AADDA;
+        }
+
+
+        /* =========================================================
+           Footer
+        ========================================================= */
+
+        .footer {
+            background: #202a30;
+            color: #ffffff;
+
+            padding: 38px 0 35px;
+
+            margin-top: 0;
+        }
+
+        .footer-inner {
+            max-width: 1050px;
+            margin: 0 auto;
+
+            padding: 0 25px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .footer-item h3 {
+            margin: 0 0 12px;
+
+            color: #ffffff;
+
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .footer-item p {
+            margin: 0;
+
+            color: #cdd5d9;
+
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================================================
+           手机端
+        ========================================================= */
+
+        @media (max-width: 768px) {
+
+            body {
+                font-size: 15px;
+                line-height: 1.8;
+            }
+
+
+            /* Logo */
+
+            .header-top {
+                padding: 18px 15px;
+            }
+
+            .logo h1 {
+                gap: 8px;
+            }
+
+            .logo img {
+                max-height: 55px;
+            }
+
+
+            /* 导航 */
+
+            .header {
+                position: sticky;
+                top: 0;
+            }
+
+            .top-menu {
+                min-height: 52px;
+
+                justify-content: flex-start;
+
+                padding: 0 18px;
+            }
+
+            span.menu {
+                display: block;
+            }
+
+            span.menu img {
+                width: 25px;
+                height: 25px;
+            }
+
+            .nav1 {
+                display: none;
+
+                position: absolute;
+
+                left: 0;
+                right: 0;
+                top: 52px;
+
+                width: 100%;
+
+                flex-direction: column;
+                align-items: stretch;
+
+                gap: 0;
+
+                padding: 8px 12px;
+
+                background: #ffffff;
+
+                border-top: 1px solid #eeeeee;
+                border-bottom: 1px solid #e5e5e5;
+
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            }
+
+            .nav1 li a {
+                padding: 11px 15px;
+
+                text-align: center;
+
+                border-radius: 7px;
+
+                font-size: 15px;
+            }
+
+
+            /* 主体 */
+
+            .pages {
+                padding: 28px 0 45px;
+            }
+
+            .content-wrapper {
+                padding: 0 14px;
+            }
+
+
+            /* 欢迎语 */
+
+            .welcome {
+                margin-bottom: 25px;
+            }
+
+            .welcome h1 {
+                font-size: 21px;
+            }
+
+            .welcome p {
+                font-size: 13px;
+            }
+
+
+            /* 卡片 */
+
+            .info-card {
+                margin-bottom: 18px;
+
+                border-radius: 9px;
+            }
+
+            .card-title {
+                padding: 14px 18px;
+
+                font-size: 18px;
+            }
+
+            .card-body {
+                padding: 19px 18px 21px;
+            }
+
+
+            /* 列表 */
+
+            .research-list,
+            .normal-list {
+                padding-left: 22px;
+            }
+
+            .research-list li,
+            .normal-list li {
+                margin-bottom: 12px;
+            }
+
+
+            /* Vision */
+
+            .vision-box {
+                margin-top: 20px;
+                padding: 17px 12px;
+            }
+
+            .vision-main {
+                font-size: 20px;
+            }
+
+            .vision-sub {
+                font-size: 13px;
+            }
+
+
+            /* 邮箱 */
+
+            .email-box {
+                padding: 17px 12px;
+            }
+
+            .email-box a {
+                font-size: 17px;
+            }
+
+
+            /* 最后一封信 */
+
+            .letter p {
+                text-align: left;
+                margin-bottom: 15px;
+            }
+
+            .signature {
+                margin-top: 25px;
+            }
+
+
+            /* Footer */
+
+            .footer {
+                padding: 28px 0;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+
+                gap: 22px;
+
+                padding: 0 20px;
+            }
+
+            .footer-item h3 {
+                font-size: 16px;
+            }
+
+            .footer-item p {
+                font-size: 13px;
+            }
+
+        }
+
+
+        /* =========================================================
+           超小屏幕
+        ========================================================= */
+
+        @media (max-width: 400px) {
+
+            .logo img {
+                max-height: 48px;
+            }
+
+            .content-wrapper {
+                padding: 0 11px;
+            }
+
+            .card-title {
+                font-size: 17px;
+            }
+
+            .card-body {
+                padding: 17px 15px 19px;
+            }
+
+            .vision-main {
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-<!-- ==================== 顶部 Logo ==================== -->
+
+<!-- =========================================================
+     顶部 Logo
+========================================================= -->
+
 <div class="header-top">
-	<div class="container">
-		<div class="logo">
-			<h1>
-				<a href="index.html">
-					<img src="./News_files/logo.png">
-					<img src="./News_files/slogan.png">
-				</a>
-			</h1>
-		</div>
-		<div class="clearfix"></div>
-	</div>
+
+    <div class="container">
+
+        <div class="logo">
+
+            <h1>
+
+                <a href="index.html">
+
+                    <img
+                        src="./News_files/logo.png"
+                        alt="刘梦源课题组"
+                    >
+
+                    <img
+                        src="./News_files/slogan.png"
+                        alt="课题组"
+                    >
+
+                </a>
+
+            </h1>
+
+        </div>
+
+    </div>
+
 </div>
 
 
-<!-- ==================== 导航栏 ==================== -->
-<div id="mainMenuBarAnchor"></div>
 
-<div class="header" id="fixTest" style="z-index:100">
-	<div class="container" style="z-index:100">
+<!-- =========================================================
+     导航栏
+========================================================= -->
 
-		<div class="top-menu" id="fixTest" style="z-index:100">
+<div class="header">
 
-			<span class="menu">
-				<img src="./News_files/menu.png" alt="">
-			</span>
+    <div class="container">
 
-			<ul class="nav1">
-				<li><a href="index.html">主页</a></li>
-				<li><a href="about.html">简介</a></li>
-				<li><a href="members.html">成员</a></li>
-				<li><a href="pub.html">论文</a></li>
-				<li class="active"><a href="News.html">招生信息</a></li>
-			</ul>
+        <div class="top-menu">
 
-		</div>
+            <!-- 手机端菜单按钮 -->
 
-		<script>
-			$("span.menu").click(function() {
-				$("ul.nav1").slideToggle(300, function() {
-					// Animation complete.
-				});
-			});
-		</script>
+            <span class="menu">
 
-	</div>
+                <img
+                    src="./News_files/menu.png"
+                    alt="菜单"
+                >
+
+            </span>
+
+
+            <ul class="nav1">
+
+                <li>
+                    <a href="index.html">主页</a>
+                </li>
+
+                <li>
+                    <a href="about.html">简介</a>
+                </li>
+
+                <li>
+                    <a href="members.html">成员</a>
+                </li>
+
+                <li>
+                    <a href="pub.html">论文</a>
+                </li>
+
+                <li class="active">
+                    <a href="News.html">招生信息</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
 </div>
 
 
-<!-- ==================== 招生信息 ==================== -->
+
+<!-- =========================================================
+     招生信息主体
+========================================================= -->
+
 <div class="pages">
 
-	<div class="container">
+    <div class="content-wrapper">
 
-		<div class="testi-head">
 
-			<br>
+        <!-- 欢迎语 -->
 
-			<!-- PDF -->
-			<h1 class="top" align="center">
-				<font color="#1AADDA">
-					欢迎大家尽早联系，每年招生名额有限~
-				</font>
-			</h1>
+        <div class="welcome">
 
-			<br>
+            <h1>
+                欢迎志同道合的你加入刘梦源课题组
+            </h1>
 
+            <p>
+                欢迎大家尽早联系，每年招生名额有限
+            </p>
 
-			<!-- ==================== 一、研究方向 ==================== -->
+        </div>
 
-			<div class="panel panel-default">
 
-				<div class="panel-heading">
-					<h3>
-						<font color="#1AADDA">
-							一、我们正在研究什么？
-						</font>
-					</h3>
-				
 
-				<div class="panel-body">
+        <!-- =====================================================
+             一、研究方向
+        ====================================================== -->
 
-					<p>
-					围绕具身智能中的核心问题，我们重点研究：
-					</p>
+        <section class="info-card">
 
-					<ul>
+            <h2 class="card-title">
+                一、我们正在研究什么？
+            </h2>
 
-						<li>
-							<strong>机器人主动探索：</strong>
-							未知环境探索、动态3D语义地图、目标搜索、长时视觉记忆
-						</li>
+            <div class="card-body">
 
-						<li>
-							<strong>机器人理解人类：</strong>
-							3D人体姿态与交互网格、行为理解、人类演示、技能迁移
-						</li>
+                <p>
+                    围绕具身智能中的核心问题，我们重点研究：
+                </p>
 
-						<li>
-							<strong>机器人灵活操作：</strong>
-							3D物体理解、Affordance、未知物体操作、视觉反馈与泛化
-						</li>
 
-						<li>
-							<strong>机器人自主学习：</strong>
-							失败检测、在线纠错、经验记忆与持续学习
-						</li>
+                <ul class="research-list">
 
-					</ul>
+                    <li>
+                        <strong>机器人主动探索：</strong>
+                        未知环境探索、动态3D语义地图、目标搜索、长时视觉记忆
+                    </li>
 
-					<p align="center" style="background:#f5f8fa;padding:18px;margin-top:20px;">
-						<font size="5" color="#1AADDA">
-							<strong>Vision ↔ Action ↔ Learning</strong>
-						</font>
-						让感知、行动与学习形成闭环。
-					</p>
+                    <li>
+                        <strong>机器人理解人类：</strong>
+                        3D人体姿态与交互网格、行为理解、人类演示、技能迁移
+                    </li>
 
-				
+                    <li>
+                        <strong>机器人灵活操作：</strong>
+                        3D物体理解、Affordance、未知物体操作、视觉反馈与泛化
+                    </li>
 
-			</div>
+                    <li>
+                        <strong>机器人自主学习：</strong>
+                        失败检测、在线纠错、经验记忆与持续学习
+                    </li>
 
+                </ul>
 
-			<!-- ==================== 二、期待的你 ==================== -->
 
-			<div class="panel panel-default">
+                <div class="vision-box">
 
-					<h3>
-						<font color="#1AADDA">
-							二、我们期待怎样的你？
-						</font>
-					</h3>
+                    <span class="vision-main">
+                        Vision ↔ Action ↔ Learning
+                    </span>
 
+                    <span class="vision-sub">
+                        让感知、行动与学习形成闭环
+                    </span>
 
-				<div class="panel-body">
+                </div>
 
-					<ul>
+            </div>
 
-						<li>
-							能够认真对待老师的指导，执行力强
-						</li>
+        </section>
 
-						<li>
-							愿意认真读论文、做实验、分析失败，
-							并主动提出有价值的科学问题
-						</li>
 
-						<li>
-							性格乐观开朗，喜欢与他人合作，
-							有一项长期坚持的运动爱好
-						</li>
 
-						<li>
-							对于申请-考核制博士或博士后申请者，
-							我们期待你有一篇
-							<strong>一作顶会/顶刊论文</strong>
-						</li>
+        <!-- =====================================================
+             二、我们期待怎样的你
+        ====================================================== -->
 
-					</ul>
+        <section class="info-card">
 
-				</div>
+            <h2 class="card-title">
+                二、我们期待怎样的你？
+            </h2>
 
-			
+            <div class="card-body">
 
+                <ul class="normal-list">
 
-			<!-- ==================== 三、培养方式 ==================== -->
+                    <li>
+                        能够认真对待老师的指导，执行力强。
+                    </li>
 
-			<div class="panel panel-default">
+                    <li>
+                        愿意认真读论文、做实验、分析失败，
+                        并主动提出有价值的科学问题。
+                    </li>
 
-					<h3>
-						<font color="#1AADDA">
-							三、我们如何一起协作？
-						</font>
-					</h3>
+                    <li>
+                        性格乐观开朗，喜欢与他人合作，
+                        有一项长期坚持的运动爱好。
+                    </li>
 
-				<div class="panel-body">
+                    <li>
+                        对于申请-考核制博士或博士后申请者，
+                        我们期待你有一篇
+                        <strong>一作顶会/顶刊论文</strong>。
+                    </li>
 
-					<ul>
+                </ul>
 
-						<li>
-							我会熟悉大家的科研课题，
-							<strong>每周面对面指导每一位学生</strong>
-						</li>
+            </div>
 
-						<li>
-							鼓励从具体任务走向独立科学问题，
-							逐步形成自己的研究方向
-						</li>
+        </section>
 
-						<li>
-							围绕
-							<strong>算法、数据、仿真、机器人和真实场景</strong>
-							开展完整研究
-						</li>
 
-						<li>
-							支持论文发表、国内外学术交流、
-							实习工作及国内外科研合作
-						</li>
 
-						<li>
-							竭力提供科研所需的设备与实验环境，
-							并为优秀科研成果提供奖励
-						</li>
+        <!-- =====================================================
+             三、如何一起协作
+        ====================================================== -->
 
-					</ul>
+        <section class="info-card">
 
-				</div>
+            <h2 class="card-title">
+                三、我们如何一起协作？
+            </h2>
 
-			
+            <div class="card-body">
 
+                <ul class="normal-list">
 
-			<!-- ==================== 四、申请材料 ==================== -->
+                    <li>
+                        我会熟悉大家的科研课题，
+                        <strong>每周面对面指导每一位学生</strong>。
+                    </li>
 
-			<div class="panel panel-default">
+                    <li>
+                        鼓励从具体任务走向独立科学问题，
+                        逐步形成自己的研究方向。
+                    </li>
 
-					<h3>
-						<font color="#1AADDA">
-							四、申请需要准备什么？
-						</font>
-					</h3>
+                    <li>
+                        围绕
+                        <strong>算法、数据、仿真、机器人和真实场景</strong>
+                        开展完整研究。
+                    </li>
 
-				<div class="panel-body">
+                    <li>
+                        支持论文发表、国内外学术交流、
+                        实习工作及国内外科研合作。
+                    </li>
 
-					<p>
-						请认真准备以下材料。对于材料齐全的申请邮件，
-						我会及时回复。
-					</p>
+                    <li>
+                        竭力提供科研所需的设备与实验环境，
+                        并为优秀科研成果提供奖励。
+                    </li>
 
-					<ul>
+                </ul>
 
-						<li>
-							<strong>个人简历：</strong>
-							包括证件照、数学/英语成绩、编程能力、
-							比赛获奖、<strong>已录用论文</strong>等
-						</li>
+            </div>
 
-						<li>
-							<strong>研究兴趣：</strong>
-							约500字，说明你最想研究什么问题、
-							为什么想研究、有什么初步思路
-						</li>
+        </section>
 
-						<li>
-							<strong>PPT报告：</strong>
-							完成一份本年度
-							CVPR / ICLR / RSS / CoRL
-							论文阅读报告
-						</li>
 
-					</ul>
 
-					<p align="center" style="background:#f5f8fa;padding:18px;margin-top:20px;">
-							<strong>申请邮箱：</strong>
-							<a href="mailto:liumengyuan@pku.edu.cn">
-								<font face="Times New Roman">
-									liumengyuan@pku.edu.cn
-								</font>
-							</a>
-						</p>
+        <!-- =====================================================
+             四、申请材料
+        ====================================================== -->
 
-						<p>
-							<strong>邮件标题建议：</strong>
-						</p>
+        <section class="info-card">
 
-						<p style="color:#1AADDA;">
-							【已认真准备材料-申请加入课题组-姓名-学校-年级-申请类型】
-						</p>
+            <h2 class="card-title">
+                四、申请需要准备什么？
+            </h2>
 
-						<p>
-							申请类型：
-							<strong>
-								博士后 / 博士 / 硕士 / 本科科研 / 访问学生 / 科研实习
-							</strong>
-						</p>
+            <div class="card-body">
 
-					</div>
+                <p>
+                    请认真准备以下材料。对于材料齐全的申请邮件，
+                    我会及时回复。
+                </p>
 
-				</div>
 
-			
+                <ul class="normal-list">
 
+                    <li>
+                        <strong>个人简历：</strong>
+                        包括证件照、数学/英语成绩、编程能力、
+                        比赛获奖、<strong>已录用论文</strong>等。
+                    </li>
 
-			<!-- ==================== 五、期待志同道合的你 ==================== -->
+                    <li>
+                        <strong>研究兴趣：</strong>
+                        约500字，说明你最想研究什么问题、
+                        为什么想研究、有什么初步思路。
+                    </li>
 
-			<div class="panel panel-default">
+                    <li>
+                        <strong>PPT报告：</strong>
+                        完成一份本年度
+                        <strong>CVPR / ICLR / RSS / CoRL</strong>
+                        论文阅读报告。
+                    </li>
 
-					<h3>
-						<font color="#1AADDA">
-							五、期待志同道合的你！
-						</font>
-					</h3>
+                </ul>
 
-				<div class="panel-body">
 
-					<p>
-						遇到和自己志同道合的同伴是一件非常幸运的事情。
-						我从学生时代一路走来，遇到了很多师长，他们悉心培养我，
-						也让我体会到真正导师应该具有的素养。
-					</p>
+                <!-- 邮箱 -->
 
-					<p>
-						我曾尝试过出国做博士后，也尝试过在科技大厂朝九晚五的工作，
-						更带过本科生、硕士生、博士生和博士后一路成长。
-						每一段经历都在无形中给现在的我很多助力，
-						也赋予了我培养学生独特的经历。
-					</p>
+                <div class="email-box">
 
-					<p>
-						看过很多云翳，才明白最好的黄昏。
-						对于一个课题组，最大的成就应该是
-						<strong>培养人</strong>。
-						我希望学生毕业之后，能够带走一些属于课题组的精神和品质，
-						也能够找到真正适合自己的道路。
-					</p>
+                    <span class="email-title">
+                        申请邮箱
+                    </span>
 
-					<p>
-						我一直相信，我选择的每一个学生身上都有闪闪发光的地方。
-						看到学生毕业后找到如意的工作、走上自己喜欢的道路，
-						是作为老师最欣慰的事情。
-					</p>
+                    <a href="mailto:liumengyuan@pku.edu.cn">
+                        liumengyuan@pku.edu.cn
+                    </a>
 
-					<p>
-						科研，对于以后不再从事研究的学生而言，
-						是一段修身养性、培养人格品质的过程；
-						对于立志成为老师的学生而言，
-						是一段寻找真正兴趣、建立独立思考能力的旅程。
-					</p>
+                </div>
 
-					<p>
-						我们希望开展的科研，不是空中楼阁，
-						而是能够真正形成
-						<strong>为了人类更美好生活而创造的工具</strong>。
-					</p>
 
-					<p>
-						如果你也想研究机器人如何
-						<strong>主动探索、理解人类、学习技能并自主纠错</strong>，
-						欢迎联系我们。
-					</p>
+                <p>
+                    <strong>邮件标题建议：</strong>
+                </p>
 
-					<br>
 
-					<p align="right">
-						<strong>刘梦源</strong><br>
-						于深圳<br>
-						2026年9月21日
-					</p>
+                <div class="mail-subject">
+                    【已认真准备材料-申请加入课题组-姓名-学校-年级-申请类型】
+                </div>
 
-		<div class="clearfix"></div>
 
-	</div>
+                <p class="application-types">
+
+                    申请类型：
+
+                    <strong>
+                        博士后 / 博士 / 硕士 /
+                        本科科研 / 访问学生 / 科研实习
+                    </strong>
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             五、期待志同道合的你
+        ====================================================== -->
+
+        <section class="info-card">
+
+            <h2 class="card-title">
+                五、期待志同道合的你！
+            </h2>
+
+            <div class="card-body letter">
+
+                <p>
+                    遇到和自己志同道合的同伴是一件非常幸运的事情。
+                    我从学生时代一路走来，遇到了很多师长，他们悉心培养我，
+                    也让我体会到真正导师应该具有的素养。
+                </p>
+
+                <p>
+                    我曾尝试过出国做博士后，也尝试过在科技大厂朝九晚五的工作，
+                    更带过本科生、硕士生、博士生和博士后一路成长。
+                    每一段经历都在无形中给现在的我很多助力，
+                    也赋予了我培养学生独特的经历。
+                </p>
+
+                <p>
+                    看过很多云翳，才明白最好的黄昏。
+                    对于一个课题组，最大的成就应该是
+                    <strong>培养人</strong>。
+                    我希望学生毕业之后，能够带走一些属于课题组的精神和品质，
+                    也能够找到真正适合自己的道路。
+                </p>
+
+                <p>
+                    我一直相信，我选择的每一个学生身上都有闪闪发光的地方。
+                    看到学生毕业后找到如意的工作、走上自己喜欢的道路，
+                    是作为老师最欣慰的事情。
+                </p>
+
+                <p>
+                    科研，对于以后不再从事研究的学生而言，
+                    是一段修身养性、培养人格品质的过程；
+                    对于立志成为老师的学生而言，
+                    是一段寻找真正兴趣、建立独立思考能力的旅程。
+                </p>
+
+                <p>
+                    我们希望开展的科研，不是空中楼阁，
+                    而是能够真正形成
+                    <strong>为了人类更美好生活而创造的工具</strong>。
+                </p>
+
+                <p>
+                    如果你也想研究机器人如何
+                    <strong>
+                        主动探索、理解人类、学习技能并自主纠错
+                    </strong>，
+                    欢迎联系我们。
+                </p>
+
+
+                <div class="signature">
+
+                    <strong>刘梦源</strong><br>
+
+                    于深圳<br>
+
+                    2026年9月21日
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
 
 </div>
 
 
-	<!---->
-	<!----> 
-	<div class="footer">
-		<div class="container">
-			<div class="footer-sec">
-				<div class="col-md-4 news-ltr">
-					<h3>地址</h3>
-				 <p><font color="#FFFFFF"><font face="Times New Roman">北京大学深圳研究生院<br>
-					 广东省深圳市西丽大学城北大校区 518055</font></font></p>
-				</div>
-				<div class="col-md-4 news-ltr">
-					<h3>邮箱</h3>
-					<p><font color="#FFFFFF"><font face="Times New Roman">liumengyuan@pku.edu.cn</font></font></p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
+
+<!-- =========================================================
+     Footer
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-item">
+
+            <h3>
+                地址
+            </h3>
+
+            <p>
+                北京大学深圳研究生院<br>
+                广东省深圳市西丽大学城北大校区 518055
+            </p>
+
+        </div>
+
+
+        <div class="footer-item">
+
+            <h3>
+                邮箱
+            </h3>
+
+            <p>
+                liumengyuan@pku.edu.cn
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
 
 
 
+<!-- =========================================================
+     手机端菜单
+========================================================= -->
 
-<script style="text/javascript">
-      $(document).ready(function() {
-          // Cache selectors for faster performance.
-          var $window = $(window),
-              $mainMenuBar = $('#fixTest'),
-              $mainMenuBarAnchor = $('#mainMenuBarAnchor');
-       
-        
-          $window.scroll(function() {
-              //scrollTop()方法返回或设置匹配元素的滚动条的垂直位置
-              var window_top = $window.scrollTop();
-            //javascript用offsetTop();jquery用offset().top;
-              var div_top = $mainMenuBarAnchor.offset().top;
-              if (window_top > div_top) {
-                  // Make the div sticky.
-                  $mainMenuBarAnchor.height($mainMenuBar.height());
-				  $mainMenuBar.addClass('stick');
-                  
-              }
-              else {
-                  // Unstick the div.
-                  $mainMenuBar.removeClass('stick');
-                  $mainMenuBarAnchor.height(0);
-              }
-  });
-      });
-$(function () { 
-	$("[data-toggle='popover']").popover();
-});
+<script>
 
- $(function(){ 
-        $('[data-toggle="popover"]').popover() //弹窗
-        .on('show.bs.popover', function () { //展示时,关闭非当前所有弹窗
-            $(this).parent().siblings().find('[data-toggle="popover"]').popover('hide');
+    $(document).ready(function() {
+
+        $("span.menu").click(function() {
+
+            $("ul.nav1").slideToggle(250);
+
         });
+
+
+        /*
+         * 当手机端点击导航链接后，
+         * 自动关闭菜单
+         */
+
+        $(".nav1 li a").click(function() {
+
+            if ($(window).width() <= 768) {
+
+                $("ul.nav1").slideUp(200);
+
+            }
+
+        });
+
+
+        /*
+         * 浏览器窗口从手机切换到电脑时，
+         * 自动恢复导航栏
+         */
+
+        $(window).resize(function() {
+
+            if ($(window).width() > 768) {
+
+                $("ul.nav1").css("display", "flex");
+
+            } else {
+
+                $("ul.nav1").css("display", "none");
+
+            }
+
+        });
+
     });
-    //给Body加一个Click监听事件
-      $('body').on('click', function(event) {
-        var target = $(event.target);
-        if (!target.hasClass('popover') //弹窗内部点击不关闭
-                && target.parent('.popover-content').length === 0
-                && target.parent('.popover-title').length === 0
-                && target.parent('.popover').length === 0
-                && target.data("toggle") !== "popover") {
-                //弹窗触发列不关闭，否则显示后隐藏
-            $('[data-toggle="popover"]').popover('hide');
-        }
-    });
+
 </script>
 
+
+</body>
+</html>
+```
+
+这版建议你**直接把原来的 `News.html` 全部替换掉**，而不是在原代码上继续补 `</div>`。
+
+另外，我特意把原来这一大段：
+
+```html
+<script>
+    $(window).scroll(function() {
+        ...
+    });
+</script>
+```
+
+删掉了，改成：
+
+```css
+.header {
+    position: sticky;
+    top: 0;
+}
+```
+
+这样代码简单很多，而且手机和电脑都能正常工作。
+
+### 这版打开后的效果
+
+**电脑端：**
+
+```text
+             [ LOGO ] [ SLOGAN ]
+
+        主页   简介   成员   论文   招生信息
+        ───────────────────────────────
+
+              欢迎志同道合的你加入
+          欢迎大家尽早联系，每年招生名额有限
+
+       ┌───────────────────────────────┐
+       │ 一、我们正在研究什么？          │
+       │                               │
+       │ 围绕具身智能中的核心问题……      │
+       │                               │
+       │ • 机器人主动探索               │
+       │ • 机器人理解人类               │
+       │ • 机器人灵活操作               │
+       │ • 机器人自主学习               │
+       │                               │
+       │   Vision ↔ Action ↔ Learning  │
+       └───────────────────────────────┘
+
+       ┌───────────────────────────────┐
+       │ 二、我们期待怎样的你？          │
+       └───────────────────────────────┘
+
+                     ...
+```
+
+**手机端：**
+
+```text
+        [ LOGO + SLOGAN ]
+
+             ☰
+
+        ┌───────────────┐
+        │     主页       │
+        │     简介       │
+        │     成员       │
+        │     论文       │
+        │    招生信息    │
+        └───────────────┘
+
+    欢迎志同道合的你加入
+       刘梦源课题组
+
+   ┌─────────────────────┐
+   │ 一、我们正在研究什么？ │
+   ├─────────────────────┤
+   │                     │
+   │ • 机器人主动探索      │
+   │                     │
+   │ • 机器人理解人类      │
+   │                     │
+   │ • 机器人灵活操作      │
+   │                     │
+   │ • 机器人自主学习      │
+   │                     │
+   │ Vision ↔ Action ↔   │
+   │ Learning            │
+   └─────────────────────┘
+
+   ┌─────────────────────┐
+   │ 二、我们期待怎样的你？ │
+   └─────────────────────┘
+```
+
+尤其是手机端，我把**左右边距、字号、卡片间距、Logo 大小、导航菜单、邮箱换行**都单独处理了，不会出现原来那种网页在手机上整体缩成一小块的情况。
+
+另外，你原代码最后还有：
+
+```html
 </a></strong></strong></font></strong></strong></body></html>
+```
+
+这种明显是旧网页残留下来的**多余闭合标签**，我也全部清理掉了。这样后面你继续修改这个招生页面会容易很多。
