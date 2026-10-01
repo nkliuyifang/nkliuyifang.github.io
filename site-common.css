@@ -149,6 +149,42 @@ html {
 }
 
 @media (max-width: 767px) {
+    /* ---------- 手机端导航：3 列 × 2 行 ---------- */
+
+    .nav1 {
+        height: auto !important;
+        flex-wrap: wrap !important;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .nav1 li {
+        height: auto !important;
+        flex: 0 0 33.333333% !important;
+        width: 33.333333% !important;
+        min-width: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    .nav1 li a,
+    .nav1 li a:hover,
+    .nav1 li a:active,
+    .nav1 li.active a {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto !important;
+        min-height: 42px;
+        padding: 8px 2px !important;
+        font-size: 14px !important;
+        line-height: 1.5;
+        white-space: nowrap;
+        text-align: center;
+    }
+
     .header-top .logo {
         padding: 10px 0;
     }
@@ -180,3 +216,16 @@ html {
         margin-top: 0 !important;
     }
 }
+
+/* 更窄的小屏手机：导航字略小、行高略紧凑 */
+@media (max-width: 480px) {
+    .nav1 li a,
+    .nav1 li a:hover,
+    .nav1 li a:active,
+    .nav1 li.active a {
+        min-height: 40px;
+        padding: 7px 1px !important;
+        font-size: 13px !important;
+    }
+}
+/* （注：内容由AI生成） */
