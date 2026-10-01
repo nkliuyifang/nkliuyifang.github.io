@@ -1079,6 +1079,340 @@
             clear: both;
         }
 
+
+        /* =====================================================
+           手机端最终适配覆盖
+           说明：
+           1. 仅在 767px 及以下生效，不改变电脑端显示
+           2. 导航调整为 3 列 × 2 行，避免“招生信息”单独换行
+           3. Logo 两张图片保持横向排列并自动缩放
+           4. 内容、Banner、Footer 均限制在屏幕宽度内
+           ===================================================== */
+
+        @media screen and (max-width: 767px) {
+
+            html,
+            body {
+                width: 100%;
+                max-width: 100%;
+                min-width: 0;
+                overflow-x: hidden;
+            }
+
+            .container {
+                width: 100% !important;
+                max-width: none !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* ---------- 顶部 Logo ---------- */
+
+            .header-top {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .header-top .logo {
+                width: 100%;
+                padding: 10px 0;
+                overflow: hidden;
+            }
+
+            .header-top .logo h1,
+            .header-top .logo h1 a {
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .header-top .logo img {
+                display: block;
+                width: auto;
+                height: auto;
+                max-width: calc(50% - 4px);
+                max-height: 58px;
+                margin: 0;
+                object-fit: contain;
+                flex: 0 1 auto;
+            }
+
+            /* ---------- 手机导航 ---------- */
+
+            .header {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .header > .container {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .top-menu {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .nav1 {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: stretch;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav1 li {
+                width: 33.333333% !important;
+                flex: 0 0 33.333333% !important;
+                min-width: 0;
+                margin: 0 !important;
+                padding: 0 !important;
+                text-align: center;
+            }
+
+            .nav1 li a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                min-height: 42px;
+                padding: 8px 2px !important;
+                font-size: 14px !important;
+                line-height: 1.5;
+                white-space: nowrap;
+                text-align: center;
+            }
+
+            /* ---------- Banner ---------- */
+
+            #myCarousel {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 8px;
+                overflow: hidden;
+            }
+
+            #myCarousel .carousel-inner,
+            #myCarousel .item {
+                width: 100%;
+            }
+
+            #myCarousel .item img {
+                display: block;
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            /* ---------- 主体 ---------- */
+
+            .content,
+            .content > .container,
+            .content-grids {
+                width: 100% !important;
+                max-width: 100% !important;
+                min-width: 0;
+            }
+
+            .content-grids {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* ---------- 招生信息 ---------- */
+
+            .recruitment-notice {
+                width: 100%;
+                max-width: 100%;
+                margin: 12px 0 8px;
+                padding: 5px 2px;
+                font-size: 15px;
+                line-height: 1.8;
+                text-align: center;
+                overflow-wrap: break-word;
+                word-break: normal;
+            }
+
+            .recruitment-notice strong {
+                display: block;
+                width: 100%;
+            }
+
+            /* ---------- 两栏改为单栏 ---------- */
+
+            .main-content-columns {
+                width: 100% !important;
+                max-width: 100%;
+                display: block !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .main-news-column,
+            .main-side-column {
+                width: 100% !important;
+                max-width: 100% !important;
+                min-width: 0;
+                display: block !important;
+                float: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            /* ---------- 标题 ---------- */
+
+            .cntnt-head {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .cntnt-head h3 {
+                width: 100%;
+                margin-top: 22px;
+                margin-bottom: 12px;
+                padding-left: 12px;
+                font-size: 21px;
+                line-height: 1.5;
+            }
+
+            .cntnt-head h3::before {
+                width: 3px;
+                height: 20px;
+                background: #8B0000;
+            }
+
+            /* ---------- 新闻 / 最新成果 ---------- */
+
+            .news-list,
+            .publication-list,
+            .news-item,
+            .publication-item {
+                width: 100%;
+                max-width: 100%;
+                min-width: 0;
+            }
+
+            .news-item,
+            .publication-item {
+                display: block;
+                padding: 5px 0;
+                font-size: 14px;
+                line-height: 1.85;
+                border: none !important;
+                background: transparent;
+                color: #000000;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                word-break: normal;
+            }
+
+            .news-item .news-date,
+            .publication-item .pub-date {
+                display: inline;
+                white-space: nowrap;
+                margin-right: 3px;
+            }
+
+            .news-item .news-text {
+                display: inline;
+            }
+
+            /* ---------- Footer ---------- */
+
+            .footer {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 30px;
+                overflow: hidden;
+            }
+
+            .footer > .container {
+                width: 100% !important;
+                max-width: none !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+
+            .footer-sec {
+                width: 100%;
+                display: block;
+                padding: 15px 0;
+            }
+
+            .footer-column {
+                width: 100%;
+                max-width: 100%;
+                padding: 10px 5px;
+                text-align: center;
+            }
+
+            .footer-column h3 {
+                font-size: 18px;
+            }
+
+            .footer-column p {
+                max-width: 100%;
+                font-size: 14px;
+                line-height: 1.6;
+                overflow-wrap: break-word;
+                word-break: normal;
+            }
+        }
+
+        /* ---------- 更窄的小屏手机 ---------- */
+
+        @media screen and (max-width: 380px) {
+
+            .header-top .logo {
+                padding: 8px 0;
+            }
+
+            .header-top .logo img {
+                max-height: 48px;
+                max-width: calc(50% - 3px);
+            }
+
+            .nav1 li a {
+                min-height: 40px;
+                padding: 7px 1px !important;
+                font-size: 13px !important;
+            }
+
+            .recruitment-notice {
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+            .cntnt-head h3 {
+                font-size: 20px;
+                margin-top: 20px;
+                margin-bottom: 11px;
+            }
+
+            .news-item,
+            .publication-item {
+                font-size: 13.5px;
+                line-height: 1.85;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+        }
+
     </style>
 
     <link rel="stylesheet" href="./site-common.css?v=2">
@@ -1248,7 +1582,7 @@
 
                 <span class="main-text">课题组招生：<span class="highlight">2027年9月入学，申请-考核制博士1名</span>（接收简历截止：2026年10月30日，招满为止）</span><br>
                 <span class="main-text">课题组招生：远程本科实习生4~8名（接收简历截止：2026年11月30日，招满为止）</span><br>
-                <span class="main-text">课题组招生：北京大学博士后/博雅博士后1名，2027年入站（接收简历截止：2026年1月30日，招满为止）</span>
+                <span class="main-text">课题组招生：北京大学博士后/博雅博士后1名，2027年入站（接收简历截止：2027年1月30日，招满为止）</span>
 
                 </strong>
 

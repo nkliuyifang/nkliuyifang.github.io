@@ -1250,7 +1250,366 @@
             }
         }
 
-    </style>
+    
+        /* =====================================================
+           最终移动端适配
+           说明：以下规则仅在手机端生效，不改变电脑端显示
+           ===================================================== */
+
+        @media screen and (max-width: 767px) {
+
+            html,
+            body {
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            body {
+                font-size: 14px;
+                line-height: 1.7;
+            }
+
+            /* ---------- 顶部 Logo ---------- */
+
+            .header-top {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .header-top .logo {
+                width: 100%;
+                padding: 8px 10px;
+            }
+
+            .header-top .logo h1,
+            .header-top .logo h1 a {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: nowrap;
+            }
+
+            .header-top .logo img {
+                display: block;
+                width: auto;
+                max-width: 48%;
+                height: auto;
+                max-height: 52px;
+                margin: 2px 3px;
+                object-fit: contain;
+            }
+
+            /* ---------- 手机导航 ---------- */
+
+            .header {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .header > .container {
+                width: 100%;
+                max-width: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .top-menu {
+                width: 100%;
+            }
+
+            .nav1 {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                margin: 0;
+                padding: 0;
+                gap: 0;
+            }
+
+            .nav1 li {
+                width: 100%;
+                min-width: 0;
+                flex: none;
+                margin: 0 !important;
+                padding: 0 !important;
+                text-align: center;
+            }
+
+            .nav1 li a,
+            .nav1 li a:hover,
+            .nav1 li a:active,
+            .nav1 li.active a {
+                display: flex;
+                width: 100%;
+                min-height: 42px;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 2px;
+                font-size: 14px;
+                line-height: 1.4;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            /* ---------- 主体容器 ---------- */
+
+            .about {
+                width: 100%;
+                padding: 18px 0 24px;
+            }
+
+            .about > .container {
+                width: 100%;
+                max-width: none;
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+            /* ---------- 个人简介 ---------- */
+
+            .about .about-head {
+                width: 100%;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                gap: 18px;
+                margin: 0 0 26px;
+            }
+
+            .about .about-photo {
+                width: 100%;
+                max-width: 190px;
+                margin: 0 auto;
+            }
+
+            .about .about-photo img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .about .about-info {
+                width: 100%;
+                min-width: 0;
+            }
+
+            .about .about-info .name-title {
+                margin: 0 0 9px;
+                font-size: 18px;
+                line-height: 1.6;
+                text-align: left;
+                overflow-wrap: anywhere;
+            }
+
+            .about .about-info p {
+                margin: 0 0 12px;
+                font-size: 14px;
+                line-height: 1.85;
+                text-align: justify;
+                overflow-wrap: anywhere;
+                word-break: normal;
+            }
+
+            /* ---------- 标题 ---------- */
+
+            .about .section-title {
+                width: 100%;
+                margin: 25px 0 14px;
+                padding-left: 11px;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+
+            .about .section-title::before {
+                width: 3px;
+                height: 20px;
+            }
+
+            /* ---------- 研究方向 ---------- */
+
+            .about .research-list {
+                width: 100%;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                gap: 12px;
+            }
+
+            .about .research-item {
+                width: 100%;
+                min-width: 0;
+                margin: 0;
+                padding: 14px 14px 13px;
+            }
+
+            .about .research-title {
+                margin: 0 0 8px;
+                font-size: 15px;
+                line-height: 1.6;
+                overflow-wrap: anywhere;
+            }
+
+            .about .research-content {
+                display: block;
+                width: 100%;
+                margin: 0;
+                padding-left: 19px;
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+            .about .research-content li {
+                overflow-wrap: anywhere;
+            }
+
+            .about .research-content li + li {
+                margin-top: 4px;
+            }
+
+            /* ---------- 教育、工作经历 ---------- */
+
+            .about .experience-list {
+                width: 100%;
+                margin: 0 0 0 3px;
+                padding-left: 0;
+            }
+
+            .about .experience-item {
+                width: 100%;
+                margin: 0;
+                padding: 0 0 16px 19px;
+            }
+
+            .about .experience-item::before {
+                left: -5px;
+                top: 8px;
+                width: 9px;
+                height: 9px;
+            }
+
+            .about .experience-text {
+                width: 100%;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                row-gap: 2px;
+                margin: 0;
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+            .about .experience-text .period {
+                display: block;
+                white-space: normal;
+                font-weight: 600;
+            }
+
+            .about .experience-text .experience-detail {
+                display: block;
+                min-width: 0;
+                overflow-wrap: anywhere;
+            }
+
+            /* ---------- Footer ---------- */
+
+            .footer {
+                width: 100%;
+                margin-top: 20px;
+                overflow: hidden;
+            }
+
+            .footer > .container {
+                width: 100%;
+                max-width: none;
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+            .footer-sec {
+                width: 100%;
+                display: block;
+                padding: 12px 0;
+            }
+
+            .footer-column {
+                width: 100%;
+                padding: 7px 0;
+                text-align: center;
+            }
+
+            .footer-column h3 {
+                margin: 0 0 4px;
+                font-size: 17px;
+                line-height: 1.5;
+            }
+
+            .footer-column p {
+                margin: 0;
+                font-size: 13px;
+                line-height: 1.6;
+                overflow-wrap: anywhere;
+                word-break: break-word;
+            }
+        }
+
+        /* ---------- 超小屏手机 ---------- */
+
+        @media screen and (max-width: 380px) {
+
+            .header-top .logo {
+                padding: 7px 6px;
+            }
+
+            .header-top .logo img {
+                max-width: 47%;
+                max-height: 46px;
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+
+            .nav1 li a,
+            .nav1 li a:hover,
+            .nav1 li a:active,
+            .nav1 li.active a {
+                min-height: 40px;
+                padding: 7px 1px;
+                font-size: 13px;
+            }
+
+            .about {
+                padding-top: 16px;
+            }
+
+            .about > .container {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .about .about-photo {
+                max-width: 175px;
+            }
+
+            .about .about-info .name-title {
+                font-size: 17px;
+            }
+
+            .about .about-info p,
+            .about .research-content,
+            .about .experience-text {
+                font-size: 13.5px;
+            }
+
+            .about .section-title {
+                font-size: 19px;
+            }
+
+            .footer > .container {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+        }
+</style>
 
     <link rel="stylesheet" href="./site-common.css?v=2">
 </head>

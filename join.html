@@ -1220,6 +1220,341 @@
 </style>
 
     <link rel="stylesheet" href="./site-common.css?v=2">
+
+    <!-- =====================================================
+         最终手机端适配
+         仅作用于 767px 及以下，不改变电脑端布局
+         ===================================================== -->
+    <style>
+    @media screen and (max-width: 767px) {
+
+        html,
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden !important;
+        }
+
+        body {
+            font-size: 14px;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        /* ---------- 手机端统一容器 ---------- */
+        .container,
+        .content > .container {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+        }
+
+        /* ---------- 顶部 Logo ---------- */
+        .header-top .logo {
+            width: 100%;
+            padding: 9px 0 !important;
+        }
+
+        .header-top .logo h1,
+        .header-top .logo h1 a {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 5px;
+        }
+
+        .header-top .logo img {
+            display: block;
+            width: auto !important;
+            height: auto !important;
+            max-width: 48% !important;
+            max-height: 54px !important;
+            margin: 0 !important;
+            object-fit: contain;
+        }
+
+        /* ---------- 手机导航 ---------- */
+        .header.stick {
+            position: relative !important;
+            top: auto !important;
+            left: auto !important;
+            width: 100% !important;
+        }
+
+        .top-menu {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav1 {
+            width: 100% !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: flex-start !important;
+            align-items: stretch !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .nav1 li {
+            flex: 0 0 33.333333% !important;
+            width: 33.333333% !important;
+            max-width: 33.333333% !important;
+            min-width: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center;
+        }
+
+        .nav1 li a {
+            display: flex !important;
+            width: 100% !important;
+            min-height: 44px;
+            padding: 9px 2px !important;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            background: #8B0000 !important;
+            font-size: 14px !important;
+            line-height: 1.4 !important;
+            white-space: nowrap !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .nav1 li a:hover,
+        .nav1 li:hover a,
+        .nav1 li a:active {
+            color: #ffffff !important;
+            background: rgba(255, 255, 255, 0.16) !important;
+        }
+
+        /* ---------- 主体 ---------- */
+        .content {
+            width: 100% !important;
+            overflow: hidden;
+        }
+
+        .admission-content {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+        }
+
+        .page-title {
+            width: 100%;
+            margin-top: 20px !important;
+            margin-bottom: 13px !important;
+            padding-left: 11px !important;
+            font-size: 21px !important;
+            line-height: 1.5 !important;
+        }
+
+        .page-title::before {
+            width: 3px !important;
+            height: 20px !important;
+        }
+
+        .welcome {
+            width: 100%;
+            margin-bottom: 15px !important;
+            font-size: 14px !important;
+            line-height: 1.8 !important;
+        }
+
+        .section-title {
+            width: 100%;
+            margin-top: 20px !important;
+            margin-bottom: 10px !important;
+            padding-left: 10px !important;
+            font-size: 19px !important;
+            line-height: 1.5 !important;
+        }
+
+        .section-title::before {
+            width: 3px !important;
+            height: 19px !important;
+        }
+
+        .content-text,
+        .letter p {
+            max-width: 100%;
+            font-size: 14px !important;
+            line-height: 1.85 !important;
+        }
+
+        .letter p {
+            margin-bottom: 13px !important;
+            text-align: left !important;
+        }
+
+        /* ---------- 列表 ---------- */
+        .research-list,
+        .normal-list {
+            width: 100%;
+            margin-top: 5px !important;
+            margin-bottom: 13px !important;
+            padding-left: 22px !important;
+        }
+
+        .research-list li,
+        .normal-list li {
+            max-width: 100%;
+            margin-bottom: 8px !important;
+            padding-left: 1px !important;
+            line-height: 1.8 !important;
+        }
+
+        /* ---------- Vision ---------- */
+        .vision-box {
+            width: 100%;
+            margin: 16px 0 19px !important;
+            padding: 13px 6px !important;
+        }
+
+        .vision-main {
+            font-size: 18px !important;
+            line-height: 1.5 !important;
+            letter-spacing: 0 !important;
+        }
+
+        .vision-sub {
+            margin-top: 3px;
+            font-size: 12px !important;
+            line-height: 1.6;
+        }
+
+        /* ---------- 邮箱 ---------- */
+        .email-box {
+            width: 100%;
+            margin: 16px 0 !important;
+            padding: 12px 5px !important;
+        }
+
+        .email-title {
+            font-size: 13px !important;
+        }
+
+        .email-box a {
+            display: block;
+            max-width: 100%;
+            font-size: 16px !important;
+            line-height: 1.5;
+            overflow-wrap: anywhere !important;
+            word-break: break-all !important;
+        }
+
+        /* ---------- 邮件标题 ---------- */
+        .mail-subject {
+            width: 100%;
+            margin: 10px 0 14px !important;
+            padding: 8px 10px !important;
+            font-size: 13px !important;
+            line-height: 1.7 !important;
+            overflow-wrap: anywhere !important;
+            word-break: break-all !important;
+        }
+
+        .application-types {
+            font-size: 13px !important;
+            line-height: 1.8 !important;
+        }
+
+        /* ---------- 签名 ---------- */
+        .signature {
+            margin-top: 20px !important;
+            text-align: right !important;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* ---------- Footer ---------- */
+        .footer {
+            width: 100%;
+            margin-top: 28px !important;
+        }
+
+        .footer-sec {
+            width: 100%;
+            display: block !important;
+            margin: 0;
+            padding: 12px 0 !important;
+        }
+
+        .footer-column {
+            width: 100% !important;
+            padding: 9px 5px !important;
+            text-align: center;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 4px;
+            font-size: 17px !important;
+        }
+
+        .footer-column p {
+            font-size: 13px !important;
+            line-height: 1.6 !important;
+            overflow-wrap: anywhere !important;
+            word-break: break-word !important;
+        }
+    }
+
+    /* ---------- 更窄的小屏手机 ---------- */
+    @media screen and (max-width: 480px) {
+
+        .container,
+        .content > .container {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .header-top .logo {
+            padding: 8px 0 !important;
+        }
+
+        .header-top .logo h1,
+        .header-top .logo h1 a {
+            gap: 3px;
+        }
+
+        .header-top .logo img {
+            max-width: 49% !important;
+            max-height: 46px !important;
+        }
+
+        .nav1 li a {
+            min-height: 42px;
+            padding: 8px 1px !important;
+            font-size: 13px !important;
+        }
+
+        .page-title {
+            margin-top: 18px !important;
+            font-size: 20px !important;
+        }
+
+        .section-title {
+            font-size: 18px !important;
+        }
+
+        .vision-main {
+            font-size: 17px !important;
+        }
+
+        .email-box a {
+            font-size: 15px !important;
+        }
+    }
+    </style>
 </head>
 
 <body>
