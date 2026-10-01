@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>简介 - 刘梦源课题组</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="keywords"
+          content="刘梦源, 北京大学深圳研究生院, 人体感知, 具身学习, 机器人">
+
+    <meta name="description"
+          content="刘梦源课题组 - 北京大学深圳研究生院">
+
+
+    <!-- Bootstrap -->
+    <link href="./简介_files/bootstrap.css"
+          rel="stylesheet"
+          type="text/css">
+
+    <!-- 原有样式 -->
+    <link href="./简介_files/style.css"
+          rel="stylesheet"
+          type="text/css">
+
+
+    <style>
+
+        /* =====================================================
+           全局
+           ===================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100%;
+
+            margin: 0;
+            padding: 0;
+
+            overflow-x: hidden;
+
+            background: #ffffff;
+
+            color: #000000;
+
+            font-family:
+                "Microsoft YaHei",
+                "PingFang SC",
+                "Hiragino Sans GB",
+                Arial,
+                sans-serif;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+
+        /* =====================================================
+           页面容器
+           ===================================================== */
+
+        .container {
+
+            width: 100%;
+
+            max-width: 1170px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+        /* =====================================================
+           顶部 Logo
+           ===================================================== */
+
+        .header-top {
+
+            width: 100%;
+
+            background: #ffffff;
+        }
+
+        .header-top .logo {
+
+            padding: 16px 0;
+        }
+
+        .header-top .logo h1 {
+
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        .header-top .logo h1 a {
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        .header-top .logo img {
+
+            display: block;
+
+            width: auto;
+
+            height: auto;
+
+            max-height: 96px;
+
+            margin-right: 10px;
+        }
+
+
+        /* =====================================================
+           导航栏
+           ===================================================== */
+
+        .header {
+
+            width: 100%;
+
+            background: #8B0000 !important;
+
+            position: relative;
+
+            z-index: 1000;
+
+            box-shadow:
+                0 2px 7px rgba(0, 0, 0, 0.10);
+        }
+
+        .top-menu {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        .nav1 {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+
+            list-style: none;
+
+            display: flex;
+
+            align-items: stretch;
+
+            justify-content: flex-start;
+
+            flex-wrap: nowrap;
+        }
+
+        .nav1 li {
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+
+            background: #8B0000 !important;
+        }
+
+        .nav1 li:hover {
+
+            background: #8B0000 !important;
+        }
+
+        .nav1 li a {
+
+            display: block;
+
+            padding: 14px 24px;
+
+            color: #ffffff !important;
+
+            background: #8B0000 !important;
+
+            font-size: 16px;
+
+            font-weight: 400;
+
+            line-height: 1.5;
+
+            white-space: nowrap;
+
+            text-decoration: none !important;
+
+            transition:
+                background-color 0.2s ease;
+        }
+
+        /* 当前页面 */
+
+        .nav1 li.active a {
+
+            color: #ffffff !important;
+
+            background: #8B0000 !important;
+        }
+
+        /* 鼠标悬停 */
+
+        .nav1 li a:hover,
+        .nav1 li:hover a {
+
+            color: #ffffff !important;
+
+            background:
+                rgba(255, 255, 255, 0.16) !important;
+        }
+
+        /* 鼠标按下 */
+
+        .nav1 li a:active {
+
+            color: #ffffff !important;
+
+            background:
+                rgba(255, 255, 255, 0.20) !important;
+        }
+
+        /* 去掉原主题伪元素 */
+
+        .nav1 li a::before,
+        .nav1 li a::after {
+
+            display: none !important;
+
+            content: none !important;
+        }
+
+
+        /* =====================================================
+           Sticky 导航
+           ===================================================== */
+
+        .header.stick {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 9999;
+        }
+
+
+        /* =====================================================
+           主体
+           ===================================================== */
+
+        .about {
+
+            width: 100%;
+
+            background: #ffffff;
+        }
+
+        .about > .container {
+
+            padding-top: 10px;
+
+            padding-bottom: 20px;
+        }
+
+
+        /* =====================================================
+           个人简介区域
+           ===================================================== */
+
+        .about-head {
+
+            width: 100%;
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 30px;
+
+            margin-top: 20px;
+
+            margin-bottom: 25px;
+        }
+
+        .about-photo {
+
+            flex: 0 0 250px;
+
+            width: 250px;
+        }
+
+        .about-photo img {
+
+            display: block;
+
+            width: 100%;
+
+            height: auto;
+
+            border-radius: 2px;
+        }
+
+        .about-info {
+
+            flex: 1;
+
+            min-width: 0;
+        }
+
+        .about-info p {
+
+            margin: 0;
+
+            color: #000000;
+
+            font-size: 15px;
+
+            line-height: 1.85;
+
+            text-align: justify;
+        }
+
+        .about-info .name-title {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-size: 20px;
+
+            font-weight: 600;
+
+            line-height: 1.6;
+
+            color: #000000;
+        }
+
+        .about-info strong {
+
+            font-weight: 600;
+        }
+
+        .about-info .red {
+
+            color: #f5070b;
+
+            font-weight: 500;
+        }
+
+
+        /* =====================================================
+           内容标题
+           ===================================================== */
+
+        .section-title {
+
+            position: relative;
+
+            margin-top: 32px;
+
+            margin-bottom: 18px;
+
+            padding-left: 14px;
+
+            color: #333333;
+
+            font-size: 23px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+        .section-title::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 50%;
+
+            width: 4px;
+
+            height: 22px;
+
+            background: #8B0000;
+
+            transform:
+                translateY(-50%);
+        }
+
+
+        /* =====================================================
+           研究方向
+           ===================================================== */
+
+        .research-list {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        .research-item {
+
+            width: 100%;
+
+            margin-bottom: 12px;
+
+            padding: 13px 18px;
+
+            background: #fafafa;
+
+            transition:
+                background-color 0.2s ease;
+        }
+
+        .research-item:hover {
+
+            background: #f5f5f5;
+        }
+
+        .research-title {
+
+            margin: 0 0 5px;
+
+            color: #0000cc;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            line-height: 1.6;
+        }
+
+        .research-content {
+
+            margin: 0;
+
+            color: #333333;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           教育工作经历
+           ===================================================== */
+
+        .experience-list {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+
+            border-left: 2px solid #e5e5e5;
+        }
+
+        .experience-item {
+
+            position: relative;
+
+            margin: 0 0 16px;
+
+            padding: 0 0 0 25px;
+        }
+
+        .experience-item::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: -7px;
+
+            top: 9px;
+
+            width: 12px;
+
+            height: 12px;
+
+            background: #8B0000;
+
+            border-radius: 50%;
+
+            border: 2px solid #ffffff;
+
+            box-shadow:
+                0 0 0 1px #8B0000;
+        }
+
+        .experience-text {
+
+            margin: 0;
+
+            color: #0000cc;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+        }
+
+        .experience-text .period {
+
+            color: #333333;
+
+            font-weight: 600;
+        }
+
+        .experience-text .highlight {
+
+            color: #f5070b;
+
+            font-weight: 500;
+        }
+
+
+        /* =====================================================
+           简介内容统一字体与文字颜色
+           ===================================================== */
+
+        .about,
+        .about * {
+
+            font-family:
+                "Microsoft YaHei",
+                "PingFang SC",
+                "Hiragino Sans GB",
+                Arial,
+                sans-serif !important;
+
+            color: #000000 !important;
+        }
+
+
+        /* =====================================================
+           Footer
+           ===================================================== */
+
+        .footer {
+
+            width: 100%;
+
+            margin-top: 25px;
+
+            background: #8B0000;
+
+            color: #ffffff;
+        }
+
+        .footer-sec {
+
+            width: 100%;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            margin: 0;
+
+            padding: 5px 0;
+        }
+
+        .footer-column {
+
+            flex: 1 1 20%;
+
+            padding: 10px 20px;
+        }
+
+        .footer-column h3 {
+
+            margin: 0 0 5px;
+
+            color: #ffffff;
+
+            font-size: 18px;
+
+            font-weight: 500;
+        }
+
+        .footer-column p {
+
+            margin: 0;
+
+            color: #ffffff;
+
+            font-family:
+                "Times New Roman",
+                "Microsoft YaHei",
+                Arial,
+                sans-serif;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =====================================================
+           平板
+           ===================================================== */
+
+        @media screen and (max-width: 991px) {
+
+            .container {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+            .header-top .logo img {
+
+                max-height: 80px;
+            }
+
+            .nav1 li a {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+            .about-head {
+
+                gap: 20px;
+            }
+
+            .about-photo {
+
+                flex-basis: 220px;
+
+                width: 220px;
+            }
+
+        }
+
+
+        /* =====================================================
+           手机端
+           ===================================================== */
+
+        @media screen and (max-width: 767px) {
+
+            body {
+
+                font-size: 14px;
+            }
+
+
+            /* ---------- 容器 ---------- */
+
+            .container {
+
+                width: 100%;
+
+                padding-left: 10px;
+
+                padding-right: 10px;
+            }
+
+
+            /* ---------- Logo ---------- */
+
+            .header-top .logo {
+
+                padding: 10px 0;
+            }
+
+            .header-top .logo h1 {
+
+                justify-content: center;
+            }
+
+            .header-top .logo h1 a {
+
+                justify-content: center;
+            }
+
+            .header-top .logo img {
+
+                max-width: 95%;
+
+                max-height: 58px;
+
+                margin: 3px 4px;
+            }
+
+
+            /* ---------- 手机导航 ---------- */
+
+            .nav1 {
+
+                width: 100%;
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                align-items: stretch;
+            }
+
+            .nav1 li {
+
+                flex: 0 0 20%;
+
+                width: 20%;
+
+                text-align: center;
+            }
+
+            .nav1 li a {
+
+                width: 100%;
+
+                padding: 10px 2px;
+
+                font-size: 14px;
+
+                line-height: 1.5;
+
+                white-space: nowrap;
+
+                background: #8B0000;
+            }
+
+            .nav1 li a:hover {
+
+                color: #ffffff;
+
+                background:
+                    rgba(255, 255, 255, 0.16);
+            }
+
+
+            /* ---------- 手机主体 ---------- */
+
+            .about > .container {
+
+                padding-top: 5px;
+
+                padding-bottom: 15px;
+            }
+
+
+            /* ---------- 个人简介 ---------- */
+
+            .about-head {
+
+                display: block;
+
+                margin-top: 15px;
+
+                margin-bottom: 20px;
+            }
+
+            .about-photo {
+
+                width: 100%;
+
+                max-width: 240px;
+
+                margin: 0 auto 18px;
+            }
+
+            .about-info p {
+
+                font-size: 14px;
+
+                line-height: 1.85;
+
+                text-align: justify;
+            }
+
+            .about-info .name-title {
+
+                font-size: 18px;
+
+                line-height: 1.6;
+
+                margin-bottom: 8px;
+            }
+
+
+            /* ---------- 标题 ---------- */
+
+            .section-title {
+
+                margin-top: 25px;
+
+                margin-bottom: 14px;
+
+                padding-left: 12px;
+
+                font-size: 21px;
+
+                line-height: 1.5;
+            }
+
+            .section-title::before {
+
+                width: 3px;
+
+                height: 20px;
+
+                background: #8B0000;
+            }
+
+
+            /* ---------- 研究方向 ---------- */
+
+            .research-item {
+
+                margin-bottom: 10px;
+
+                padding: 11px 13px;
+            }
+
+            .research-title {
+
+                font-size: 15px;
+
+                line-height: 1.6;
+            }
+
+            .research-content {
+
+                font-size: 14px;
+
+                line-height: 1.75;
+            }
+
+
+            /* ---------- 教育经历 ---------- */
+
+            .experience-list {
+
+                margin-left: 3px;
+            }
+
+            .experience-item {
+
+                margin-bottom: 13px;
+
+                padding-left: 20px;
+            }
+
+            .experience-item::before {
+
+                left: -6px;
+
+                width: 10px;
+
+                height: 10px;
+            }
+
+            .experience-text {
+
+                font-size: 14px;
+
+                line-height: 1.8;
+            }
+
+
+            /* ---------- Footer ---------- */
+
+            .footer {
+
+                margin-top: 25px;
+            }
+
+            .footer-sec {
+
+                display: block;
+
+                padding: 15px 0;
+            }
+
+            .footer-column {
+
+                width: 100%;
+
+                padding: 8px 5px;
+
+                text-align: center;
+            }
+
+            .footer-column h3 {
+
+                font-size: 18px;
+            }
+
+            .footer-column p {
+
+                font-size: 14px;
+
+                word-break: break-word;
+            }
+
+        }
+
+
+        /* =====================================================
+           小屏手机
+           ===================================================== */
+
+        @media screen and (max-width: 480px) {
+
+            .header-top .logo img {
+
+                max-height: 45px;
+            }
+
+            .nav1 li a {
+
+                padding: 9px 1px;
+
+                font-size: 13px;
+            }
+
+            .about-photo {
+
+                max-width: 210px;
+            }
+
+            .about-info p {
+
+                font-size: 13.5px;
+
+                line-height: 1.85;
+            }
+
+            .about-info .name-title {
+
+                font-size: 17px;
+            }
+
+            .section-title {
+
+                font-size: 20px;
+
+                margin-top: 22px;
+
+                margin-bottom: 12px;
+            }
+
+            .research-title {
+
+                font-size: 14px;
+            }
+
+            .research-content {
+
+                font-size: 13.5px;
+            }
+
+            .experience-text {
+
+                font-size: 13.5px;
+
+                line-height: 1.8;
+            }
+
+        }
+
+
+        /* =====================================================
+           防止横向滚动
+           ===================================================== */
+
+        p,
+        div,
+        span,
+        a,
+        li {
+
+            overflow-wrap: break-word;
+
+            word-wrap: break-word;
+        }
+
+
+        /* =====================================================
+           清除 Bootstrap 浮动
+           ===================================================== */
+
+        .clearfix::after {
+
+            display: table;
+
+            content: "";
+
+            clear: both;
+        }
+
+
+        /* 简介页布局优化：仅作用于本页主体，保留原有配色。 */
+        .about {
+            padding: 30px 0 36px;
+        }
+
+        .about > .container {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .about .about-head {
+            display: grid;
+            grid-template-columns: 220px minmax(0, 1fr);
+            align-items: start;
+            gap: 32px;
+            margin: 18px 0 36px;
+        }
+
+        .about .about-photo {
+            width: 100%;
+            max-width: 220px;
+            margin: 0;
+        }
+
+        .about .about-photo img {
+            float: none;
+            width: 100%;
+            margin: 0;
+        }
+
+        .about .about-info {
+            float: none;
+            width: 100%;
+            min-width: 0;
+        }
+
+        .about .about-info .name-title {
+            margin: 0 0 10px;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .about .about-info p {
+            margin: 0 0 12px;
+            line-height: 1.9;
+            text-align: left;
+        }
+
+        .about .about-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about .section-title {
+            margin: 32px 0 18px;
+            padding-left: 14px;
+            font-size: 21px;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .about .research-list {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .about .research-item {
+            width: auto;
+            min-width: 0;
+            margin: 0;
+            padding: 20px 20px 18px;
+        }
+
+        .about .research-title {
+            margin: 0 0 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .about .research-content {
+            margin: 0;
+            padding-left: 20px;
+            list-style: disc;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .about .research-content li + li {
+            margin-top: 6px;
+        }
+
+        .about .experience-list {
+            width: auto;
+            margin: 0 0 0 5px;
+        }
+
+        .about .experience-item {
+            margin: 0;
+            padding: 0 0 18px 24px;
+        }
+
+        .about .experience-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .about .experience-text {
+            display: grid;
+            grid-template-columns: 112px minmax(0, 1fr);
+            column-gap: 12px;
+            line-height: 1.85;
+        }
+
+        .about .experience-text .period {
+            white-space: nowrap;
+        }
+
+        @media screen and (max-width: 991px) {
+            .about .about-head {
+                grid-template-columns: 190px minmax(0, 1fr);
+                gap: 24px;
+            }
+
+            .about .research-list {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 14px;
+            }
+
+            .about .research-content {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                column-gap: 28px;
+                row-gap: 6px;
+            }
+
+            .about .research-content li + li {
+                margin-top: 0;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .about {
+                padding: 24px 0 28px;
+            }
+
+            .about > .container {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .about .about-head {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 22px;
+                margin: 0 0 28px;
+            }
+
+            .about .about-photo {
+                max-width: 210px;
+                margin: 0 auto;
+            }
+
+            .about .about-info .name-title {
+                font-size: 18px;
+            }
+
+            .about .about-info p {
+                font-size: 14px;
+            }
+
+            .about .section-title {
+                margin: 28px 0 16px;
+                font-size: 20px;
+            }
+
+            .about .research-item {
+                padding: 17px 18px;
+            }
+
+            .about .research-content {
+                display: block;
+                font-size: 14px;
+            }
+
+            .about .research-content li + li {
+                margin-top: 6px;
+            }
+
+            .about .experience-text {
+                grid-template-columns: minmax(0, 1fr);
+                row-gap: 3px;
+                font-size: 14px;
+            }
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="./site-common.css?v=2">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     顶部 Logo
+     ========================================================= -->
+
+<div class="header-top">
+
+    <div class="container">
+
+        <div class="logo">
+
+            <h1>
+
+                <a href="index.html">
+
+                    <img
+                        src="./刘梦源-个人主页_files/logo.png"
+                        alt="刘梦源">
+
+                    <img
+                        src="./刘梦源-个人主页_files/slogan.png"
+                        alt="课题组">
+
+                </a>
+
+            </h1>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     Sticky Anchor
+     ========================================================= -->
+
+<div id="mainMenuBarAnchor"></div>
+
+
+<!-- =========================================================
+     导航栏
+     ========================================================= -->
+
+<div class="header" id="fixTest">
+
+    <div class="container">
+
+        <div class="top-menu">
+
+            <ul class="nav1">
+
+                <li>
+
+                    <a href="index.html">
+                        主页
+                    </a>
+
+                </li>
+
+                <li class="active">
+
+                    <a href="about.html">
+                        简介
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="members.html">
+                        成员
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="pub.html">
+                        论文
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="photo.html">
+                        照片
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="join.html">
+                        招生信息
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     主体
+     ========================================================= -->
+
+<div class="about">
+
+    <div class="container">
+
+
+        <!-- =================================================
+             个人简介
+             ================================================= -->
+
+        <div class="about-head">
+
+
+            <!-- 个人照片 -->
+
+            <div class="about-photo">
+
+                <img
+                    src="./简介_files/liumengyuan.jpg"
+                    class="img-responsive"
+                    alt="刘梦源">
+
+            </div>
+
+
+            <!-- 个人信息 -->
+
+            <div class="about-info">
+
+                <div class="name-title">
+                        刘梦源，研究员，博士生导师，籍贯安徽庐江
+                </div>
+
+                <p>
+
+                        广东省杰青、深圳市优青、IEEE Senior Member、斯坦福大学评选的全球前2%顶尖科学家。以第一/通讯作者发表中科院1区Top SCI期刊+CCF A类顶会论文50余篇
+                        （如TPAMI/IJCV、CVPR/ICML等）。主持国家重点研发计划课题、广东省杰出青年基金、深圳市优秀青年基金、国家自然科学基金面上项目、国家自然科学基金青年项目。
+                        获省部级科技奖励2项，其中以第二完成人获2024年度广东省自然科学一等奖。
+                        指导学生获 ACM Multimedia 国际挑战赛冠军、
+                        ICME 国际挑战赛双料冠军、
+                        CVPR 国际挑战赛季军、
+                        ACM MM Asia 最佳论文候选等奖励10余项。
+                    担任SCI期刊IEEE Transactions on Image Processing编委、
+                    Pattern Recognition编委、
+                    Journal of Visual Communication and Image Representation编委、
+                    CAAI Transactions on Intelligence Technology青年编委、
+                   Science Partner Journal Cyborg and Bionic Systems青年编委；
+                    国际会议IROS、ICME、VCIP、PRCV等研讨会主席及领域主席；
+                    中国人工智能学会智能机器人专业委员会副秘书长、
+                    中国人工智能学会青年工作委员会副秘书长、
+                    中国图象图形学学会青年工作委员会委员。
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             研究方向
+             ================================================= -->
+
+        <h2 class="section-title">
+            研究方向
+        </h2>
+
+
+        <div class="research-list">
+
+            <div class="research-item">
+                <h3 class="research-title">具身操作与技能学习</h3>
+                <ul class="research-content">
+                    <li>物体可供性</li>
+                    <li>跨具身技能迁移</li>
+                    <li>VLA 操作学习</li>
+                    <li>失败恢复与在线纠错</li>
+                </ul>
+            </div>
+
+            <div class="research-item">
+                <h3 class="research-title">具身感知与自主导航</h3>
+                <ul class="research-content">
+                    <li>视觉目标跟踪</li>
+                    <li>零样本目标导航</li>
+                    <li>语义地图</li>
+                    <li>人体行为与运动理解</li>
+                </ul>
+            </div>
+
+            <div class="research-item">
+                <h3 class="research-title">多模态基础模型与高效推理</h3>
+                <ul class="research-content">
+                    <li>多模态理解与生成</li>
+                    <li>人-物交互建模</li>
+                    <li>世界-动作模型</li>
+                    <li>模型轻量化与端侧推理</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             教育、工作经历
+             ================================================= -->
+
+        <h2 class="section-title">
+            教育、工作经历
+        </h2>
+
+
+        <div class="experience-list">
+
+
+            <div class="experience-item">
+
+                <p class="experience-text">
+
+                    <span class="period">
+                        2023‒至今，</span>
+                    <span class="experience-detail">
+                    研究员，北京大学深圳研究生院
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <p class="experience-text">
+
+                    <span class="period">
+                        2020‒2023，</span>
+                    <span class="experience-detail">
+                    长聘副教授，中山大学
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <p class="experience-text">
+
+                    <span class="period">
+                        2018‒2020，</span>
+                    <span class="experience-detail">
+                    高级研究员，腾讯AI Lab
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <p class="experience-text">
+
+                    <span class="period">
+                        2017‒2018，</span>
+                    <span class="experience-detail">
+                    博士后，新加坡南洋理工大学EEE学院
+                    （
+                    <span class="highlight">
+                        导师：Junsong Yuan, IEEE/IAPR Fellow；
+                        Kai-Kuang Ma，新加坡工程院院士，IEEE Fellow
+                    </span>
+                    ）
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <p class="experience-text">
+
+                    <span class="period">
+                        2012‒2017，</span>
+                    <span class="experience-detail">
+                    博士，北京大学信息科学技术学院
+                    （
+                    <span class="highlight">
+                        导师：刘宏教授，国家级领军人才
+                    </span>
+                    ）
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <p class="experience-text">
+
+                    <span class="period">
+                        2008‒2012，</span>
+                    <span class="experience-detail">
+                    学士，南开大学机器人与信息自动化研究所
+                    （
+                    <span class="highlight">
+                        导师：方勇纯教授，国家级人才；
+                        赵新教授，国家级人才
+                    </span>
+                    ）
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     Footer
+     ========================================================= -->
+
+<div class="footer">
+
+    <div class="container">
+
+        <div class="footer-sec">
+
+
+            <!-- 地址 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    地址
+                </h3>
+
+                <p>
+                    北京大学深圳研究生院<br>
+                    广东省深圳市西丽大学城北大校区 518055
+                </p>
+
+            </div>
+
+
+            <!-- 邮箱 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    邮箱
+                </h3>
+
+                <p>
+                    liumengyuan@pku.edu.cn
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JavaScript
+     ========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        var menu =
+            document.getElementById("fixTest");
+
+        var anchor =
+            document.getElementById("mainMenuBarAnchor");
+
+
+        if (!menu || !anchor) {
+            return;
+        }
+
+
+        var menuOffset =
+            menu.offsetTop;
+
+
+        function updateMenu() {
+
+            /*
+             * 手机端取消固定导航
+             */
+
+            if (window.innerWidth <= 767) {
+
+                menu.classList.remove("stick");
+
+                anchor.style.height = "0px";
+
+                return;
+            }
+
+
+            if (window.scrollY > menuOffset) {
+
+                anchor.style.height =
+                    menu.offsetHeight + "px";
+
+                menu.classList.add("stick");
+
+            } else {
+
+                anchor.style.height = "0px";
+
+                menu.classList.remove("stick");
+
+            }
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateMenu,
+            { passive: true }
+        );
+
+
+        window.addEventListener(
+            "resize",
+            function () {
+
+                menuOffset =
+                    menu.offsetTop;
+
+                updateMenu();
+
+            }
+        );
+
+
+        updateMenu();
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

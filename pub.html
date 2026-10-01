@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>论文 - 刘梦源课题组</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="keywords"
+          content="刘梦源, Publication, Peking University, Computer Vision, Robotics">
+
+    <meta name="description"
+          content="刘梦源课题组 - 北京大学深圳研究生院 - 论文">
+
+
+    <!-- Bootstrap -->
+    <link href="./刘梦源-个人主页_files/bootstrap.css"
+          rel="stylesheet"
+          type="text/css">
+
+    <!-- 原有样式 -->
+    <link href="./刘梦源-个人主页_files/style.css"
+          rel="stylesheet"
+          type="text/css">
+
+
+    <style>
+
+        /* =====================================================
+           全局
+           ===================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100%;
+
+            margin: 0;
+            padding: 0;
+
+            overflow-x: hidden;
+
+            background: #ffffff;
+
+            color: #000000;
+
+            font-family:
+                "Microsoft YaHei",
+                "PingFang SC",
+                "Hiragino Sans GB",
+                Arial,
+                sans-serif;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+
+
+        /* =====================================================
+           页面容器
+           ===================================================== */
+
+        .container {
+
+            width: 100%;
+
+            max-width: 1170px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+        /* =====================================================
+           顶部 Logo
+           ===================================================== */
+
+        .header-top {
+
+            width: 100%;
+
+            background: #ffffff;
+        }
+
+        .header-top .logo {
+
+            padding: 16px 0;
+        }
+
+        .header-top .logo h1 {
+
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        .header-top .logo h1 a {
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        .header-top .logo img {
+
+            display: block;
+
+            width: auto;
+
+            height: auto;
+
+            max-height: 96px;
+
+            margin-right: 10px;
+        }
+
+
+        /* =====================================================
+           导航栏
+           ===================================================== */
+
+        .header {
+
+            width: 100%;
+
+            background: #8B0000 !important;
+
+            position: relative;
+
+            z-index: 1000;
+
+            box-shadow:
+                0 2px 7px rgba(0, 0, 0, 0.10);
+        }
+
+        /*
+         * 桌面端滚动固定
+         */
+        .header.stick {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 9999;
+        }
+
+        .top-menu {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        .nav1 {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+
+            list-style: none;
+
+            display: flex;
+
+            align-items: stretch;
+
+            justify-content: flex-start;
+
+            flex-wrap: nowrap;
+        }
+
+        .nav1 li {
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+
+            background: #8B0000 !important;
+        }
+
+        .nav1 li:hover {
+
+            background: #8B0000 !important;
+        }
+
+        .nav1 li a {
+
+            display: block;
+
+            padding: 14px 24px;
+
+            color: #ffffff !important;
+
+            background: #8B0000 !important;
+
+            font-size: 16px;
+
+            font-weight: 400;
+
+            line-height: 1.5;
+
+            white-space: nowrap;
+
+            text-decoration: none !important;
+
+            transition:
+                background-color 0.2s ease;
+        }
+
+        /* 当前页面 */
+
+        .nav1 li.active a {
+
+            color: #ffffff !important;
+
+            background: #8B0000 !important;
+        }
+
+        /* 鼠标悬停 */
+
+        .nav1 li a:hover,
+        .nav1 li:hover a {
+
+            color: #ffffff !important;
+
+            background:
+                rgba(255, 255, 255, 0.16) !important;
+        }
+
+        /* 鼠标按下 */
+
+        .nav1 li a:active {
+
+            color: #ffffff !important;
+
+            background:
+                rgba(255, 255, 255, 0.20) !important;
+        }
+
+        /* 完全取消伪元素 */
+
+        .nav1 li a::before,
+        .nav1 li a::after {
+
+            display: none !important;
+
+            content: none !important;
+        }
+
+
+        /* =====================================================
+           页面主体
+           ===================================================== */
+
+        .pages {
+
+            width: 100%;
+
+            background: #ffffff;
+        }
+
+        .pages > .container {
+
+            padding-top: 0;
+
+            padding-bottom: 20px;
+        }
+
+
+        /* =====================================================
+           Google Scholar
+           ===================================================== */
+
+        .scholar-link {
+
+            width: 100%;
+
+            margin: 25px 0 20px;
+
+            text-align: center;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+        .scholar-link .main-text {
+
+            color: #000000;
+        }
+
+        .scholar-link a {
+
+            color: #0000cc;
+
+            text-decoration: none;
+        }
+
+        .scholar-link a:hover {
+
+            color: #8B0000;
+
+            text-decoration: underline;
+        }
+
+
+        /* =====================================================
+           年份标题
+           ===================================================== */
+
+        .year-title {
+
+            position: relative;
+
+            margin-top: 28px;
+
+            margin-bottom: 14px;
+
+            padding-left: 14px;
+
+            color: #333333;
+
+            font-size: 23px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+        .year-title::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 50%;
+
+            width: 4px;
+
+            height: 22px;
+
+            background: #8B0000;
+
+            transform:
+                translateY(-50%);
+        }
+
+
+        /* =====================================================
+           论文列表
+           ===================================================== */
+
+        .publication-list {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+
+        /* =====================================================
+           单篇论文
+           ===================================================== */
+
+        .publication-item {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 7px 0 13px;
+
+            display: flex;
+
+            flex-direction: row;
+
+            align-items: flex-start;
+
+            border: none;
+
+            background: #ffffff;
+
+            color: #000000;
+        }
+
+
+        /* =====================================================
+           左侧论文图片
+           ===================================================== */
+
+        .publication-image {
+
+            flex: 0 0 15%;
+
+            width: 15%;
+
+            padding-right: 12px;
+
+            display: flex;
+
+            align-items: flex-start;
+
+            justify-content: flex-start;
+        }
+
+        .publication-image img {
+
+            display: block;
+
+            width: 147px;
+
+            height: 100px;
+
+            max-width: 100%;
+
+            object-fit: cover;
+
+            border: 1px solid #000000;
+
+            margin: 0 0 10px 0;
+        }
+
+
+        /* =====================================================
+           右侧论文文字
+           ===================================================== */
+
+        .publication-content {
+
+            flex: 1;
+
+            min-width: 0;
+
+            padding: 0;
+
+            font-family:
+                "Times New Roman",
+                "Microsoft YaHei",
+                Arial,
+                sans-serif;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+            color: #000000;
+        }
+
+        .publication-content p {
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        /* 作者 */
+
+        .publication-authors {
+
+            color: #000000;
+        }
+
+        /* 论文标题 */
+
+        .publication-title {
+
+            color: #000000;
+        }
+
+        /* 会议 */
+
+        .publication-venue {
+
+            color: #0000cc;
+
+            font-weight: 600;
+        }
+
+        /* 通讯作者说明 */
+
+        .publication-note {
+
+            color: #f5070b;
+
+            font-weight: 400;
+        }
+
+
+        /* =====================================================
+           论文辅助信息
+           ===================================================== */
+
+        .publication-links {
+
+            margin-top: 3px;
+
+            font-family:
+                "Microsoft YaHei",
+                Arial,
+                sans-serif;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+        }
+
+        .publication-links a {
+
+            color: #666666;
+
+            margin-right: 12px;
+        }
+
+        .publication-links a:hover {
+
+            color: #8B0000;
+
+            text-decoration: underline;
+        }
+
+
+        /* =====================================================
+           Footer
+           ===================================================== */
+
+        .footer {
+
+            width: 100%;
+
+            margin-top: 0;
+
+            background: #8B0000;
+
+            color: #ffffff;
+        }
+
+        .footer-sec {
+
+            width: 100%;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        .footer-column {
+
+            flex: 1 1 20%;
+
+            padding: 5px 20px;
+        }
+
+        .footer-column h3 {
+
+            margin: 0 0 5px;
+
+            color: #ffffff;
+
+            font-size: 18px;
+
+            font-weight: 500;
+        }
+
+        .footer-column p {
+
+            margin: 0;
+
+            color: #ffffff;
+
+            font-family:
+                "Times New Roman",
+                "Microsoft YaHei",
+                Arial,
+                sans-serif;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =====================================================
+           平板
+           ===================================================== */
+
+        @media screen and (max-width: 991px) {
+
+            .container {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+            .header-top .logo img {
+
+                max-height: 80px;
+            }
+
+            .nav1 li a {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+            .publication-image {
+
+                flex: 0 0 18%;
+
+                width: 18%;
+            }
+
+            .publication-content {
+
+                font-size: 15px;
+
+                line-height: 1.8;
+            }
+        }
+
+
+        /* =====================================================
+           手机端
+           ===================================================== */
+
+        @media screen and (max-width: 767px) {
+
+            body {
+
+                font-size: 14px;
+            }
+
+
+            /* ---------- 容器 ---------- */
+
+            .container {
+
+                width: 100%;
+
+                padding-left: 10px;
+
+                padding-right: 10px;
+            }
+
+
+            /* ---------- Logo ---------- */
+
+            .header-top .logo {
+
+                padding: 10px 0;
+            }
+
+            .header-top .logo h1 {
+
+                justify-content: center;
+            }
+
+            .header-top .logo h1 a {
+
+                justify-content: center;
+            }
+
+            .header-top .logo img {
+
+                max-width: 95%;
+
+                max-height: 58px;
+
+                margin: 3px 4px;
+            }
+
+
+            /* ---------- 手机导航 ---------- */
+
+            .header.stick {
+
+                position: relative;
+
+                top: auto;
+
+                left: auto;
+            }
+
+            .nav1 {
+
+                width: 100%;
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                align-items: stretch;
+            }
+
+            .nav1 li {
+
+                flex: 0 0 20%;
+
+                width: 20%;
+
+                text-align: center;
+            }
+
+            .nav1 li a {
+
+                width: 100%;
+
+                padding: 10px 2px;
+
+                font-size: 14px;
+
+                line-height: 1.5;
+
+                white-space: nowrap;
+
+                background: #8B0000;
+            }
+
+            .nav1 li a:hover {
+
+                color: #ffffff;
+
+                background:
+                    rgba(255, 255, 255, 0.16);
+            }
+
+
+            /* ---------- 页面主体 ---------- */
+
+            .pages > .container {
+
+                padding-left: 10px;
+
+                padding-right: 10px;
+            }
+
+
+            /* ---------- Google Scholar ---------- */
+
+            .scholar-link {
+
+                margin-top: 15px;
+
+                margin-bottom: 15px;
+
+                font-size: 15px;
+
+                line-height: 1.8;
+            }
+
+
+            /* ---------- 年份 ---------- */
+
+            .year-title {
+
+                margin-top: 22px;
+
+                margin-bottom: 12px;
+
+                padding-left: 12px;
+
+                font-size: 21px;
+
+                line-height: 1.5;
+            }
+
+            .year-title::before {
+
+                width: 3px;
+
+                height: 20px;
+
+                background: #8B0000;
+            }
+
+
+            /* ---------- 论文 ---------- */
+
+            .publication-item {
+
+                width: 100%;
+
+                display: flex;
+
+                flex-direction: row;
+
+                align-items: flex-start;
+
+                padding: 7px 0 11px;
+            }
+
+            .publication-image {
+
+                flex: 0 0 29%;
+
+                width: 29%;
+
+                padding-right: 8px;
+            }
+
+            .publication-image img {
+
+                width: 100%;
+
+                height: auto;
+
+                aspect-ratio: 147 / 100;
+
+                object-fit: cover;
+
+                margin: 0;
+            }
+
+            .publication-content {
+
+                flex: 1;
+
+                width: auto;
+
+                min-width: 0;
+
+                font-size: 13.5px;
+
+                line-height: 1.75;
+
+                word-break: normal;
+
+                overflow-wrap: break-word;
+            }
+
+            .publication-links {
+
+                font-size: 12px;
+
+                margin-top: 2px;
+            }
+
+
+            /* ---------- Footer ---------- */
+
+            .footer {
+
+                margin-top: 30px;
+            }
+
+            .footer-sec {
+
+                display: block;
+
+                padding: 15px 0;
+            }
+
+            .footer-column {
+
+                width: 100%;
+
+                padding: 10px 5px;
+
+                text-align: center;
+            }
+
+            .footer-column h3 {
+
+                font-size: 18px;
+            }
+
+            .footer-column p {
+
+                font-size: 14px;
+
+                word-break: break-word;
+            }
+        }
+
+
+        /* =====================================================
+           小屏手机
+           ===================================================== */
+
+        @media screen and (max-width: 480px) {
+
+            .header-top .logo img {
+
+                max-height: 45px;
+            }
+
+            .nav1 li a {
+
+                padding: 9px 1px;
+
+                font-size: 13px;
+            }
+
+            .scholar-link {
+
+                font-size: 14px;
+
+                line-height: 1.8;
+            }
+
+            .year-title {
+
+                font-size: 20px;
+
+                margin-top: 20px;
+
+                margin-bottom: 11px;
+            }
+
+            .publication-item {
+
+                padding-top: 5px;
+
+                padding-bottom: 10px;
+            }
+
+            .publication-image {
+
+                flex: 0 0 30%;
+
+                width: 30%;
+
+                padding-right: 7px;
+            }
+
+            .publication-content {
+
+                font-size: 13px;
+
+                line-height: 1.75;
+            }
+
+            .publication-links {
+
+                font-size: 11.5px;
+            }
+        }
+
+
+        /* =====================================================
+           防止横向滚动
+           ===================================================== */
+
+        p,
+        div,
+        span,
+        a,
+        li {
+
+            overflow-wrap: break-word;
+
+            word-wrap: break-word;
+        }
+
+
+        /* =====================================================
+           清除浮动
+           ===================================================== */
+
+        .clearfix::after {
+
+            display: table;
+
+            content: "";
+
+            clear: both;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="./site-common.css?v=2">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     顶部 Logo
+     ========================================================= -->
+
+<div class="header-top">
+
+    <div class="container">
+
+        <div class="logo">
+
+            <h1>
+
+                <a href="index.html">
+
+                    <img
+                        src="./刘梦源-个人主页_files/logo.png"
+                        alt="刘梦源">
+
+                    <img
+                        src="./刘梦源-个人主页_files/slogan.png"
+                        alt="课题组">
+
+                </a>
+
+            </h1>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     Sticky Anchor
+     ========================================================= -->
+
+<div id="mainMenuBarAnchor"></div>
+
+
+<!-- =========================================================
+     导航栏
+     ========================================================= -->
+
+<div class="header" id="fixTest">
+
+    <div class="container">
+
+        <div class="top-menu">
+
+            <ul class="nav1">
+
+                <li>
+
+                    <a href="index.html">
+                        主页
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html">
+                        简介
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="members.html">
+                        成员
+                    </a>
+
+                </li>
+
+                <li class="active">
+
+                    <a href="pub.html">
+                        论文
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="photo.html">
+                        照片
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="join.html">
+                        招生信息
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     论文主体
+     ========================================================= -->
+
+<div class="pages">
+
+    <div class="container">
+
+
+        <!-- =================================================
+             Google Scholar
+             ================================================= -->
+
+        <div class="scholar-link">
+
+            <span class="main-text">
+                更多论文请访问：
+            </span>
+
+            <a
+                href="https://scholar.google.com/citations?user=woX_4AcAAAAJ&hl=zh-CN"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Google Scholar
+
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             2026
+             ================================================= -->
+
+        <h3 class="year-title">
+            2026
+        </h3>
+
+
+        <div class="publication-list">
+
+
+            <!-- =================================================
+                 Superman - CVPR 2026
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <!-- 左侧照片 -->
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/Superman_CVPR2026.jpg"
+                        alt="Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation">
+
+                </div>
+
+
+                <!-- 右侧文字 -->
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Xinshun Wang, Peiming Li, Ziyi Wang,
+                            Zhongbin Fang, Zhichao Deng, Songtao Wu,
+                            Xiangtai Li,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            Superman: Unifying Skeleton and Vision for Human
+                            Motion Perception and Generation.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                CVPR
+                            </span>
+
+                        </strong>,
+
+                        2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Superman_Unifying_Skeleton_and_Vision_for_Human_Motion_Perception_and_CVPR_2026_paper.html"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/BradleyWang0416/Superman-CVPR2026"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SkeletonLLM - ICML 2026
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <!-- 左侧照片 -->
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/SkeletonLLM_ICML2026.jpg"
+                        alt="Universal Skeleton Understanding via Differentiable Rendering and MLLMs">
+
+                </div>
+
+
+                <!-- 右侧文字 -->
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Ziyi Wang, Peiming Li, Xinshun Wang,
+                            Yang Tang, Kai-Kuang Ma,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            Universal Skeleton Understanding via Differentiable
+                            Rendering and MLLMs.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                ICML
+                            </span>
+
+                        </strong>,
+
+                        2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 机器学习顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://arxiv.org/pdf/2603.18003"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/wangzy01/SkeletonLLM"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 DAP - ECCV 2026
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <!-- 左侧照片 -->
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/DAP_ECCV2026.jpg"
+                        alt="DAP: Doppler-aware Point Network for Heterogeneous mmWave Action Recognition">
+
+                </div>
+
+
+                <!-- 右侧文字 -->
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Jiaying Lin, Shiman Wu, Jinfu Liu,
+                            Can Wang,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            DAP: Doppler-aware Point Network for Heterogeneous
+                            mmWave Action Recognition.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                ECCV
+                            </span>
+
+                        </strong>,
+
+                        2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://arxiv.org/abs/2605.09604"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/jolin830/DAP-Net"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 UniMotion - ECCV 2026
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <!-- 左侧照片 -->
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/UniMotion_ECCV2026.jpg"
+                        alt="UniMotion: A Unified Framework for Motion-Text-Vision Understanding and Generation">
+
+                </div>
+
+
+                <!-- 右侧文字 -->
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Ziyi Wang, Xinshun Wang, Chen Shuang,
+                            Cong Yang,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            UniMotion: A Unified Framework for Motion-Text-Vision
+                            Understanding and Generation.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                ECCV
+                            </span>
+
+                        </strong>,
+
+                        2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://arxiv.org/pdf/2603.22282"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://wangzy01.github.io/UniMotion/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 MP1 - AAAI 2026
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <!-- 左侧照片 -->
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/MP1_AAAI2026.jpg"
+                        alt="MP1: MeanFlow Tames Policy Learning in 1-step for Robotic Manipulation">
+
+                </div>
+
+
+                <!-- 右侧文字 -->
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Juyi Sheng, Ziyi Wang, Peiming Li,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            MP1: MeanFlow Tames Policy Learning in 1-step for
+                            Robotic Manipulation.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                AAAI
+                            </span>
+
+                        </strong>,
+
+                        2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 人工智能顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://arxiv.org/abs/2507.10543"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/LogSSim/MP1"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 Find Anything Like Humans - ICRA 2026
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/zyt_find-anything-like-humans.png"
+                        alt="Find Anything Like Humans: Online Semantic Mapping and Coarse-to-Fine Navigation in Dynamic Environments">
+
+                </div>
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Yutian Zhang, Jianyu Zhang,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            Find Anything Like Humans: Online Semantic Mapping
+                            and Coarse-to-Fine Navigation in Dynamic Environments.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                ICRA
+                            </span>
+
+                        </strong>,
+
+                        2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 机器人顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://github.com/yutian929/Find-Anything-Like-Humans"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             2025
+             ================================================= -->
+
+        <h3 class="year-title">
+            2025
+        </h3>
+
+
+        <div class="publication-list">
+
+
+            <!-- =================================================
+                 TcpFormer - AAAI 2025
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/liujiajie_tcpformer.png"
+                        alt="TcpFormer: Learning Temporal Correlation with Implicit Pose Proxy for 3D Human Pose Estimation">
+
+                </div>
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Jiajie Liu,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>,
+
+                            Hong Liu, Wenhao Li.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            TcpFormer: Learning Temporal Correlation with
+                            Implicit Pose Proxy for 3D Human Pose Estimation.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                AAAI
+                            </span>
+
+                        </strong>,
+
+                        2025.
+
+                        <span class="publication-note">
+                            (通讯作者, 人工智能顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://arxiv.org/abs/2501.01770"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/James-ben-tombling/TCPFormer"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 Ust-SSM - ICCV 2025
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/lipeiming_ustssm.jpg"
+                        alt="Ust-SSM: Unified Spatio-Temporal State Space Models for Point Cloud Video Modeling">
+
+                </div>
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Peiming Li, Ziyi Wang, Yulin Yuan, Hong Liu,
+                            Xiangming Meng, Junsong Yuan,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            Ust-SSM: Unified Spatio-Temporal State Space Models
+                            for Point Cloud Video Modeling.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                ICCV
+                            </span>
+
+                        </strong>,
+
+                        2025.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://arxiv.org/abs/2508.14604"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/wangzy01/UST-SSM"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 Recognizing Actions from Robotic View - ICCV 2025
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/wangziyi_Recognizing Actions from Robotic View for Natural Human-Robot Interaction.png"
+                        alt="Recognizing Actions from Robotic View for Natural Human-Robot Interaction">
+
+                </div>
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Ziyi Wang, Peiming Li, Hong Liu, Zhichao Deng,
+                            Can Wang, Jun Liu, Junsong Yuan,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            Recognizing Actions from Robotic View for Natural
+                            Human-Robot Interaction.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                ICCV
+                            </span>
+
+                        </strong>,
+
+                        2025.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Recognizing_Actions_from_Robotic_View_for_Natural_Human-Robot_Interaction_ICCV_2025_paper.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/wangzy01/ACTIVE-Action-from-Robotic-View"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             2024
+             ================================================= -->
+
+        <h3 class="year-title">
+            2024
+        </h3>
+
+
+        <div class="publication-list">
+
+
+            <!-- =================================================
+                 APP - ACM MM 2024
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/zhangjinyan_app.png"
+                        alt="APP: Adaptive Pose Pooling for 3D Human Pose Estimation from Videos">
+
+                </div>
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Jinyan Zhang,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>,
+
+                            Hong Liu, Guoquan Wang, Wenhao Li.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            APP: Adaptive Pose Pooling for 3D Human Pose
+                            Estimation from Videos.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                ACM MM
+                            </span>
+
+                        </strong>,
+
+                        2024.
+
+                        <span class="publication-note">
+                            (通讯作者, 多模态顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://dl.acm.org/doi/10.1145/3664647.3680880"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/jinyanzhang/APP"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 ClickDiff - ACM MM 2024
+                 ================================================= -->
+
+            <div class="publication-item">
+
+                <div class="publication-image">
+
+                    <img
+                        src="./论文_files/lipeiming_click-diff.png"
+                        alt="ClickDiff: Click to Induce Semantic Contact Map for Controllable Grasp Generation with Diffusion Models">
+
+                </div>
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Peiming Li, Ziyi Wang,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>,
+
+                            Hong Liu, Chen Chen.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            ClickDiff: Click to Induce Semantic Contact Map
+                            for Controllable Grasp Generation with Diffusion Models.
+
+                        </span>
+
+                        <strong>
+
+                            <span class="publication-venue">
+                                ACM MM
+                            </span>
+
+                        </strong>,
+
+                        2024.
+
+                        <span class="publication-note">
+                            (通讯作者, 多模态顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a
+                            href="https://dl.acm.org/doi/10.1145/3664647.3680597"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a
+                            href="https://github.com/wangzy01/ClickDiff"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     Footer
+     ========================================================= -->
+
+<div class="footer">
+
+    <div class="container">
+
+        <div class="footer-sec">
+
+
+            <!-- 地址 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    地址
+                </h3>
+
+                <p>
+
+                    北京大学深圳研究生院<br>
+
+                    广东省深圳市西丽大学城北大校区 518055
+
+                </p>
+
+            </div>
+
+
+            <!-- 邮箱 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    邮箱
+                </h3>
+
+                <p>
+                    liumengyuan@pku.edu.cn
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JavaScript
+     ========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        var menu =
+            document.getElementById("fixTest");
+
+        var anchor =
+            document.getElementById("mainMenuBarAnchor");
+
+
+        if (!menu || !anchor) {
+            return;
+        }
+
+
+        var menuOffset =
+            menu.offsetTop;
+
+
+        function updateMenu() {
+
+            /*
+             * 手机端取消固定导航
+             */
+            if (window.innerWidth <= 767) {
+
+                menu.classList.remove("stick");
+
+                anchor.style.height = "0px";
+
+                return;
+            }
+
+
+            if (window.scrollY > menuOffset) {
+
+                anchor.style.height =
+                    menu.offsetHeight + "px";
+
+                menu.classList.add("stick");
+
+            } else {
+
+                anchor.style.height = "0px";
+
+                menu.classList.remove("stick");
+
+            }
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateMenu,
+            { passive: true }
+        );
+
+
+        window.addEventListener(
+            "resize",
+            function () {
+
+                menuOffset =
+                    menu.offsetTop;
+
+                updateMenu();
+
+            }
+        );
+
+
+        updateMenu();
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>照片 - 刘梦源课题组</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="刘梦源课题组照片">
+    <style>
+        * { box-sizing: border-box; }
+        html, body { margin: 0; min-height: 100%; }
+        body {
+            color: #000;
+            background: #fff;
+            font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        img { max-width: 100%; }
+        a { text-decoration: none; }
+        .container { width: 100%; max-width: 1170px; margin: 0 auto; padding: 0 15px; }
+        .header-top { background: #fff; }
+        .logo { padding: 16px 0; }
+        .logo h1 { margin: 0; display: flex; align-items: center; flex-wrap: wrap; }
+        .logo h1 a { display: flex; align-items: center; flex-wrap: wrap; }
+        .logo img { display: block; width: auto; max-height: 96px; margin-right: 10px; }
+        .header { width: 100%; background: #8B0000; position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 7px rgba(0,0,0,.1); }
+        .nav1 { width: 100%; margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: nowrap; }
+        .nav1 li { margin: 0; padding: 0; background: #8B0000; }
+        .nav1 li a { display: block; padding: 14px 24px; color: #fff; font-size: 16px; line-height: 1.5; white-space: nowrap; transition: background-color .2s ease; }
+        .nav1 li a:hover, .nav1 li.active a { color: #fff; background: rgba(255,255,255,.16); }
+        .page { padding: 42px 15px 70px; }
+        .page-heading { text-align: center; margin-bottom: 34px; }
+        .page-heading h2 { margin: 0 0 8px; color: #8B0000; font-size: 32px; font-weight: 600; }
+        .page-heading p { margin: 0; color: #666; font-size: 16px; }
+        .timeline { max-width: 1150px; margin: 0 auto; }
+        .event { margin-bottom: 34px; padding: 24px; border: 1px solid #eadada; border-radius: 8px; background: #fff; box-shadow: 0 3px 12px rgba(139,0,0,.07); }
+        .event-header { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid #eee; }
+        .event h3 { margin: 0; color: #8B0000; font-size: 22px; font-weight: 600; }
+        .event-date { color: #777; font-size: 15px; white-space: nowrap; }
+        .photos-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+        .photo-card { margin: 0; overflow: hidden; border-radius: 6px; background: #f7f7f7; }
+        .photo-card img { display: block; width: 100%; height: 230px; object-fit: cover; cursor: zoom-in; }
+        .photo-card figcaption { padding: 8px 10px; color: #555; text-align: center; font-size: 14px; }
+        .event.is-hidden { display: none; }
+        .more-button { display: block; margin: 19px auto 0; padding: 8px 24px; border: 1px solid #8B0000; border-radius: 4px; color: #8B0000; background: #fff; font: inherit; cursor: pointer; }
+        .more-button:hover { color: #fff; background: #8B0000; }
+        #load-more { margin: 8px auto 0; }
+        .footer { padding: 28px 0; color: #fff; background: #8B0000; }
+        .footer-sec { display: flex; gap: 80px; }
+        .footer-column h3 { margin: 0 0 8px; color: #fff; font-size: 16px; }
+        .footer-column p { margin: 0; }
+        .lightbox { display: none; position: fixed; inset: 0; z-index: 1000; align-items: center; justify-content: center; padding: 30px; background: rgba(0,0,0,.86); cursor: zoom-out; }
+        .lightbox.open { display: flex; }
+        .lightbox img { max-width: 94vw; max-height: 88vh; object-fit: contain; }
+        @media (max-width: 767px) {
+            .nav1 { overflow-x: auto; }
+            .nav1 li a { padding: 12px 15px; font-size: 15px; }
+            .page { padding-top: 30px; }
+            .event { padding: 16px; }
+            .event-header { display: block; }
+            .event-date { display: block; margin-top: 4px; }
+            .photos-grid { grid-template-columns: 1fr; }
+            .photo-card img { height: auto; max-height: 360px; }
+            .footer-sec { display: block; }
+            .footer-column + .footer-column { margin-top: 18px; }
+        }
+    </style>
+    <link rel="stylesheet" href="./site-common.css?v=2">
+</head>
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">
+                        <img src="./刘梦源-个人主页_files/logo.png" alt="刘梦源">
+                        <img src="./刘梦源-个人主页_files/slogan.png" alt="课题组">
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <ul class="nav1">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="about.html">简介</a></li>
+                <li><a href="members.html">成员</a></li>
+                <li><a href="pub.html">论文</a></li>
+                <li class="active"><a href="photo.html">照片</a></li>
+                <li><a href="join.html">招生信息</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="page">
+        <div class="timeline" id="photo-timeline"></div>
+        <button class="more-button" id="load-more" type="button">更多</button>
+    </main>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-sec">
+                <div class="footer-column"><h3>地址</h3><p>北京大学深圳研究生院<br>广东省深圳市西丽大学城北大校区 518055</p></div>
+                <div class="footer-column"><h3>邮箱</h3><p>liumengyuan@pku.edu.cn</p></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./照片_files/photo-data.js"></script>
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="查看大图"><img id="lightbox-image" src="" alt=""></div>
+    <script>        var events = window.photoEvents || [];
+        var timeline = document.getElementById('photo-timeline');
+        var loadMoreButton = document.getElementById('load-more');
+        var visibleCount = 4;
+
+        function renderEvents() {
+            timeline.innerHTML = events.slice(0, visibleCount).map(function (event) {
+                var images = event.images.map(function (image) {
+                    return '<figure class="photo-card"><img src="' + image.src + '" alt="' + image.alt + '"></figure>';
+                }).join('');
+                return '<section class="event"><div class="event-header"><h3>' + event.title + '</h3><span class="event-date">' + event.date + '</span></div><div class="photos-grid">' + images + '</div></section>';
+            }).join('');
+            if (visibleCount >= events.length) loadMoreButton.remove();
+        }
+
+        renderEvents();
+        loadMoreButton.addEventListener('click', function () {
+            visibleCount += 4;
+            renderEvents();
+        });
+
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImage = document.getElementById('lightbox-image');
+        timeline.addEventListener('click', function (event) {
+            if (event.target.tagName === 'IMG') {
+                lightboxImage.src = event.target.src;
+                lightboxImage.alt = event.target.alt;
+                lightbox.classList.add('open');
+            }
+        });
+        lightbox.addEventListener('click', function (event) { if (event.target === lightbox) lightbox.classList.remove('open'); });
+        document.addEventListener('keydown', function (event) { if (event.key === 'Escape') lightbox.classList.remove('open'); });    </script>
+</body>
+</html>

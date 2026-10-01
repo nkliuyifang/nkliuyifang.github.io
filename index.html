@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>刘梦源-个人主页</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="keywords"
+          content="Institute of Intelligent Sensing and Computing">
+
+    <meta name="description"
+          content="刘梦源课题组 - 北京大学深圳研究生院">
+
+
+    <!-- Bootstrap -->
+    <link href="./刘梦源-个人主页_files/bootstrap.css"
+          rel="stylesheet"
+          type="text/css">
+
+    <!-- Lightbox -->
+    <link rel="stylesheet"
+          href="./刘梦源-个人主页_files/lightbox.css">
+
+    <!-- 原有样式 -->
+    <link href="./刘梦源-个人主页_files/style.css"
+          rel="stylesheet"
+          type="text/css">
+
+
+    <style>
+
+        /* =====================================================
+           全局
+           ===================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100%;
+
+            margin: 0;
+            padding: 0;
+
+            overflow-x: hidden;
+
+            background: #ffffff;
+
+            color: #000000;
+
+            font-family:
+                "Microsoft YaHei",
+                "PingFang SC",
+                "Hiragino Sans GB",
+                Arial,
+                sans-serif;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+
+
+        /* =====================================================
+           页面容器
+           ===================================================== */
+
+        .container {
+
+            width: 100%;
+
+            max-width: 1170px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+        /* =====================================================
+           顶部 Logo
+           ===================================================== */
+
+        .header-top {
+
+            width: 100%;
+
+            background: #ffffff;
+        }
+
+        .header-top .logo {
+
+            padding: 16px 0;
+        }
+
+        .header-top .logo h1 {
+
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        .header-top .logo h1 a {
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        .header-top .logo img {
+
+            display: block;
+
+            width: auto;
+
+            height: auto;
+
+            max-height: 96px;
+
+            margin-right: 10px;
+        }
+
+
+        /* =====================================================
+           导航栏
+           ===================================================== */
+
+/* =====================================================
+   导航栏
+   ===================================================== */
+
+.header {
+    width: 100%;
+    background: #8B0000 !important;
+    position: relative;
+    z-index: 1000;
+
+    box-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.10);
+}
+
+.top-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.nav1 li {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: #8B0000 !important;
+}
+
+.nav1 li:hover {
+    background: #8B0000 !important;
+}
+
+.nav1 li a {
+    display: block;
+
+    padding: 14px 24px;
+
+    color: #ffffff !important;
+    background: #8B0000 !important;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    white-space: nowrap;
+
+    text-decoration: none !important;
+
+    transition:
+        background-color 0.2s ease;
+}
+
+/* 当前页面 */
+.nav1 li.active a {
+    color: #ffffff !important;
+    background: #8B0000 !important;
+}
+
+/* 鼠标悬停：透明白色 */
+.nav1 li a:hover,
+.nav1 li:hover a {
+    color: #ffffff !important;
+
+    background:
+        rgba(255, 255, 255, 0.16) !important;
+}
+
+/* 鼠标按下 */
+.nav1 li a:active {
+    color: #ffffff !important;
+
+    background:
+        rgba(255, 255, 255, 0.20) !important;
+}
+
+/* 完全取消伪元素 */
+.nav1 li a::before,
+.nav1 li a::after {
+    display: none !important;
+    content: none !important;
+}
+
+
+        /* =====================================================
+           内容区域
+           ===================================================== */
+
+        .content-grids {
+
+            width: 100% !important;
+
+            max-width: 1170px !important;
+
+            margin-left: auto !important;
+
+            margin-right: auto !important;
+
+            padding-left: 15px !important;
+
+            padding-right: 15px !important;
+
+            transform: none !important;
+        }
+
+
+        /* =====================================================
+           招生信息
+           ===================================================== */
+
+        .recruitment-notice {
+
+            width: 100%;
+
+            margin: 20px 0 12px;
+
+            padding: 5px 10px;
+
+            text-align: center;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+        }
+
+        .recruitment-notice .main-text {
+
+            color: #0000cc;
+        }
+
+        .recruitment-notice .highlight {
+
+            color: #f5070b;
+        }
+
+
+        /* =====================================================
+           主内容布局
+           ===================================================== */
+
+        .main-content-columns {
+
+            width: 100% !important;
+
+            display: flex !important;
+
+            flex-direction: row;
+
+            align-items: flex-start;
+
+            gap: 30px;
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+        }
+
+        .main-news-column {
+
+            flex: 2 1 0;
+
+            width: auto !important;
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+
+            float: none !important;
+
+            display: block !important;
+        }
+
+        .main-side-column {
+
+            flex: 1 1 0;
+
+            width: auto !important;
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+
+            float: none !important;
+
+            display: block !important;
+        }
+
+
+        /* =====================================================
+           内容标题
+           ===================================================== */
+
+        .cntnt-head {
+
+            width: 100%;
+        }
+
+        .cntnt-head h3 {
+
+            position: relative;
+
+            margin-top: 26px;
+
+            margin-bottom: 16px;
+
+            padding-left: 14px;
+
+            color: #333333;
+
+            font-size: 23px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+        /*
+         * 北大红竖线
+         */
+        .cntnt-head h3::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 50%;
+
+            width: 4px;
+
+            height: 22px;
+
+            background: #8B0000;
+
+            transform:
+                translateY(-50%);
+        }
+
+        /*
+         * 完全去掉标题下面的横线
+         */
+        .cntnt-head > span {
+
+            display: none;
+        }
+
+
+        /* =====================================================
+           新闻资讯
+           ===================================================== */
+
+        .news-list {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        .news-item {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 5px 0;
+
+            border: none !important;
+
+            border-bottom: none !important;
+
+            background: transparent;
+
+            color: #000000;
+
+            font-size: 15px;
+
+            font-weight: 400;
+
+            line-height: 1.8;
+
+            display: block;
+
+            transition: none;
+        }
+
+        /*
+         * 新闻悬停完全不改变
+         */
+        .news-item:hover {
+
+            color: #000000;
+
+            padding-left: 0;
+        }
+
+        /*
+         * 日期
+         */
+        .news-item .news-date {
+
+            display: inline;
+
+            color: #000000;
+
+            margin-right: 4px;
+
+            white-space: nowrap;
+        }
+
+        /*
+         * 新闻内容
+         */
+        .news-item .news-text {
+
+            display: inline;
+
+            color: #000000;
+
+            font-weight: 400;
+        }
+
+        /*
+         * 强制取消之前的特殊颜色
+         */
+        .news-item .news-text.highlight-news {
+
+            color: #000000;
+
+            font-weight: 400;
+        }
+
+
+        /* =====================================================
+           最新成果
+           ===================================================== */
+
+        .publication-list {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        .publication-item {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 5px 0;
+
+            border: none !important;
+
+            border-bottom: none !important;
+
+            background: transparent;
+
+            color: #000000;
+
+            font-family:
+                "Times New Roman",
+                "Microsoft YaHei",
+                Arial,
+                sans-serif;
+
+            font-size: 15px;
+
+            font-weight: 400;
+
+            line-height: 1.8;
+
+            display: block;
+
+            transition: none;
+        }
+
+        /*
+         * 最新成果不设置任何悬停效果
+         */
+        .publication-item:hover {
+
+            color: #000000;
+
+            padding-left: 0;
+        }
+
+        /*
+         * 日期
+         */
+        .publication-item .pub-date {
+
+            display: inline;
+
+            color: #000000;
+
+            margin-right: 4px;
+
+            white-space: nowrap;
+        }
+
+
+        /* =====================================================
+           Footer
+           ===================================================== */
+
+.footer {
+    width: 100%;
+    margin-top: 0px;
+    background: #8B0000;
+    color: #ffffff;
+}
+
+.footer-sec {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0px 0;
+}
+
+.footer-column {
+    flex: 1 1 20%;
+    padding: 5px 20px;
+}
+
+.footer-column h3 {
+    margin: 0 0 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-column p {
+    margin: 0;
+    color: #ffffff;
+    font-family:
+        "Times New Roman",
+        "Microsoft YaHei",
+        Arial,
+        sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+        /* =====================================================
+           平板
+           ===================================================== */
+
+        @media screen and (max-width: 991px) {
+
+            .container {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+            .header-top .logo img {
+
+                max-height: 80px;
+            }
+
+            .nav1 li a {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+            #myCarousel .item img {
+
+                width: 90%;
+            }
+
+            .main-content-columns {
+
+                gap: 20px;
+            }
+        }
+
+
+        /* =====================================================
+           手机端
+           ===================================================== */
+
+        @media screen and (max-width: 767px) {
+
+            body {
+
+                font-size: 14px;
+            }
+
+
+            /* ---------- 容器 ---------- */
+
+            .container {
+
+                width: 100%;
+
+                padding-left: 10px;
+
+                padding-right: 10px;
+            }
+
+
+            /* ---------- Logo ---------- */
+
+            .header-top .logo {
+
+                padding: 10px 0;
+            }
+
+            .header-top .logo h1 {
+
+                justify-content: center;
+            }
+
+            .header-top .logo h1 a {
+
+                justify-content: center;
+            }
+
+            .header-top .logo img {
+
+                max-width: 95%;
+
+                max-height: 58px;
+
+                margin: 3px 4px;
+            }
+
+
+            /* ---------- 手机导航 ---------- */
+
+            .nav1 {
+
+                width: 100%;
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                align-items: stretch;
+            }
+
+            .nav1 li {
+
+                flex: 0 0 20%;
+
+                width: 20%;
+
+                text-align: center;
+            }
+
+            .nav1 li a {
+
+                width: 100%;
+
+                padding: 10px 2px;
+
+                font-size: 14px;
+
+                line-height: 1.5;
+
+                white-space: nowrap;
+
+                background: #8B0000;
+            }
+
+            /*
+             * 手机端悬停
+             * 透明白色效果
+             */
+            .nav1 li a:hover {
+
+                color: #ffffff;
+
+                background:
+                    rgba(255, 255, 255, 0.16);
+            }
+
+
+            /* ---------- Banner ---------- */
+
+            #myCarousel {
+
+                margin-top: 8px;
+            }
+
+            #myCarousel .item img {
+
+                width: 100%;
+
+                max-width: 100%;
+            }
+
+
+            /* ---------- 主体 ---------- */
+
+            .content-grids {
+
+                width: 100% !important;
+
+                padding-left: 10px !important;
+
+                padding-right: 10px !important;
+
+                margin: 0 auto !important;
+
+                transform: none !important;
+            }
+
+
+            /* ---------- 招生 ---------- */
+
+            .recruitment-notice {
+
+                margin-top: 12px;
+
+                margin-bottom: 8px;
+
+                padding: 5px;
+
+                font-size: 15px;
+
+                line-height: 1.8;
+            }
+
+
+            /* ---------- 两栏变单栏 ---------- */
+
+            .main-content-columns {
+
+                width: 100% !important;
+
+                display: block !important;
+
+                margin: 0 !important;
+
+                padding: 0 !important;
+            }
+
+            .main-news-column,
+            .main-side-column {
+
+                width: 100% !important;
+
+                max-width: 100% !important;
+
+                display: block !important;
+
+                float: none !important;
+
+                margin: 0 !important;
+
+                padding: 0 !important;
+            }
+
+
+            /* ---------- 标题 ---------- */
+
+            .cntnt-head h3 {
+
+                margin-top: 22px;
+
+                margin-bottom: 12px;
+
+                padding-left: 12px;
+
+                font-size: 21px;
+
+                line-height: 1.5;
+            }
+
+            .cntnt-head h3::before {
+
+                width: 3px;
+
+                height: 20px;
+
+                background: #8B0000;
+            }
+
+
+            /* =================================================
+               手机新闻
+               ================================================= */
+
+            .news-item {
+
+                padding: 5px 0;
+
+                font-size: 14px;
+
+                line-height: 1.85;
+
+                display: block;
+
+                border: none !important;
+
+                border-bottom: none !important;
+
+                color: #000000;
+
+                word-break: normal;
+
+                overflow-wrap: break-word;
+
+                transition: none;
+            }
+
+            .news-item:hover {
+
+                color: #000000;
+
+                padding-left: 0;
+            }
+
+            .news-item .news-date {
+
+                display: inline;
+
+                color: #000000;
+
+                white-space: nowrap;
+
+                margin-right: 3px;
+            }
+
+            .news-item .news-text {
+
+                display: inline;
+
+                color: #000000;
+            }
+
+
+            /* =================================================
+               手机最新成果
+               ================================================= */
+
+            .publication-item {
+
+                padding: 5px 0;
+
+                font-size: 14px;
+
+                line-height: 1.85;
+
+                display: block;
+
+                border: none !important;
+
+                border-bottom: none !important;
+
+                color: #000000;
+
+                word-break: normal;
+
+                overflow-wrap: break-word;
+
+                transition: none;
+            }
+
+            .publication-item:hover {
+
+                color: #000000;
+
+                padding-left: 0;
+            }
+
+            .publication-item .pub-date {
+
+                display: inline;
+
+                color: #000000;
+
+                white-space: nowrap;
+
+                margin-right: 3px;
+            }
+
+
+            /* ---------- Footer ---------- */
+
+            .footer {
+
+                margin-top: 30px;
+            }
+
+            .footer-sec {
+
+                display: block;
+
+                padding: 15px 0;
+            }
+
+            .footer-column {
+
+                width: 100%;
+
+                padding: 10px 5px;
+
+                text-align: center;
+            }
+
+            .footer-column h3 {
+
+                font-size: 18px;
+            }
+
+            .footer-column p {
+
+                font-size: 14px;
+
+                word-break: break-word;
+            }
+        }
+
+
+        /* =====================================================
+           小屏手机
+           ===================================================== */
+
+        @media screen and (max-width: 480px) {
+
+            .header-top .logo img {
+
+                max-height: 45px;
+            }
+
+            .nav1 li a {
+
+                padding: 9px 1px;
+
+                font-size: 13px;
+            }
+
+            .recruitment-notice {
+
+                font-size: 14px;
+
+                line-height: 1.8;
+            }
+
+            .cntnt-head h3 {
+
+                font-size: 20px;
+
+                margin-top: 20px;
+
+                margin-bottom: 11px;
+            }
+
+            .news-item,
+            .publication-item {
+
+                font-size: 13.5px;
+
+                line-height: 1.85;
+
+                padding-top: 4px;
+
+                padding-bottom: 4px;
+            }
+        }
+
+
+        /* =====================================================
+           防止横向滚动
+           ===================================================== */
+
+        p,
+        div,
+        span,
+        a,
+        li {
+
+            overflow-wrap: break-word;
+
+            word-wrap: break-word;
+        }
+
+
+        /* =====================================================
+           清除 Bootstrap 浮动
+           ===================================================== */
+
+        .clearfix::after {
+
+            display: table;
+
+            content: "";
+
+            clear: both;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="./site-common.css?v=2">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     顶部 Logo
+     ========================================================= -->
+
+<div class="header-top">
+
+    <div class="container">
+
+        <div class="logo">
+
+            <h1>
+
+                <a href="index.html">
+
+                    <img
+                        src="./刘梦源-个人主页_files/logo.png"
+                        alt="刘梦源">
+
+                    <img
+                        src="./刘梦源-个人主页_files/slogan.png"
+                        alt="课题组">
+
+                </a>
+
+            </h1>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     Sticky Anchor
+     ========================================================= -->
+
+<div id="mainMenuBarAnchor"></div>
+
+
+<!-- =========================================================
+     导航栏
+     ========================================================= -->
+
+<div class="header" id="fixTest">
+
+    <div class="container">
+
+        <div class="top-menu">
+
+            <ul class="nav1">
+
+                <li class="active">
+
+                    <a href="index.html">
+                        主页
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html">
+                        简介
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="members.html">
+                        成员
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="pub.html">
+                        论文
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="photo.html">
+                        照片
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="join.html">
+                        招生信息
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     主体
+     ========================================================= -->
+
+<div class="content">
+
+    <div class="container">
+
+
+        <!-- =================================================
+             Banner
+             ================================================= -->
+
+        <div id="myCarousel"
+             class="carousel slide">
+
+            <div class="carousel-inner">
+
+                <div class="item active">
+
+                    <img
+                        src="./刘梦源-个人主页_files/whu.jpg"
+                        alt="刘梦源课题组">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="clearfix"></div>
+
+
+        <!-- =================================================
+             内容区域
+             ================================================= -->
+
+        <div class="content-grids">
+
+
+            <!-- =================================================
+                 招生提示
+                 ================================================= -->
+
+            <div class="recruitment-notice">
+
+                <strong>
+
+                <span class="main-text">课题组招生：<span class="highlight">2027年9月入学，申请-考核制博士1名</span>（接收简历截止：2026年10月30日，招满为止）</span><br>
+                <span class="main-text">课题组招生：远程本科实习生4~8名（接收简历截止：2026年11月30日，招满为止）</span><br>
+                <span class="main-text">课题组招生：北京大学博士后/博雅博士后1名，2027年入站（接收简历截止：2026年1月30日，招满为止）</span>
+
+                </strong>
+
+            </div>
+
+
+            <!-- =================================================
+                 主内容
+                 ================================================= -->
+
+            <div class="main-content-columns">
+
+
+                <!-- =================================================
+                     新闻资讯
+                     ================================================= -->
+
+                <div class="main-news-column">
+
+                    <div class="cntnt-head">
+
+                        <h3>
+                            新闻资讯
+                        </h3>
+
+
+                        <div class="news-list">
+
+
+                            <div class="news-item">
+                                    2026-10，祝贺张雨田、林佳盈两位同学获得北京大学优秀科研单项奖！
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-09，祝贺王梓懿获得北京大学三好学生标兵称号，林杨婷获得北京大学三好学生称号！
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-09，教师节团建活动圆满落幕，也感谢同学们的鲜花和礼物！
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-09，欢迎张兼瑜、李金橙、李嘉乐、张明杰、廖智成、陈忠岩六位新同学！
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-07，祝贺刘梦源研究员晋升为IEEE Senior Member！
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-06，祝贺刘佳洁、张锦岩、刘静婷、王帝通过硕士学位答辩！祝贺刘佳洁获评北京大学优秀毕业生！
+                            </div>
+
+
+                            <div class="news-item">
+                                    2025-11，祝贺刘梦源研究员入选IEEE Transactions on Image Processing编委！
+                            </div>
+
+
+                            <div class="news-item">
+                                    2025-10，祝贺刘梦源研究员入选Pattern Recognition编委！
+                            </div>
+
+
+                            <div class="news-item">
+                                    2025-06，HPG顺利举办AI Coding学术沙龙！
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- =================================================
+                             最新成果
+                             ================================================= -->
+
+                        <h3>
+                            最新成果
+                        </h3>
+
+
+                        <div class="publication-list">
+
+
+                            <div class="news-item">
+                                    2026-09, 1 paper has been accepted by PR. Congratulations to Jiaying Lin!
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-07, 1 paper has been accepted by TIP. Congratulations to Yangting Lin!
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-07, 2 papers have been accepted by ECCV. Congratulations to Jiaying Lin and Ziyi Wang!
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-05, 1 paper has been accepted by ICML. Congratulations to Ziyi Wang!
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-03, 1 paper has been accepted by PR. Congratulations to Jingting Liu!
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-02, 1 paper has been accepted by CVPR. Congratulations to Xinshun Wang!
+                            </div>
+
+
+                            <div class="news-item">
+                                    2026-01, 1 paper has been accepted by ICRA. Congratulations to Yutian Zhang!
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     右侧区域
+                     ================================================= -->
+
+                <div class="main-side-column">
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     Footer
+     ========================================================= -->
+
+<div class="footer">
+
+    <div class="container">
+
+        <div class="footer-sec">
+
+            <!-- 地址 -->
+            <div class="footer-column">
+                <h3>地址</h3>
+                <p>
+                    北京大学深圳研究生院<br>
+                    广东省深圳市西丽大学城北大校区 518055
+                </p>
+            </div>
+
+            <!-- 邮箱 -->
+            <div class="footer-column">
+                <h3>邮箱</h3>
+                <p>
+                    liumengyuan@pku.edu.cn
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JavaScript
+     ========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        var menu =
+            document.getElementById("fixTest");
+
+        var anchor =
+            document.getElementById("mainMenuBarAnchor");
+
+
+        if (!menu || !anchor) {
+            return;
+        }
+
+
+        var menuOffset =
+            menu.offsetTop;
+
+
+        function updateMenu() {
+
+            /*
+             * 手机端取消固定导航
+             */
+            if (window.innerWidth <= 767) {
+
+                menu.classList.remove("stick");
+
+                anchor.style.height = "0px";
+
+                return;
+            }
+
+
+            if (window.scrollY > menuOffset) {
+
+                anchor.style.height =
+                    menu.offsetHeight + "px";
+
+                menu.classList.add("stick");
+
+            } else {
+
+                anchor.style.height = "0px";
+
+                menu.classList.remove("stick");
+
+            }
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateMenu,
+            { passive: true }
+        );
+
+
+        window.addEventListener(
+            "resize",
+            function () {
+
+                menuOffset =
+                    menu.offsetTop;
+
+                updateMenu();
+
+            }
+        );
+
+
+        updateMenu();
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

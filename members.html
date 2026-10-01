@@ -1,0 +1,2476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>成员 - 刘梦源课题组</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="keywords"
+          content="刘梦源, 刘梦源课题组, HPG, Peking University, Computer Vision, Robotics">
+
+    <meta name="description"
+          content="刘梦源课题组成员">
+
+
+    <!-- Bootstrap -->
+    <link href="./刘梦源-个人主页_files/bootstrap.css"
+          rel="stylesheet"
+          type="text/css">
+
+    <!-- 原有样式 -->
+    <link href="./刘梦源-个人主页_files/style.css"
+          rel="stylesheet"
+          type="text/css">
+
+
+    <style>
+
+        /* =====================================================
+           全局
+           ===================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100%;
+
+            margin: 0;
+            padding: 0;
+
+            overflow-x: hidden;
+
+            background: #ffffff;
+
+            color: #000000;
+
+            font-family:
+                "Microsoft YaHei",
+                "PingFang SC",
+                "Hiragino Sans GB",
+                Arial,
+                sans-serif;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+
+        /* =====================================================
+           页面容器
+           与首页完全一致
+           ===================================================== */
+
+        .container {
+
+            width: 100%;
+
+            max-width: 1170px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+        /* =====================================================
+           顶部 Logo
+           与首页完全一致
+           ===================================================== */
+
+        .header-top {
+
+            width: 100%;
+
+            background: #ffffff;
+        }
+
+        .header-top .logo {
+
+            padding: 16px 0;
+        }
+
+        .header-top .logo h1 {
+
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        .header-top .logo h1 a {
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        .header-top .logo img {
+
+            display: block;
+
+            width: auto;
+            height: auto;
+
+            max-height: 96px;
+
+            margin-right: 10px;
+        }
+
+
+        /* =====================================================
+           导航栏
+           与首页完全一致
+           ===================================================== */
+
+        .header {
+
+            width: 100%;
+
+            background: #8B0000 !important;
+
+            position: relative;
+
+            z-index: 1000;
+
+            box-shadow:
+                0 2px 7px rgba(0, 0, 0, 0.10);
+        }
+
+        .top-menu {
+
+            width: 100%;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav1 {
+
+            width: 100%;
+
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            display: flex;
+
+            align-items: stretch;
+
+            justify-content: flex-start;
+
+            flex-wrap: nowrap;
+        }
+
+        .nav1 li {
+
+            margin: 0 !important;
+            padding: 0 !important;
+
+            background: #8B0000 !important;
+        }
+
+        .nav1 li:hover {
+
+            background: #8B0000 !important;
+        }
+
+        .nav1 li a {
+
+            display: block;
+
+            padding: 14px 24px;
+
+            color: #ffffff !important;
+
+            background: #8B0000 !important;
+
+            font-size: 16px;
+
+            font-weight: 400;
+
+            line-height: 1.5;
+
+            white-space: nowrap;
+
+            text-decoration: none !important;
+
+            transition:
+                background-color 0.2s ease;
+        }
+
+        /* 当前页面 */
+
+        .nav1 li.active a {
+
+            color: #ffffff !important;
+
+            background: #8B0000 !important;
+        }
+
+        /* 鼠标悬停 */
+
+        .nav1 li a:hover,
+        .nav1 li:hover a {
+
+            color: #ffffff !important;
+
+            background:
+                rgba(255, 255, 255, 0.16) !important;
+        }
+
+        /* 鼠标按下 */
+
+        .nav1 li a:active {
+
+            color: #ffffff !important;
+
+            background:
+                rgba(255, 255, 255, 0.20) !important;
+        }
+
+        /* 完全取消伪元素 */
+
+        .nav1 li a::before,
+        .nav1 li a::after {
+
+            display: none !important;
+
+            content: none !important;
+        }
+
+
+        /* =====================================================
+           吸顶导航
+           与首页 JavaScript 配套
+           ===================================================== */
+
+        .header.stick {
+
+            position: fixed !important;
+
+            top: 0;
+            left: 0;
+            right: 0;
+
+            width: 100%;
+
+            box-shadow:
+                0 2px 7px rgba(0, 0, 0, 0.10);
+        }
+
+
+        /* =====================================================
+           Sticky Anchor
+           ===================================================== */
+
+        #mainMenuBarAnchor {
+
+            width: 100%;
+
+            height: 0;
+        }
+
+
+        /* =====================================================
+           内容区域
+           与首页保持一致
+           ===================================================== */
+
+        .content {
+
+            width: 100%;
+
+            padding-bottom: 0;
+        }
+
+
+        /* =====================================================
+           成员内容容器
+           ===================================================== */
+
+        .content-grids {
+
+            width: 100% !important;
+
+            max-width: 1170px !important;
+
+            margin-left: auto !important;
+
+            margin-right: auto !important;
+
+            padding-left: 15px !important;
+
+            padding-right: 15px !important;
+
+            transform: none !important;
+        }
+
+
+        /* =====================================================
+           成员分区
+           ===================================================== */
+
+        .members-section {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+
+        /* =====================================================
+           内容标题
+           与首页完全一致
+           ===================================================== */
+
+        .cntnt-head {
+
+            width: 100%;
+        }
+
+        .cntnt-head h3 {
+
+            position: relative;
+
+            margin-top: 26px;
+
+            margin-bottom: 16px;
+
+            padding-left: 14px;
+
+            color: #333333;
+
+            font-size: 23px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+        /* 北大红竖线 */
+
+        .cntnt-head h3::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 50%;
+
+            width: 4px;
+
+            height: 22px;
+
+            background: #8B0000;
+
+            transform:
+                translateY(-50%);
+        }
+
+        /* 去掉标题横线 */
+
+        .cntnt-head > span {
+
+            display: none;
+        }
+
+
+        /* =====================================================
+           人员网格
+           ===================================================== */
+
+        .team-list {
+
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, minmax(0, 1fr));
+
+            gap: 24px;
+
+            margin-top: 10px;
+
+            margin-bottom: 8px;
+        }
+
+
+        /* =====================================================
+           人员卡片
+           ===================================================== */
+
+        .team-grid {
+
+            width: 100%;
+
+            background: #ffffff;
+
+            border: 1px solid #e8e8e8;
+
+            border-radius: 2px;
+
+            overflow: hidden;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .team-grid:hover {
+
+            border-color: #d8d8d8;
+
+            box-shadow:
+                0 4px 16px rgba(0, 0, 0, 0.08);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           人员头像
+           完整显示
+           不裁剪
+           ===================================================== */
+
+        .team-grid-image {
+
+            width: 100%;
+
+            height: 220px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+
+            background: #ffffff;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .team-grid-image img {
+
+            display: block;
+
+            width: 100%;
+            height: 100%;
+
+            max-width: 100%;
+            max-height: 100%;
+
+            object-fit: contain;
+
+            object-position: center center;
+
+            transform: none !important;
+
+            transition:
+                opacity 0.2s ease;
+        }
+
+        .team-grid:hover
+        .team-grid-image img {
+
+            transform: none !important;
+
+            opacity: 0.96;
+        }
+
+
+        /* =====================================================
+           人员信息
+           ===================================================== */
+
+        .team-grid-info {
+
+            width: 100%;
+
+            padding: 14px 15px 16px;
+
+            text-align: left;
+
+            background: #ffffff;
+        }
+
+        .team-grid-name {
+
+            margin: 0 0 6px;
+
+            color: #333333;
+
+            font-size: 17px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+        .team-grid-position {
+
+            margin: 0 0 7px;
+
+            color: #8B0000;
+
+            font-size: 14px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+        .team-grid-research {
+
+            margin: 0;
+
+            color: #666666;
+
+            font-size: 13px;
+
+            line-height: 1.65;
+        }
+
+        .team-grid-research span {
+
+            color: #555555;
+        }
+
+
+        /* =====================================================
+           毕业学生
+           使用与在读成员完全一致的卡片布局
+           ===================================================== */
+
+        .graduate-grid {
+
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, minmax(0, 1fr));
+
+            gap: 24px;
+
+            margin-top: 10px;
+
+            margin-bottom: 8px;
+        }
+
+        .graduate-card {
+
+            width: 100%;
+
+            background: #ffffff;
+
+            border: 1px solid #e8e8e8;
+
+            border-radius: 2px;
+
+            overflow: hidden;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .graduate-card:hover {
+
+            border-color: #d8d8d8;
+
+            box-shadow:
+                0 4px 16px rgba(0, 0, 0, 0.08);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           毕业生照片
+           ===================================================== */
+
+        .graduate-image {
+
+            width: 100%;
+
+            height: 220px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+
+            background: #ffffff;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .graduate-image img {
+
+            display: block;
+
+            width: 100%;
+            height: 100%;
+
+            max-width: 100%;
+            max-height: 100%;
+
+            object-fit: contain;
+
+            object-position: center center;
+
+            transform: none !important;
+
+            transition:
+                opacity 0.2s ease;
+        }
+
+        .graduate-card:hover
+        .graduate-image img {
+
+            transform: none !important;
+
+            opacity: 0.96;
+        }
+
+
+        /* =====================================================
+           毕业生信息
+           ===================================================== */
+
+        .graduate-info {
+
+            width: 100%;
+
+            padding: 14px 15px 16px;
+
+            background: #ffffff;
+        }
+
+        .graduate-name {
+
+            margin: 0 0 6px;
+
+            color: #333333;
+
+            font-size: 17px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+        .graduate-position {
+
+            margin: 0 0 6px;
+
+            color: #666666;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+        .graduate-destination {
+
+            margin: 0;
+
+            color: #8B0000;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           Footer
+           与首页完全一致
+           ===================================================== */
+
+        .footer {
+
+            width: 100%;
+
+            margin-top: 0;
+
+            background: #8B0000;
+
+            color: #ffffff;
+        }
+
+        .footer-sec {
+
+            width: 100%;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        .footer-column {
+
+            flex: 1 1 20%;
+
+            padding: 5px 20px;
+        }
+
+        .footer-column h3,
+        .footer-column h4 {
+
+            margin: 0 0 5px;
+
+            color: #ffffff;
+
+            font-size: 18px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+        .footer-column p {
+
+            margin: 0;
+
+            color: #ffffff;
+
+            font-family:
+                "Times New Roman",
+                "Microsoft YaHei",
+                Arial,
+                sans-serif;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =====================================================
+           平板
+           与首页断点一致
+           ===================================================== */
+
+        @media screen and (max-width: 991px) {
+
+            .container {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+            .header-top .logo img {
+
+                max-height: 80px;
+            }
+
+            .nav1 li a {
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+            }
+
+            .team-list,
+            .graduate-grid {
+
+                grid-template-columns:
+                    repeat(3, minmax(0, 1fr));
+
+                gap: 20px;
+            }
+
+            .team-grid-image,
+            .graduate-image {
+
+                height: 220px;
+            }
+        }
+
+
+        /* =====================================================
+           手机端
+           与首页断点一致
+           ===================================================== */
+
+        @media screen and (max-width: 767px) {
+
+            body {
+
+                font-size: 14px;
+            }
+
+
+            /* ---------- 容器 ---------- */
+
+            .container {
+
+                width: 100%;
+
+                padding-left: 10px;
+
+                padding-right: 10px;
+            }
+
+
+            /* ---------- Logo ---------- */
+
+            .header-top .logo {
+
+                padding: 10px 0;
+            }
+
+            .header-top .logo h1 {
+
+                justify-content: center;
+            }
+
+            .header-top .logo h1 a {
+
+                justify-content: center;
+            }
+
+            .header-top .logo img {
+
+                max-width: 95%;
+
+                max-height: 58px;
+
+                margin: 3px 4px;
+            }
+
+
+            /* ---------- 手机导航 ---------- */
+
+            .nav1 {
+
+                width: 100%;
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                align-items: stretch;
+            }
+
+            .nav1 li {
+
+                flex: 0 0 20%;
+
+                width: 20%;
+
+                text-align: center;
+            }
+
+            .nav1 li a {
+
+                width: 100%;
+
+                padding: 10px 2px;
+
+                font-size: 14px;
+
+                line-height: 1.5;
+
+                white-space: nowrap;
+
+                background: #8B0000;
+            }
+
+            .nav1 li a:hover {
+
+                color: #ffffff;
+
+                background:
+                    rgba(255, 255, 255, 0.16);
+            }
+
+
+            /* ---------- 主体 ---------- */
+
+            .content-grids {
+
+                width: 100% !important;
+
+                padding-left: 10px !important;
+
+                padding-right: 10px !important;
+
+                margin: 0 auto !important;
+
+                transform: none !important;
+            }
+
+
+            /* ---------- 标题 ---------- */
+
+            .cntnt-head h3 {
+
+                margin-top: 22px;
+
+                margin-bottom: 12px;
+
+                padding-left: 12px;
+
+                font-size: 21px;
+
+                line-height: 1.5;
+            }
+
+            .cntnt-head h3::before {
+
+                width: 3px;
+
+                height: 20px;
+
+                background: #8B0000;
+            }
+
+
+            /* =================================================
+               手机成员网格
+               ================================================= */
+
+            .team-list,
+            .graduate-grid {
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 14px;
+
+                margin-top: 10px;
+
+                margin-bottom: 8px;
+            }
+
+
+            /* ---------- 在读成员头像 ---------- */
+
+            .team-grid-image {
+
+                width: 100%;
+
+                height: auto;
+
+                aspect-ratio: 1 / 1.12;
+
+                display: flex;
+
+                align-items: center;
+
+                justify-content: center;
+
+                overflow: hidden;
+
+                background: #ffffff;
+            }
+
+            .team-grid-image img {
+
+                width: 100%;
+                height: 100%;
+
+                object-fit: contain;
+
+                object-position: center center;
+
+                transform: none !important;
+            }
+
+
+            /* ---------- 在读成员信息 ---------- */
+
+            .team-grid-info {
+
+                padding: 11px 10px 13px;
+
+                background: #ffffff;
+            }
+
+            .team-grid-name {
+
+                margin-bottom: 4px;
+
+                font-size: 16px;
+            }
+
+            .team-grid-position {
+
+                margin-bottom: 5px;
+
+                font-size: 13px;
+            }
+
+            .team-grid-research {
+
+                font-size: 12px;
+
+                line-height: 1.6;
+            }
+
+
+            /* ---------- 毕业生照片 ---------- */
+
+            .graduate-image {
+
+                width: 100%;
+
+                height: auto;
+
+                aspect-ratio: 1 / 1.12;
+
+                display: flex;
+
+                align-items: center;
+
+                justify-content: center;
+
+                overflow: hidden;
+
+                background: #ffffff;
+            }
+
+            .graduate-image img {
+
+                width: 100%;
+                height: 100%;
+
+                object-fit: contain;
+
+                object-position: center center;
+
+                transform: none !important;
+            }
+
+
+            /* ---------- 毕业生信息 ---------- */
+
+            .graduate-info {
+
+                padding: 11px 10px 13px;
+
+                background: #ffffff;
+            }
+
+            .graduate-name {
+
+                margin-bottom: 4px;
+
+                font-size: 16px;
+            }
+
+            .graduate-position {
+
+                margin-bottom: 5px;
+
+                font-size: 13px;
+            }
+
+            .graduate-destination {
+
+                font-size: 13px;
+            }
+
+
+            /* ---------- Footer ---------- */
+
+            .footer {
+
+                margin-top: 30px;
+            }
+
+            .footer-sec {
+
+                display: block;
+
+                padding: 15px 0;
+            }
+
+            .footer-column {
+
+                width: 100%;
+
+                padding: 10px 5px;
+
+                text-align: center;
+            }
+
+            .footer-column h3,
+            .footer-column h4 {
+
+                font-size: 18px;
+            }
+
+            .footer-column p {
+
+                font-size: 14px;
+
+                word-break: break-word;
+            }
+        }
+
+
+        /* =====================================================
+           小屏手机
+           与首页一致
+           ===================================================== */
+
+        @media screen and (max-width: 480px) {
+
+            .header-top .logo img {
+
+                max-height: 45px;
+            }
+
+            .nav1 li a {
+
+                padding: 9px 1px;
+
+                font-size: 13px;
+            }
+
+            .cntnt-head h3 {
+
+                font-size: 20px;
+
+                margin-top: 20px;
+
+                margin-bottom: 11px;
+            }
+
+            .team-list,
+            .graduate-grid {
+
+                gap: 10px;
+            }
+
+            .team-grid-image,
+            .graduate-image {
+
+                aspect-ratio: 1 / 1.08;
+
+                background: #ffffff;
+            }
+
+            .team-grid-info,
+            .graduate-info {
+
+                padding: 9px 8px 11px;
+            }
+
+            .team-grid-name,
+            .graduate-name {
+
+                font-size: 15px;
+            }
+
+            .team-grid-position {
+
+                font-size: 12px;
+            }
+
+            .team-grid-research {
+
+                font-size: 11px;
+            }
+
+            .graduate-position,
+            .graduate-destination {
+
+                font-size: 12px;
+            }
+        }
+
+
+        /* =====================================================
+           防止横向滚动
+           ===================================================== */
+
+        p,
+        div,
+        span,
+        a,
+        li {
+
+            overflow-wrap: break-word;
+
+            word-wrap: break-word;
+        }
+
+
+        /* =====================================================
+           清除 Bootstrap 浮动
+           ===================================================== */
+
+        .clearfix::after {
+
+            display: table;
+
+            content: "";
+
+            clear: both;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="./site-common.css?v=2">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     顶部 Logo
+     与首页完全一致
+     ========================================================= -->
+
+<div class="header-top">
+
+    <div class="container">
+
+        <div class="logo">
+
+            <h1>
+
+                <a href="index.html">
+
+                    <img
+                        src="./刘梦源-个人主页_files/logo.png"
+                        alt="刘梦源">
+
+                    <img
+                        src="./刘梦源-个人主页_files/slogan.png"
+                        alt="课题组">
+
+                </a>
+
+            </h1>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     Sticky Anchor
+     ========================================================= -->
+
+<div id="mainMenuBarAnchor"></div>
+
+
+<!-- =========================================================
+     导航栏
+     ========================================================= -->
+
+<div class="header" id="fixTest">
+
+    <div class="container">
+
+        <div class="top-menu">
+
+            <ul class="nav1">
+
+                <li>
+
+                    <a href="index.html">
+                        主页
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html">
+                        简介
+                    </a>
+
+                </li>
+
+                <!-- 当前页面：成员 -->
+
+                <li class="active">
+
+                    <a href="members.html">
+                        成员
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="pub.html">
+                        论文
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="photo.html">
+                        照片
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="join.html">
+                        招生信息
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     主体
+     ========================================================= -->
+
+<div class="content">
+
+    <div class="container">
+
+        <div class="content-grids">
+
+
+            <!-- =================================================
+                 合作导师
+                 ================================================= -->
+
+            <section class="members-section">
+
+                <div class="cntnt-head">
+
+                    <h3>
+                        合作导师
+                    </h3>
+
+                </div>
+
+
+                <div class="team-list">
+
+
+                    <!-- 刘梦源 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/liumengyuan.jpg"
+                                alt="刘梦源">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                刘梦源
+                            </h4>
+
+                            <p class="team-grid-position">
+                                课题组负责人
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 李宇轩 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/liyuxuan.jpg"
+                                alt="李宇轩">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                李宇轩
+                            </h4>
+
+                            <p class="team-grid-position">
+                                博士后
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>目标跟踪
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 博士（在读）
+                 ================================================= -->
+
+            <section class="members-section">
+
+                <div class="cntnt-head">
+
+                    <h3>
+                        博士（在读）
+                    </h3>
+
+                </div>
+
+
+                <div class="team-list">
+
+
+                    <!-- 王鑫舜 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/wangxinshun.jpg"
+                                alt="王鑫舜">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                王鑫舜
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>人机技能迁移
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>TIP、CVPR、AAAI
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>艺术、电影
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;hl=en&amp;user=NflmfmEAAAAJ" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>wangxinshun@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 盛举义 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/shengjuyi.jpg"
+                                alt="盛举义">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                盛举义
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>机器人操作
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>AAAI
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>摄影
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://LogSSim.github.io" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>logss2024@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 王梓懿 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/wangziyi.jpg"
+                                alt="王梓懿">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                王梓懿
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>具身可供性估计
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>TIP、ICML、ICCV、ECCV
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>阅读、羽毛球
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://wangzy01.github.io" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>ziyiwang@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 林杨婷 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/linyangting.jpg"
+                                alt="林杨婷">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                林杨婷
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>人机技能迁移
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>TIP
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>音乐
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://lytinghub.github.io/" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>yangtinglin0203@gmail.com
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 硕士（在读）
+                 ================================================= -->
+
+            <section class="members-section">
+
+                <div class="cntnt-head">
+
+                    <h3>
+                        硕士（在读）
+                    </h3>
+
+                </div>
+
+
+                <div class="team-list">
+
+
+                    <!-- 李培铭 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/lipeiming.jpg"
+                                alt="李培铭">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                李培铭
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>人体行为识别
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>ICCV、ACM MM、TIP
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>听音乐
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://lpm1001.github.io/" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>lipeiming1001@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 林佳盈 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/linjiaying.jpg"
+                                alt="林佳盈">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                林佳盈
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>人体行为识别
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>ECCV、PR
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>健身、唱歌
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://scholar.google.com/citations?user=kU4rtNQAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>jylin25@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 张雨田 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/zhangyutian.jpg"
+                                alt="张雨田">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                张雨田
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>动态语义地图
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>项目成果：</span>基于锚点刷新机制的动态语义地图（国家重点研发、ICRA2026）
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>匹克球、游泳
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://github.com/yutian929" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>yutianzhang25@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 龚家年 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/gongjianian.jpg"
+                                alt="龚家年">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                龚家年
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>人-物交互
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>乒乓球、跑步
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://jianiangong.github.io" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>jngong25@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 徐天铭 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/xutianming.jpg"
+                                alt="徐天铭">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                徐天铭
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>具身可供性估计
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>慢跑
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://forroxy.github.io" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>tmxu25@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 张兼瑜 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/zhangjianyu.jpg"
+                                alt="张兼瑜">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                张兼瑜
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>动态语义地图
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>ICRA（第二作者）
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>羽毛球
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://zjy109.github.io" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>zhangjianyu26@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 李金橙 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/lijincheng.jpg"
+                                alt="李金橙">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                李金橙
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>具身可供性估计
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>项目成果：</span>基于操作语义驱动的物品功能理解（国家重点研发）
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>健身、跑步
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://jinchengli2022.github.io" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>lijincheng26@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 张明杰 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/zhangmingjie.jpg"
+                                alt="张明杰">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                张明杰
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>零样本目标导航
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>羽毛球、唱歌
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://scholar.google.com/citations?user=Ef4qli8AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>zhangmingjie26@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 廖智成 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/liaozhicheng.jpg"
+                                alt="廖智成">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                廖智成
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>零样本目标导航
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>跑步、麻将
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=-KgDFfsAAAAJ" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>liaozhicheng26@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 李嘉乐 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/lijiale.jpg"
+                                alt="李嘉乐">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                李嘉乐
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>机器人操作
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>篮球、摄影、健身、游泳
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://scholar.google.com/citations?user=fED_ASAAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>julianpku@yeah.net
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 陈忠岩 -->
+
+                    <div class="team-grid">
+
+                        <div class="team-grid-image">
+
+                            <img
+                                src="./成员_files/chenzhongyan.jpg"
+                                alt="陈忠岩">
+
+                        </div>
+
+                        <div class="team-grid-info">
+
+                            <h4 class="team-grid-name">
+                                陈忠岩
+                            </h4>
+
+                            <p class="team-grid-research">
+                                <span>研究领域：</span>模型部署
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>科研成果：</span>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>长期爱好：</span>足球、旅游
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>个人主页：</span><a href="https://zhongyanchen02.github.io" target="_blank" rel="noopener noreferrer">个人主页</a>
+                            </p>
+
+                            <p class="team-grid-research">
+                                <span>联系方式：</span>chenzhongyan26@stu.pku.edu.cn
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 毕业学生
+                 ================================================= -->
+
+            <section class="members-section">
+
+                <div class="cntnt-head">
+
+                    <h3>
+                        毕业学生
+                    </h3>
+
+                </div>
+
+
+                <div class="graduate-grid">
+
+
+                    <!-- 刘佳洁 -->
+
+                    <div class="graduate-card">
+
+                        <div class="graduate-image">
+
+                            <img
+                                src="./成员_files/liujiajie.jpg"
+                                alt="刘佳洁">
+
+                        </div>
+
+                        <div class="graduate-info">
+
+                            <h4 class="graduate-name">
+                                刘佳洁
+                            </h4>
+
+                            <p class="graduate-position">
+                                硕士研究生
+                            </p>
+
+                            <p class="graduate-destination">
+                                去向：香港理工大学读博
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 张锦岩 -->
+
+                    <div class="graduate-card">
+
+                        <div class="graduate-image">
+
+                            <img
+                                src="./成员_files/zhangjinyan.jpg"
+                                alt="张锦岩">
+
+                        </div>
+
+                        <div class="graduate-info">
+
+                            <h4 class="graduate-name">
+                                张锦岩
+                            </h4>
+
+                            <p class="graduate-position">
+                                硕士研究生
+                            </p>
+
+                            <p class="graduate-destination">
+                                去向：阿里巴巴（北京）
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 刘静婷 -->
+
+                    <div class="graduate-card">
+
+                        <div class="graduate-image">
+
+                            <img
+                                src="./成员_files/liujingting.jpg"
+                                alt="刘静婷">
+
+                        </div>
+
+                        <div class="graduate-info">
+
+                            <h4 class="graduate-name">
+                                刘静婷
+                            </h4>
+
+                            <p class="graduate-position">
+                                硕士研究生
+                            </p>
+
+                            <p class="graduate-destination">
+                                去向：支付宝（杭州）
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 王帝 -->
+
+                    <div class="graduate-card">
+
+                        <div class="graduate-image">
+
+                            <img
+                                src="./成员_files/wangdi.jpg"
+                                alt="王帝">
+
+                        </div>
+
+                        <div class="graduate-info">
+
+                            <h4 class="graduate-name">
+                                王帝
+                            </h4>
+
+                            <p class="graduate-position">
+                                硕士研究生
+                            </p>
+
+                            <p class="graduate-destination">
+                                去向：中国农业发展银行
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     Footer
+     与首页完全一致
+     ========================================================= -->
+
+<div class="footer">
+
+    <div class="container">
+
+        <div class="footer-sec">
+
+
+            <!-- 地址 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    地址
+                </h3>
+
+                <p>
+                    北京大学深圳研究生院<br>
+                    广东省深圳市西丽大学城北大校区 518055
+                </p>
+
+            </div>
+
+
+            <!-- 邮箱 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    邮箱
+                </h3>
+
+                <p>
+                    liumengyuan@pku.edu.cn
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JavaScript
+     与首页完全一致
+     ========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        var menu =
+            document.getElementById("fixTest");
+
+        var anchor =
+            document.getElementById("mainMenuBarAnchor");
+
+
+        if (!menu || !anchor) {
+            return;
+        }
+
+
+        var menuOffset =
+            menu.offsetTop;
+
+
+        function updateMenu() {
+
+            /*
+             * 手机端取消固定导航
+             */
+
+            if (window.innerWidth <= 767) {
+
+                menu.classList.remove("stick");
+
+                anchor.style.height = "0px";
+
+                return;
+            }
+
+
+            /*
+             * 桌面端滚动后吸顶
+             */
+
+            if (window.scrollY > menuOffset) {
+
+                anchor.style.height =
+                    menu.offsetHeight + "px";
+
+                menu.classList.add("stick");
+
+            } else {
+
+                anchor.style.height = "0px";
+
+                menu.classList.remove("stick");
+
+            }
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateMenu,
+            { passive: true }
+        );
+
+
+        window.addEventListener(
+            "resize",
+            function () {
+
+                menuOffset =
+                    menu.offsetTop;
+
+                updateMenu();
+
+            }
+        );
+
+
+        updateMenu();
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
