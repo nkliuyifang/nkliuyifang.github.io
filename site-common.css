@@ -50,8 +50,7 @@ html {
 .header {
     width: 100%;
     background: #8B0000 !important;
-    position: sticky !important;
-    top: 0 !important;
+    position: relative;
     z-index: 1000;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
 }
@@ -149,6 +148,15 @@ html {
 }
 
 @media (max-width: 767px) {
+    /* ---------- 手机端：导航栏回归正常文档流，避免 sticky 与 overflow-x:hidden 冲突导致不显示 ---------- */
+    .header {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: 100% !important;
+    }
+
     /* ---------- 手机端导航：3 列 × 2 行 ---------- */
 
     .nav1 {
