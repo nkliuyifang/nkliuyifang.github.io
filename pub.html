@@ -7,25 +7,18 @@
 
     <title>论文 - 刘梦源课题组</title>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="keywords"
-          content="刘梦源, Publication, Peking University, Computer Vision, Robotics">
+    <meta name="keywords" content="刘梦源, Publication, Peking University, Computer Vision, Robotics">
 
-    <meta name="description"
-          content="刘梦源课题组 - 北京大学深圳研究生院 - 论文">
+    <meta name="description" content="刘梦源课题组 - 北京大学深圳研究生院 - 论文">
 
 
     <!-- Bootstrap -->
-    <link href="./刘梦源-个人主页_files/bootstrap.css"
-          rel="stylesheet"
-          type="text/css">
+    <link href="./%E5%88%98%E6%A2%A6%E6%BA%90-%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5_files/bootstrap.css" rel="stylesheet" type="text/css">
 
     <!-- 原有样式 -->
-    <link href="./刘梦源-个人主页_files/style.css"
-          rel="stylesheet"
-          type="text/css">
+    <link href="./%E5%88%98%E6%A2%A6%E6%BA%90-%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5_files/style.css" rel="stylesheet" type="text/css">
 
 
     <style>
@@ -1056,6 +1049,52 @@
             clear: both;
         }
 
+    
+
+        .publication-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 147px;
+            height: 100px;
+            max-width: 100%;
+            margin: 0 0 10px 0;
+            border: 1px solid #8B0000;
+            background: #faf6f6;
+            color: #8B0000;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+    
+
+        /* Publication figures retain the proportions of Figure 1 in each PDF. */
+        .publication-item .publication-image {
+            flex: 0 0 26%;
+            width: 26%;
+            padding-right: 14px;
+        }
+        .publication-item .publication-image a {
+            display: block;
+            width: 100%;
+        }
+        .publication-item .publication-image img.paper-figure {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            aspect-ratio: auto;
+            object-fit: contain;
+            border: 0;
+            margin: 0 0 10px;
+        }
+        @media screen and (max-width: 767px) {
+            .publication-item .publication-image {
+                flex-basis: 34%;
+                width: 34%;
+                padding-right: 9px;
+            }
+        }
     </style>
 
     <link rel="stylesheet" href="./site-common.css?v=3">
@@ -1079,13 +1118,9 @@
 
                 <a href="index.html">
 
-                    <img
-                        src="./刘梦源-个人主页_files/logo.png"
-                        alt="刘梦源">
+                    <img src="./%E5%88%98%E6%A2%A6%E6%BA%90-%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5_files/logo.png" alt="刘梦源">
 
-                    <img
-                        src="./刘梦源-个人主页_files/slogan.png"
-                        alt="课题组">
+                    <img src="./%E5%88%98%E6%A2%A6%E6%BA%90-%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5_files/slogan.png" alt="课题组">
 
                 </a>
 
@@ -1193,10 +1228,7 @@
                 更多论文请访问：
             </span>
 
-            <a
-                href="https://scholar.google.com/citations?user=woX_4AcAAAAJ&hl=zh-CN"
-                target="_blank"
-                rel="noopener noreferrer">
+            <a href="https://scholar.google.com/citations?user=woX_4AcAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">
 
                 Google Scholar
 
@@ -1215,23 +1247,194 @@
 
 
         <div class="publication-list">
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/PR2026_wanruozhang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/PR2026_wanruozhang-fig1.png" alt="Figure 1: DSVTformer: Dual-Stream Spatial-View-Temporal Transformer for Multi-View 3D Human Pose Estimation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Wanruo Zhang, <strong>Mengyuan Liu*</strong>, Wenhao Li, Hong Liu.</span> <span class="publication-title">DSVTformer: Dual-Stream Spatial-View-Temporal Transformer for Multi-View 3D Human Pose Estimation.</span> <strong><span class="publication-venue">PR</span></strong>, 2026. <span class="publication-note">(通讯作者, 模式识别期刊)</span></p><div class="publication-links"><a href="papers/PR2026_wanruozhang.pdf" target="_blank">[论文]</a></div></div></div>
 
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/PR2026_jiayinglin-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/PR2026_jiayinglin-fig1.png" alt="Figure 1: Pose2Point: Bridging human poses and point clouds for unified action recognition" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Jiaying Lin, Jiajun Wen, Weiwei Wan, <strong>Mengyuan Liu*</strong>.</span> <span class="publication-title">Pose2Point: Bridging human poses and point clouds for unified action recognition.</span> <strong><span class="publication-venue">PR</span></strong>, 2026. <span class="publication-note">(通讯作者, 模式识别期刊)</span></p><div class="publication-links"><a href="papers/PR2026_jiayinglin.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <!-- =================================================
-                 Superman - CVPR 2026
-                 ================================================= -->
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/IJCV2026_mengyuanliu-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/IJCV2026_mengyuanliu-fig1.png" alt="Figure 1: De-biasing Skeleton-based Action Recognition with Convex Hull Adaptive Shift" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Yuhang Wen, Yi Zhang, Songtao Wu, Hong Liu, Junsong Yuan, Beichen Ding.</span> <span class="publication-title">De-biasing Skeleton-based Action Recognition with Convex Hull Adaptive Shift.</span> <strong><span class="publication-venue">IJCV</span></strong>, 2026. <span class="publication-note">(共同第一作者, 计算机视觉顶刊)</span></p><div class="publication-links"><a href="papers/IJCV2026_mengyuanliu.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <div class="publication-item">
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TIP2026_mengyuanliu-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TIP2026_mengyuanliu-fig1.png" alt="Figure 1: Adaptive Interaction Network for Human Motion Prediction During Human-Robot Collaboration" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Yangting Lin, Qiongjie Cui.</span> <span class="publication-title">Adaptive Interaction Network for Human Motion Prediction During Human-Robot Collaboration.</span> <strong><span class="publication-venue">TIP</span></strong>, 2026. <span class="publication-note">(第一作者, 图像处理顶刊)</span></p><div class="publication-links"><a href="papers/TIP2026_mengyuanliu.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TIP2026_mengyuanliu_pepnet-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TIP2026_mengyuanliu_pepnet-fig1.png" alt="Figure 1: PePNet: Pose-Enhanced Point Cloud Network for LiDAR-based Human Action Recognition in Outdoor Long-Range Scenarios" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Zhichao Deng, Wanying Zhang, Ziyi Wang, Peiming Li, Jun Liu.</span> <span class="publication-title">PePNet: Pose-Enhanced Point Cloud Network for LiDAR-based Human Action Recognition in Outdoor Long-Range Scenarios.</span> <strong><span class="publication-venue">TIP</span></strong>, 2026. <span class="publication-note">(第一作者, 图像处理顶刊)</span></p><div class="publication-links"><a href="papers/TIP2026_mengyuanliu_pepnet.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item">
 
                 <!-- 左侧照片 -->
 
-                <div class="publication-image">
+                <div class="publication-image"><a href="paper-figures/ECCV2026_jiayinglin-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ECCV2026_jiayinglin-fig1.png" alt="Figure 1: DAP: Doppler-aware Point Network for Heterogeneous
+                            mmWave Action Recognition" loading="lazy"></a></div>
 
-                    <img
-                        src="./论文_files/Superman_CVPR2026.jpg"
-                        alt="Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation">
+
+                <!-- 右侧文字 -->
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Jiaying Lin, Shiman Wu, Jinfu Liu,
+                            Can Wang,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            DAP: Doppler-aware Point Network for Heterogeneous
+                            mmWave Action Recognition.
+
+                        </span>
+
+                        <strong><span class="publication-venue">ECCV</span></strong>, 2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a href="papers/ECCV2026_jiayinglin.pdf" target="_blank" rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a href="https://github.com/jolin830/DAP-Net" target="_blank" rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
 
                 </div>
+
+            </div>
+
+<div class="publication-item">
+
+                <!-- 左侧照片 -->
+
+                <div class="publication-image"><a href="paper-figures/ECCV2026_ziyiwang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ECCV2026_ziyiwang-fig1.png" alt="Figure 1: UniMotion: A Unified Framework for Motion-Text-Vision
+                            Understanding and Generation" loading="lazy"></a></div>
+
+
+                <!-- 右侧文字 -->
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Ziyi Wang, Xinshun Wang, Chen Shuang,
+                            Cong Yang,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            UniMotion: A Unified Framework for Motion-Text-Vision
+                            Understanding and Generation.
+
+                        </span>
+
+                        <strong><span class="publication-venue">ECCV</span></strong>, 2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a href="papers/ECCV2026_ziyiwang.pdf" target="_blank" rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a href="https://wangzy01.github.io/UniMotion/" target="_blank" rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TIP2026_mengyuanliu_lps-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TIP2026_mengyuanliu_lps-fig1.png" alt="Figure 1: Lens Privacy Sealing: A New Benchmark and Method for Physical Privacy-Preserving Action Recognition" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Ziyi Wang, Peiming Li, Junsong Yuan.</span> <span class="publication-title">Lens Privacy Sealing: A New Benchmark and Method for Physical Privacy-Preserving Action Recognition.</span> <strong><span class="publication-venue">TIP</span></strong>, 2026. <span class="publication-note">(第一作者, 图像处理顶刊)</span></p><div class="publication-links"><a href="papers/TIP2026_mengyuanliu_lps.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item">
+
+                <!-- 左侧照片 -->
+
+                <div class="publication-image"><a href="paper-figures/ICML2026_ziyiwang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ICML2026_ziyiwang-fig1.png" alt="Figure 1: Universal Skeleton Understanding via Differentiable
+                            Rendering and MLLMs" loading="lazy"></a></div>
+
+
+                <!-- 右侧文字 -->
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Ziyi Wang, Peiming Li, Xinshun Wang,
+                            Yang Tang, Kai-Kuang Ma,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            Universal Skeleton Understanding via Differentiable
+                            Rendering and MLLMs.
+
+                        </span>
+
+                        <strong><span class="publication-venue">ICML</span></strong>, 2026.
+
+                        <span class="publication-note">
+                            (通讯作者, 机器学习顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a href="papers/ICML2026_ziyiwang.pdf" target="_blank" rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a href="https://github.com/wangzy01/SkeletonLLM" target="_blank" rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/PR2026_mengyuanliu-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/PR2026_mengyuanliu-fig1.png" alt="Figure 1: Adaptive Learning from Noisy Estimated Depth Maps Benefits Monocular RGB-based 3D Human Pose Estimation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Jingting Liu.</span> <span class="publication-title">Adaptive Learning from Noisy Estimated Depth Maps Benefits Monocular RGB-based 3D Human Pose Estimation.</span> <strong><span class="publication-venue">PR</span></strong>, 2026. <span class="publication-note">(第一作者, 模式识别期刊)</span></p><div class="publication-links"><a href="papers/PR2026_mengyuanliu.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item">
+
+                <!-- 左侧照片 -->
+
+                <div class="publication-image"><a href="paper-figures/CVPR2026_xinshunwang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/CVPR2026_xinshunwang-fig1.png" alt="Figure 1: Superman: Unifying Skeleton and Vision for Human
+                            Motion Perception and Generation" loading="lazy"></a></div>
 
 
                 <!-- 右侧文字 -->
@@ -1269,17 +1472,11 @@
 
                     <div class="publication-links">
 
-                        <a
-                            href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_Superman_Unifying_Skeleton_and_Vision_for_Human_Motion_Perception_and_CVPR_2026_paper.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="papers/CVPR2026_xinshunwang.pdf" target="_blank" rel="noopener noreferrer">
                             [论文]
                         </a>
 
-                        <a
-                            href="https://github.com/BradleyWang0416/Superman-CVPR2026"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="https://github.com/BradleyWang0416/Superman-CVPR2026" target="_blank" rel="noopener noreferrer">
                             [代码]
                         </a>
 
@@ -1289,25 +1486,10 @@
 
             </div>
 
+<div class="publication-item">
 
-            <!-- =================================================
-                 SkeletonLLM - ICML 2026
-                 ================================================= -->
-
-            <div class="publication-item">
-
-                <!-- 左侧照片 -->
-
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/SkeletonLLM_ICML2026.jpg"
-                        alt="Universal Skeleton Understanding via Differentiable Rendering and MLLMs">
-
-                </div>
-
-
-                <!-- 右侧文字 -->
+                <div class="publication-image"><a href="paper-figures/ICRA2026_yutianzhang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ICRA2026_yutianzhang-fig1.png" alt="Figure 1: Find Anything Like Humans: Online Semantic Mapping
+                            and Coarse-to-Fine Navigation in Dynamic Environments" loading="lazy"></a></div>
 
                 <div class="publication-content">
 
@@ -1315,8 +1497,7 @@
 
                         <span class="publication-authors">
 
-                            Ziyi Wang, Peiming Li, Xinshun Wang,
-                            Yang Tang, Kai-Kuang Ma,
+                            Yutian Zhang, Jianyu Zhang,
 
                             <strong>
                                 Mengyuan Liu*
@@ -1326,34 +1507,29 @@
 
                         <span class="publication-title">
 
-                            Universal Skeleton Understanding via Differentiable
-                            Rendering and MLLMs.
+                            Find Anything Like Humans: Online Semantic Mapping
+                            and Coarse-to-Fine Navigation in Dynamic Environments.
 
                         </span>
 
-                        <strong><span class="publication-venue">ICML</span></strong>, 2026.
+                        <strong><span class="publication-venue">ICRA</span></strong>, 2026.
 
                         <span class="publication-note">
-                            (通讯作者, 机器学习顶会)
+                            (通讯作者, 机器人顶会)
                         </span>
 
                     </p>
 
                     <div class="publication-links">
 
-                        <a
-                            href="https://arxiv.org/pdf/2603.18003"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="papers/ICRA2026_yutianzhang.pdf" target="_blank" rel="noopener noreferrer">
                             [论文]
                         </a>
-
-                        <a
-                            href="https://github.com/wangzy01/SkeletonLLM"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="https://github.com/yutian929/Find-Anything-Like-Humans" target="_blank" rel="noopener noreferrer">
                             [代码]
                         </a>
+
+                        
 
                     </div>
 
@@ -1361,166 +1537,12 @@
 
             </div>
 
-
-            <!-- =================================================
-                 DAP - ECCV 2026
-                 ================================================= -->
-
-            <div class="publication-item">
+<div class="publication-item">
 
                 <!-- 左侧照片 -->
 
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/DAP_ECCV2026.jpg"
-                        alt="DAP: Doppler-aware Point Network for Heterogeneous mmWave Action Recognition">
-
-                </div>
-
-
-                <!-- 右侧文字 -->
-
-                <div class="publication-content">
-
-                    <p>
-
-                        <span class="publication-authors">
-
-                            Jiaying Lin, Shiman Wu, Jinfu Liu,
-                            Can Wang,
-
-                            <strong>
-                                Mengyuan Liu*
-                            </strong>.
-
-                        </span>
-
-                        <span class="publication-title">
-
-                            DAP: Doppler-aware Point Network for Heterogeneous
-                            mmWave Action Recognition.
-
-                        </span>
-
-                        <strong><span class="publication-venue">ECCV</span></strong>, 2026.
-
-                        <span class="publication-note">
-                            (通讯作者, 计算机视觉顶会)
-                        </span>
-
-                    </p>
-
-                    <div class="publication-links">
-
-                        <a
-                            href="https://arxiv.org/pdf/2605.09604.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [论文]
-                        </a>
-
-                        <a
-                            href="https://github.com/jolin830/DAP-Net"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [代码]
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 UniMotion - ECCV 2026
-                 ================================================= -->
-
-            <div class="publication-item">
-
-                <!-- 左侧照片 -->
-
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/UniMotion_ECCV2026.jpg"
-                        alt="UniMotion: A Unified Framework for Motion-Text-Vision Understanding and Generation">
-
-                </div>
-
-
-                <!-- 右侧文字 -->
-
-                <div class="publication-content">
-
-                    <p>
-
-                        <span class="publication-authors">
-
-                            Ziyi Wang, Xinshun Wang, Chen Shuang,
-                            Cong Yang,
-
-                            <strong>
-                                Mengyuan Liu*
-                            </strong>.
-
-                        </span>
-
-                        <span class="publication-title">
-
-                            UniMotion: A Unified Framework for Motion-Text-Vision
-                            Understanding and Generation.
-
-                        </span>
-
-                        <strong><span class="publication-venue">ECCV</span></strong>, 2026.
-
-                        <span class="publication-note">
-                            (通讯作者, 计算机视觉顶会)
-                        </span>
-
-                    </p>
-
-                    <div class="publication-links">
-
-                        <a
-                            href="https://arxiv.org/pdf/2603.22282.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [论文]
-                        </a>
-
-                        <a
-                            href="https://wangzy01.github.io/UniMotion/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [代码]
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 MP1 - AAAI 2026
-                 ================================================= -->
-
-            <div class="publication-item">
-
-                <!-- 左侧照片 -->
-
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/MP1_AAAI2026.jpg"
-                        alt="MP1: MeanFlow Tames Policy Learning in 1-step for Robotic Manipulation">
-
-                </div>
+                <div class="publication-image"><a href="paper-figures/AAAI2026_juyisheng-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/AAAI2026_juyisheng-fig1.png" alt="Figure 1: MP1: MeanFlow Tames Policy Learning in 1-step for
+                            Robotic Manipulation" loading="lazy"></a></div>
 
 
                 <!-- 右侧文字 -->
@@ -1556,17 +1578,11 @@
 
                     <div class="publication-links">
 
-                        <a
-                            href="https://arxiv.org/pdf/2507.10543.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="papers/AAAI2026_juyisheng.pdf" target="_blank" rel="noopener noreferrer">
                             [论文]
                         </a>
 
-                        <a
-                            href="https://github.com/LogSSim/MP1"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="https://github.com/LogSSim/MP1" target="_blank" rel="noopener noreferrer">
                             [代码]
                         </a>
 
@@ -1576,75 +1592,11 @@
 
             </div>
 
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/IJCV2026_mengyuanliu_pic-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/IJCV2026_mengyuanliu_pic-fig1.png" alt="Figure 1: Point-In-Context: Understanding Point Cloud via In-Context Learning" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Zhongbin Fang, Xia Li, Joachim M. Buhmann, Deheng Ye, Xiangtai Li, Chen Change Loy.</span> <span class="publication-title">Point-In-Context: Understanding Point Cloud via In-Context Learning.</span> <strong><span class="publication-venue">IJCV</span></strong>, 2026. <span class="publication-note">(第一作者, 计算机视觉顶刊)</span></p><div class="publication-links"><a href="papers/IJCV2026_mengyuanliu_pic.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <!-- =================================================
-                 Find Anything Like Humans - ICRA 2026
-                 ================================================= -->
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TMM2026_tiwang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TMM2026_tiwang-fig1.png" alt="Figure 1: Uncertainty-Aware Testing-Time Optimization for 3D Human Pose Estimation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Ti Wang, <strong>Mengyuan Liu*</strong>, Hong Liu, Bin Ren, Yingxuan You, Wenhao Li, Nicu Sebe, Xia Li.</span> <span class="publication-title">Uncertainty-Aware Testing-Time Optimization for 3D Human Pose Estimation.</span> <strong><span class="publication-venue">TMM</span></strong>, 2026. <span class="publication-note">(通讯作者, 多媒体期刊)</span></p><div class="publication-links"><a href="papers/TMM2026_tiwang.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <div class="publication-item">
-
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/zyt_find-anything-like-humans.png"
-                        alt="Find Anything Like Humans: Online Semantic Mapping and Coarse-to-Fine Navigation in Dynamic Environments">
-
-                </div>
-
-                <div class="publication-content">
-
-                    <p>
-
-                        <span class="publication-authors">
-
-                            Yutian Zhang, Jianyu Zhang,
-
-                            <strong>
-                                Mengyuan Liu*
-                            </strong>.
-
-                        </span>
-
-                        <span class="publication-title">
-
-                            Find Anything Like Humans: Online Semantic Mapping
-                            and Coarse-to-Fine Navigation in Dynamic Environments.
-
-                        </span>
-
-                        <strong><span class="publication-venue">ICRA</span></strong>, 2026.
-
-                        <span class="publication-note">
-                            (通讯作者, 机器人顶会)
-                        </span>
-
-                    </p>
-
-                    <div class="publication-links">
-
-                        <a
-                            href="https://events.infovaya.com/uploads/documents/pdfviewer/90/66/218486-3816.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [论文]
-                        </a>
-                        <a
-                            href="https://github.com/yutian929/Find-Anything-Like-Humans"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [代码]
-                        </a>
-
-                        
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
+</div>
 
 
         <!-- =================================================
@@ -1657,21 +1609,124 @@
 
 
         <div class="publication-list">
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TPAMI2025_mengyuanliu-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TPAMI2025_mengyuanliu-fig1.png" alt="Figure 1: Heatmap Pooling Network for Action Recognition From RGB Videos" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Jinfu Liu, Yongkang Jiang, Bin He.</span> <span class="publication-title">Heatmap Pooling Network for Action Recognition From RGB Videos.</span> <strong><span class="publication-venue">TPAMI</span></strong>, 2025. <span class="publication-note">(第一作者, 计算机视觉顶刊)</span></p><div class="publication-links"><a href="papers/TPAMI2025_mengyuanliu.pdf" target="_blank">[论文]</a></div></div></div>
 
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TIP2025_mengyuanliu-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TIP2025_mengyuanliu-fig1.png" alt="Figure 1: PoseMoE: Mixture-of-Experts Network for Monocular 3D Human Pose Estimation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Jiajie Liu, Jinyan Zhang, Wenhao Li, Junsong Yuan.</span> <span class="publication-title">PoseMoE: Mixture-of-Experts Network for Monocular 3D Human Pose Estimation.</span> <strong><span class="publication-venue">TIP</span></strong>, 2025. <span class="publication-note">(第一作者, 图像处理顶刊)</span></p><div class="publication-links"><a href="papers/TIP2025_mengyuanliu.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <!-- =================================================
-                 TcpFormer - AAAI 2025
-                 ================================================= -->
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TPAMI2025_wenhaoli-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TPAMI2025_wenhaoli-fig1.png" alt="Figure 1: H2OT: Hierarchical Hourglass Tokenizer for Efficient Video Pose Transformers" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Wenhao Li, <strong>Mengyuan Liu*</strong>, Hong Liu, Pichao Wang, Shijian Lu, Nicu Sebe.</span> <span class="publication-title">H2OT: Hierarchical Hourglass Tokenizer for Efficient Video Pose Transformers.</span> <strong><span class="publication-venue">TPAMI</span></strong>, 2025. <span class="publication-note">(共同通讯作者, 计算机视觉顶刊)</span></p><div class="publication-links"><a href="papers/TPAMI2025_wenhaoli.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <div class="publication-item">
+<div class="publication-item">
 
-                <div class="publication-image">
+                <div class="publication-image"><a href="paper-figures/ICCV2025_ziyiwang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ICCV2025_ziyiwang-fig1.png" alt="Figure 1: Recognizing Actions from Robotic View for Natural
+                            Human-Robot Interaction" loading="lazy"></a></div>
 
-                    <img
-                        src="./论文_files/liujiajie_tcpformer.png"
-                        alt="TcpFormer: Learning Temporal Correlation with Implicit Pose Proxy for 3D Human Pose Estimation">
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Ziyi Wang, Peiming Li, Hong Liu, Zhichao Deng,
+                            Can Wang, Jun Liu, Junsong Yuan,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            Recognizing Actions from Robotic View for Natural
+                            Human-Robot Interaction.
+
+                        </span>
+
+                        <strong><span class="publication-venue">ICCV</span></strong>, 2025.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a href="papers/ICCV2025_ziyiwang.pdf" target="_blank" rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a href="https://github.com/wangzy01/ACTIVE-Action-from-Robotic-View" target="_blank" rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
 
                 </div>
+
+            </div>
+
+<div class="publication-item">
+
+                <div class="publication-image"><a href="paper-figures/ICCV2025_peimingli-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ICCV2025_peimingli-fig1.png" alt="Figure 1: Ust-SSM: Unified Spatio-Temporal State Space Models
+                            for Point Cloud Video Modeling" loading="lazy"></a></div>
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Peiming Li, Ziyi Wang, Yulin Yuan, Hong Liu,
+                            Xiangming Meng, Junsong Yuan,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            Ust-SSM: Unified Spatio-Temporal State Space Models
+                            for Point Cloud Video Modeling.
+
+                        </span>
+
+                        <strong><span class="publication-venue">ICCV</span></strong>, 2025.
+
+                        <span class="publication-note">
+                            (通讯作者, 计算机视觉顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a href="papers/ICCV2025_peimingli.pdf" target="_blank" rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a href="https://github.com/wangzy01/UST-SSM" target="_blank" rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/IROS2025_baiqiaoyin-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/IROS2025_baiqiaoyin-fig1.png" alt="Figure 1: Recognizing Skeleton-Based Actions As Points" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">BaiqiaoYin, Jiaying Lin, Jiajun Wen, Yue Li, Jinfu Liu, Yanfei Wang, <strong>Mengyuan Liu*</strong>.</span> <span class="publication-title">Recognizing Skeleton-Based Actions As Points.</span> <strong><span class="publication-venue">IROS</span></strong>, 2025. <span class="publication-note">(通讯作者, 机器人顶会)</span></p><div class="publication-links"><a href="papers/IROS2025_baiqiaoyin.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/PR2025_guoquanwang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/PR2025_guoquanwang-fig1.png" alt="Figure 1: Frequency-Aware Self-Supervised Group Activity Recognition with Skeleton Sequences" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Guoquan Wang, <strong>Mengyuan Liu*</strong>, Hong Liu, Jinyan Zhang, Peini Guo, Ruijia Fan, Siyu Chen.</span> <span class="publication-title">Frequency-Aware Self-Supervised Group Activity Recognition with Skeleton Sequences.</span> <strong><span class="publication-venue">PR</span></strong>, 2025. <span class="publication-note">(通讯作者, 模式识别期刊)</span></p><div class="publication-links"><a href="papers/PR2025_guoquanwang.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TIP2025_jialuncai-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TIP2025_jialuncai-fig1.png" alt="Figure 1: NanoHTNet: Nano Human Topology Network for Efficient 3D Human Pose Estimation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Jialun Cai, <strong>Mengyuan Liu*</strong>, Hong Liu, Wenhao Li, Shuheng Zhou.</span> <span class="publication-title">NanoHTNet: Nano Human Topology Network for Efficient 3D Human Pose Estimation.</span> <strong><span class="publication-venue">TIP</span></strong>, 2025. <span class="publication-note">(通讯作者, 图像处理顶刊)</span></p><div class="publication-links"><a href="papers/TIP2025_jialuncai.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item">
+
+                <div class="publication-image"><a href="paper-figures/AAAI25_jiajieliu-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/AAAI25_jiajieliu-fig1.png" alt="Figure 1: TcpFormer: Learning Temporal Correlation with
+                            Implicit Pose Proxy for 3D Human Pose Estimation" loading="lazy"></a></div>
 
                 <div class="publication-content">
 
@@ -1706,17 +1761,11 @@
 
                     <div class="publication-links">
 
-                        <a
-                            href="https://arxiv.org/pdf/2501.01770.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="papers/AAAI25_jiajieliu.pdf" target="_blank" rel="noopener noreferrer">
                             [论文]
                         </a>
 
-                        <a
-                            href="https://github.com/James-ben-tombling/TCPFormer"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="https://github.com/James-ben-tombling/TCPFormer" target="_blank" rel="noopener noreferrer">
                             [代码]
                         </a>
 
@@ -1726,142 +1775,11 @@
 
             </div>
 
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/AAAI25_wanruozhang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/AAAI25_wanruozhang-fig1.png" alt="Figure 1: SVTformer: Spatial-View-Temporal Transformer for Multi-View 3D Human Pose Estimation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Wanruo Zhang, <strong>Mengyuan Liu*</strong>, Hong Liu, Wenhao Li.</span> <span class="publication-title">SVTformer: Spatial-View-Temporal Transformer for Multi-View 3D Human Pose Estimation.</span> <strong><span class="publication-venue">AAAI</span></strong>, 2025. <span class="publication-note">(通讯作者, 人工智能顶会)</span></p><div class="publication-links"><a href="papers/AAAI25_wanruozhang.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <!-- =================================================
-                 Ust-SSM - ICCV 2025
-                 ================================================= -->
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/THMS2025_mengyuanliu_megcn-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/THMS2025_mengyuanliu_megcn-fig1.png" alt="Figure 1: Learning Mutual Excitation for Hand-to-Hand and Human-to-Human Interaction Recognition" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Chen Chen, Songtao Wu, Fanyang Meng, Hong Liu.</span> <span class="publication-title">Learning Mutual Excitation for Hand-to-Hand and Human-to-Human Interaction Recognition.</span> <strong><span class="publication-venue">THMS</span></strong>, 2025. <span class="publication-note">(第一作者, 人机系统期刊)</span></p><div class="publication-links"><a href="papers/THMS2025_mengyuanliu_megcn.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <div class="publication-item">
-
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/lipeiming_ustssm.jpg"
-                        alt="Ust-SSM: Unified Spatio-Temporal State Space Models for Point Cloud Video Modeling">
-
-                </div>
-
-                <div class="publication-content">
-
-                    <p>
-
-                        <span class="publication-authors">
-
-                            Peiming Li, Ziyi Wang, Yulin Yuan, Hong Liu,
-                            Xiangming Meng, Junsong Yuan,
-
-                            <strong>
-                                Mengyuan Liu*
-                            </strong>.
-
-                        </span>
-
-                        <span class="publication-title">
-
-                            Ust-SSM: Unified Spatio-Temporal State Space Models
-                            for Point Cloud Video Modeling.
-
-                        </span>
-
-                        <strong><span class="publication-venue">ICCV</span></strong>, 2025.
-
-                        <span class="publication-note">
-                            (通讯作者, 计算机视觉顶会)
-                        </span>
-
-                    </p>
-
-                    <div class="publication-links">
-
-                        <a
-                            href="https://arxiv.org/pdf/2508.14604.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [论文]
-                        </a>
-
-                        <a
-                            href="https://github.com/wangzy01/UST-SSM"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [代码]
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 Recognizing Actions from Robotic View - ICCV 2025
-                 ================================================= -->
-
-            <div class="publication-item">
-
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/wangziyi_Recognizing Actions from Robotic View for Natural Human-Robot Interaction.png"
-                        alt="Recognizing Actions from Robotic View for Natural Human-Robot Interaction">
-
-                </div>
-
-                <div class="publication-content">
-
-                    <p>
-
-                        <span class="publication-authors">
-
-                            Ziyi Wang, Peiming Li, Hong Liu, Zhichao Deng,
-                            Can Wang, Jun Liu, Junsong Yuan,
-
-                            <strong>
-                                Mengyuan Liu*
-                            </strong>.
-
-                        </span>
-
-                        <span class="publication-title">
-
-                            Recognizing Actions from Robotic View for Natural
-                            Human-Robot Interaction.
-
-                        </span>
-
-                        <strong><span class="publication-venue">ICCV</span></strong>, 2025.
-
-                        <span class="publication-note">
-                            (通讯作者, 计算机视觉顶会)
-                        </span>
-
-                    </p>
-
-                    <div class="publication-links">
-
-                        <a
-                            href="https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Recognizing_Actions_from_Robotic_View_for_Natural_Human-Robot_Interaction_ICCV_2025_paper.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [论文]
-                        </a>
-
-                        <a
-                            href="https://github.com/wangzy01/ACTIVE-Action-from-Robotic-View"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [代码]
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
+</div>
 
 
         <!-- =================================================
@@ -1874,89 +1792,16 @@
 
 
         <div class="publication-list">
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/THMS2024_mengyuanliu_cmcs-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/THMS2024_mengyuanliu_cmcs-fig1.png" alt="Figure 1: Cross-Model Cross-Stream Learning for Self-Supervised Human Action Recognition" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Hong Liu, Tianyu Guo.</span> <span class="publication-title">Cross-Model Cross-Stream Learning for Self-Supervised Human Action Recognition.</span> <strong><span class="publication-venue">THMS</span></strong>, 2024. <span class="publication-note">(第一作者, 人机系统期刊)</span></p><div class="publication-links"><a href="papers/THMS2024_mengyuanliu_cmcs.pdf" target="_blank">[论文]</a></div></div></div>
 
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/PR2024_wenhaoli-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/PR2024_wenhaoli-fig1.png" alt="Figure 1: GraphMLP: A Graph MLP-Like Architecture for 3D Human Pose Estimation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Wenhao Li, <strong>Mengyuan Liu*</strong>, Hong Liu, Tianyu Guo, Ti Wang, Hao Tang, Nicu Sebe.</span> <span class="publication-title">GraphMLP: A Graph MLP-Like Architecture for 3D Human Pose Estimation.</span> <strong><span class="publication-venue">PR</span></strong>, 2024. <span class="publication-note">(通讯作者, 模式识别期刊)</span></p><div class="publication-links"><a href="papers/PR2024_wenhaoli.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <!-- =================================================
-                 APP - ACM MM 2024
-                 ================================================= -->
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/ACMMM2024_jinfuliu-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ACMMM2024_jinfuliu-fig1.png" alt="Figure 1: Multi-Modality Co-Learning for Efficient Skeleton-based Action Recognition" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Jinfu Liu, Chen Chen, <strong>Mengyuan Liu*</strong>.</span> <span class="publication-title">Multi-Modality Co-Learning for Efficient Skeleton-based Action Recognition.</span> <strong><span class="publication-venue">ACM MM</span></strong>, 2024. <span class="publication-note">(通讯作者, 多媒体顶会)</span></p><div class="publication-links"><a href="papers/ACMMM2024_jinfuliu.pdf" target="_blank">[论文]</a></div></div></div>
 
-            <div class="publication-item">
+<div class="publication-item">
 
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/zhangjinyan_app.png"
-                        alt="APP: Adaptive Pose Pooling for 3D Human Pose Estimation from Videos">
-
-                </div>
-
-                <div class="publication-content">
-
-                    <p>
-
-                        <span class="publication-authors">
-
-                            Jinyan Zhang,
-
-                            <strong>
-                                Mengyuan Liu*
-                            </strong>,
-
-                            Hong Liu, Guoquan Wang, Wenhao Li.
-
-                        </span>
-
-                        <span class="publication-title">
-
-                            APP: Adaptive Pose Pooling for 3D Human Pose
-                            Estimation from Videos.
-
-                        </span>
-
-                        <strong><span class="publication-venue">ACM MM</span></strong>, 2024.
-
-                        <span class="publication-note">
-                            (通讯作者, 多媒体顶会)
-                        </span>
-
-                    </p>
-
-                    <div class="publication-links">
-
-                        <a
-                            href="https://dl.acm.org/doi/10.1145/3664647.3680880"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [论文]
-                        </a>
-
-                        <a
-                            href="https://github.com/jinyanzhang/APP"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            [代码]
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 ClickDiff - ACM MM 2024
-                 ================================================= -->
-
-            <div class="publication-item">
-
-                <div class="publication-image">
-
-                    <img
-                        src="./论文_files/lipeiming_click-diff.png"
-                        alt="ClickDiff: Click to Induce Semantic Contact Map for Controllable Grasp Generation with Diffusion Models">
-
-                </div>
+                <div class="publication-image"><a href="paper-figures/ACMMM2024_peimingli-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ACMMM2024_peimingli-fig1.png" alt="Figure 1: ClickDiff: Click to Induce Semantic Contact Map
+                            for Controllable Grasp Generation with Diffusion Models" loading="lazy"></a></div>
 
                 <div class="publication-content">
 
@@ -1991,17 +1836,11 @@
 
                     <div class="publication-links">
 
-                        <a
-                            href="https://dl.acm.org/doi/10.1145/3664647.3680597"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="papers/ACMMM2024_peimingli.pdf" target="_blank" rel="noopener noreferrer">
                             [论文]
                         </a>
 
-                        <a
-                            href="https://github.com/wangzy01/ClickDiff"
-                            target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="https://github.com/wangzy01/ClickDiff" target="_blank" rel="noopener noreferrer">
                             [代码]
                         </a>
 
@@ -2011,11 +1850,81 @@
 
             </div>
 
+<div class="publication-item">
 
-        </div>
+                <div class="publication-image"><a href="paper-figures/ACMMM2024_jinyanzhang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/ACMMM2024_jinyanzhang-fig1.png" alt="Figure 1: APP: Adaptive Pose Pooling for 3D Human Pose
+                            Estimation from Videos" loading="lazy"></a></div>
+
+                <div class="publication-content">
+
+                    <p>
+
+                        <span class="publication-authors">
+
+                            Jinyan Zhang,
+
+                            <strong>
+                                Mengyuan Liu*
+                            </strong>,
+
+                            Hong Liu, Guoquan Wang, Wenhao Li.
+
+                        </span>
+
+                        <span class="publication-title">
+
+                            APP: Adaptive Pose Pooling for 3D Human Pose
+                            Estimation from Videos.
+
+                        </span>
+
+                        <strong><span class="publication-venue">ACM MM</span></strong>, 2024.
+
+                        <span class="publication-note">
+                            (通讯作者, 多媒体顶会)
+                        </span>
+
+                    </p>
+
+                    <div class="publication-links">
+
+                        <a href="papers/ACMMM2024_jinyanzhang.pdf" target="_blank" rel="noopener noreferrer">
+                            [论文]
+                        </a>
+
+                        <a href="https://github.com/jinyanzhang/APP" target="_blank" rel="noopener noreferrer">
+                            [代码]
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TCSVT24_wanyingzhang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TCSVT24_wanyingzhang-fig1.png" alt="Figure 1: CHAMP: a large-scale dataset for skeleton-based composite human motion prediction" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Wanying Zhang, <strong>Mengyuan Liu*</strong>, Xinshun Wang, Shen Zhao, Can Wang.</span> <span class="publication-title">CHAMP: a large-scale dataset for skeleton-based composite human motion prediction.</span> <strong><span class="publication-venue">TCSVT</span></strong>, 2024. <span class="publication-note">(通讯作者, 视频技术期刊)</span></p><div class="publication-links"><a href="papers/TCSVT24_wanyingzhang.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TMM2024_taowang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TMM2024_taowang-fig1.png" alt="Figure 1: Feature Completion Transformer for Occluded Person Re-identification" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Tao Wang, <strong>Mengyuan Liu*</strong>, Hong Liu, Wenhao Li, Miaoju Ban, Tianyu Guo, Yidi Li.</span> <span class="publication-title">Feature Completion Transformer for Occluded Person Re-identification.</span> <strong><span class="publication-venue">TMM</span></strong>, 2024. <span class="publication-note">(共同通讯作者, 多媒体期刊)</span></p><div class="publication-links"><a href="papers/TMM2024_taowang.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/PR2024_tianyuguo-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/PR2024_tianyuguo-fig1.png" alt="Figure 1: Improving Self-Supervised Action Recognition from Extremely Augmented Skeleton Sequences" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Tianyu Guo, <strong>Mengyuan Liu*</strong>, Hong Liu, Guoquan Wang, Wenhao Li.</span> <span class="publication-title">Improving Self-Supervised Action Recognition from Extremely Augmented Skeleton Sequences.</span> <strong><span class="publication-venue">PR</span></strong>, 2024. <span class="publication-note">(通讯作者, 模式识别期刊)</span></p><div class="publication-links"><a href="papers/PR2024_tianyuguo.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/PR2024_guoquanwang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/PR2024_guoquanwang-fig1.png" alt="Figure 1: Augmented Skeleton Sequences with Hypergraph Network for Self-Supervised Group Activity Recognition" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Guoquan Wang, <strong>Mengyuan Liu*</strong>, Hong Liu, Peini Guo, Ti Wang, Jingwen Guo, Ruijia Fan.</span> <span class="publication-title">Augmented Skeleton Sequences with Hypergraph Network for Self-Supervised Group Activity Recognition.</span> <strong><span class="publication-venue">PR</span></strong>, 2024. <span class="publication-note">(通讯作者, 模式识别期刊)</span></p><div class="publication-links"><a href="papers/PR2024_guoquanwang.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TIP24_yizhang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TIP24_yizhang-fig1.png" alt="Figure 1: Facial Prior Guided Micro-Expression Generation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Yi Zhang, Xinhua Xu, Youjun Zhao, Yuhang Wen, Zixuan Tang, <strong>Mengyuan Liu*</strong>.</span> <span class="publication-title">Facial Prior Guided Micro-Expression Generation.</span> <strong><span class="publication-venue">TIP</span></strong>, 2024. <span class="publication-note">(通讯作者, 图像处理顶刊)</span></p><div class="publication-links"><a href="papers/TIP24_yizhang.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/CVPR2024_wenhaoli-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/CVPR2024_wenhaoli-fig1.png" alt="Figure 1: Hourglass Tokenizer for Efficient Transformer-Based 3D Human Pose Estimation" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Wenhao Li, <strong>Mengyuan Liu*</strong>, Hong Liu, Pichao Wang, Jialun Cai, Nicu Sebe.</span> <span class="publication-title">Hourglass Tokenizer for Efficient Transformer-Based 3D Human Pose Estimation.</span> <strong><span class="publication-venue">CVPR</span></strong>, 2024. <span class="publication-note">(通讯作者, 计算机视觉顶会)</span></p><div class="publication-links"><a href="papers/CVPR2024_wenhaoli.pdf" target="_blank">[论文]</a></div></div></div>
+
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/TIP2023_xinshunwang-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/TIP2023_xinshunwang-fig1.png" alt="Figure 1: Dynamic Dense Graph Convolutional Network for Skeleton-based Human Motion Prediction" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors">Xinshun Wang, Wanying Zhang, Can Wang, Yuan Gao, <strong>Mengyuan Liu*</strong>.</span> <span class="publication-title">Dynamic Dense Graph Convolutional Network for Skeleton-based Human Motion Prediction.</span> <strong><span class="publication-venue">TIP</span></strong>, 2024. <span class="publication-note">(通讯作者, 图像处理顶刊)</span></p><div class="publication-links"><a href="papers/TIP2023_xinshunwang.pdf" target="_blank">[论文]</a></div></div></div>
+
+</div>
 
 
-    </div>
+    <h3 class="year-title">2023</h3>
+<div class="publication-list">
+<div class="publication-item"><div class="publication-image"><a href="paper-figures/AAAI2023_mengyuanliu-fig1.png" target="_blank" rel="noopener"><img class="paper-figure" src="paper-figures/AAAI2023_mengyuanliu-fig1.png" alt="Figure 1: Novel Motion Patterns Matter for Practical Skeleton-Based Action Recognition" loading="lazy"></a></div><div class="publication-content"><p><span class="publication-authors"><strong>Mengyuan Liu</strong>, Fanyang Meng, Chen Chen, Songtao Wu.</span> <span class="publication-title">Novel Motion Patterns Matter for Practical Skeleton-Based Action Recognition.</span> <strong><span class="publication-venue">AAAI</span></strong>, 2023. <span class="publication-note">(第一作者, 人工智能顶会)</span></p><div class="publication-links"><a href="papers/AAAI2023_mengyuanliu.pdf" target="_blank">[论文]</a></div></div></div>
+
+</div>
+</div>
 
 </div>
 
